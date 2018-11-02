@@ -242,7 +242,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added [delta query](../concepts/delta_query_overview) capability for the following entities in Azure AD:<br/>[application](../api-reference/beta/api/application_delta.md)<br/>[directoryRole](../api-reference/beta/api/directoryRole_delta.md)<br/>[servicePrincipal](../api-reference/beta/api/serviceprincipal_delta.md) |
+| Addition        | Beta        | Added [delta query](../concepts/delta_query_overview.md(../concepts/delta_query_overview capability for the following entities in Azure AD:<br/>[application](../api-reference/beta/api/application_delta.md)<br/>[directoryRole](../api-reference/beta/api/directoryRole_delta.md)<br/>[servicePrincipal](../api-reference/beta/api/serviceprincipal_delta.md) |
 
 ### Directory APIs
 
@@ -773,7 +773,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition | v1.0 | Added [visualInfo](../api-reference/v1.0/resources/projectrome_visualinfo.md) |
 | Addition | v1.0 | Added [imageInfo](../api-reference/v1.0/resources/projectrome_imageinfo.md) |
 | Addition | v.10 | Added [Project Rome overview](../api-reference/v1.0/resources/project_rome_overview.md) |
-| Change | Beta | Added deep insert documentation to [Upsert Activity](../beta/api/projectrome_put_activity) |
+| Change | Beta | Added deep insert documentation to [Upsert Activity](../beta/api/projectrome_put_activity.md) |
 
 ### Reports APIs
 |Change type|Version|Description|
@@ -997,8 +997,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|v1.0|Added [JSON batching](../concepts/json_batching) support. Internal request limit set to 20.|
-|Change|Beta|Increased [JSON batching](../concepts/json_batching) internal request limit from 5 to 20.|
+|Addition|v1.0|Added [JSON batching](../concepts/json_batching.md(../concepts/json_batching support. Internal request limit set to 20.|
+|Change|Beta|Increased [JSON batching](../concepts/json_batching.md(../concepts/json_batching internal request limit from 5 to 20.|
 
 ### Education APIs
 
@@ -1799,7 +1799,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Add delta function support to v1.0. Add to the following entities to perform [delta query](../concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](../concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder](../concepts/delta_query_messages)<br/>[Get incremental changes to users](../concepts/delta_query_users) |
+| Addition        | v1.0        | Add delta function support to v1.0. Add to the following entities to perform [delta query](../concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups](../concepts/delta_query_groups.md(../concepts/delta_query_groups<br/>[Get incremental changes to messages in a folder](../concepts/delta_query_messages.md.md(../concepts/delta_query_messages.md<br/>[Get incremental changes to users](../concepts/delta_query_users.md(../concepts/delta_query_users |
 | Change          | Beta        | Add additional optional query filtering capability (by id) to [users](../api-reference/beta/api/user_delta.md) and [groups](../api-reference/beta/api/group_delta.md). |
 
 ### Added user resource support for deleted items
@@ -2016,7 +2016,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](../concepts/auth_cloudsolutionprovider). |
+| Addition        | Beta        | Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](../concepts/auth_cloudsolutionprovider.md(../concepts/auth_cloudsolutionprovider. |
 
 ### Added onPremises properties to user entity
 
@@ -2189,7 +2189,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](../concepts/extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](../concepts/extensibility_schema_groups) |
+| Addition        | Beta        | Extend Microsoft Graph with application data by using [schema extensions](../concepts/extensibility_overview#schema-extensions-preview).  This is supported on the following resources:<br/>administrative unit<br/>calendar event<br/>device<br/>group<br/>message<br/>organization<br/>personal contact<br/>post<br/>user<br/>See the following example:<br/>[Add custom data to groups using Schema Extensions (preview)](../concepts/extensibility_schema_groups.md(../concepts/extensibility_schema_groups |
 | Addition        | Beta        | Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](../concepts/extensibility_overview#schema-extensions-preview) for details. |
 
 ### Add custom data to Microsoft Graph using open extensions
@@ -2304,7 +2304,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | Beta        | A new delta function add to the following entities to perform [delta query](../concepts/delta_query_overview):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](../concepts/delta_query_groups)<br/>[Get incremental changes to messages in a folder (preview)](../concepts/delta_query_messages)<br/>[Get incremental changes to users (preview)](../concepts/delta_query_users) |
+| Addition        | Beta        | A new delta function add to the following entities to perform [delta query](../concepts/delta_query_overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>See the following for examples:<br/>[Get incremental changes to groups (preview)](../concepts/delta_query_groups.md)<br/>[Get incremental changes to messages in a folder (preview)](../concepts/delta_query_messages.md)<br/>[Get incremental changes to users (preview)](../concepts/delta_query_users.md(../concepts/delta_query_users |
 
 ### Excel APIs
 
@@ -2325,7 +2325,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon & long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow). |
-| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](../concepts/permissions_reference), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
+| Addition        | v1.0 and beta | The v2.0 auth endpoint now supports [permission scopes that require administrator's consent](../concepts/permissions_reference.md(../concepts/permissions_reference, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 | Addition        | v1.0 and beta | The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions). |
 
 ### Invitation APIs
@@ -2383,7 +2383,7 @@ Added support for dynamic group membership through the public preview API, inclu
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific [hybrid deployments](../overview/hybrid_rest_support). **Note:** If you're using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview. |
+| Addition        | v1.0        | Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific [hybrid deployments](../overview/hybrid_rest_support.md). **Note:** If you're using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview. |
 
 ### IdentityRiskEvents
 
