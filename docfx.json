@@ -1,22 +1,39 @@
 {
   "build": {
+    "groups": {
+      "all": {
+        "dest": "all",
+        "moniker_range": "graph-rest-1.0 || graph-rest-beta"
+      }
+    },
     "content": [
       {
+        "src": "api-reference/v1.0/",
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "api/**.md",
+          "resources/**.md"
         ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "appveyor.yml"
-        ]
+        "exclude": [],
+        "group": "all"
+      },
+      {
+        "src": "concepts",
+        "files": [
+          "**.md",
+          "**.yml"
+        ],
+        "exclude": [],
+        "dest": ".",
+        "group": "all"
+      },
+      {
+        "src": "api-reference/beta/",
+        "files": [
+          "api/**.md",
+          "resources/**.md"
+        ],
+        "exclude": [],
+        "group": "all"
       }
     ],
     "resource": [
@@ -36,11 +53,31 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/graph/breadcrumb/toc.json",
+      "breadcrumb_path": "breadcrumb/toc.yml",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
-    "fileMetadata": {},
+    "fileMetadata": {   
+      "monikerRange": {
+        "api-reference/1.0/**": "graph-rest-1.0",
+        "api-reference/beta/**": "graph-rest-beta"
+      },
+      "feedback_system": {},
+      "ms.service": {
+        "concepts/*.md": "microsoft-graph", 
+        "api-reference/v1.0/api/*.md": "microsoft-graph",  
+        "api-reference/beta/api/*.md": "microsoft-graph",
+        "api-reference/v1.0/resources/*.md": "microsoft-graph",  
+        "api-reference/beta/resources/*.md": "microsoft-graph"    
+      },
+      "ms.topic": {
+        "concepts/*.md": "conceptual",  
+        "api-reference/v1.0/api/*.md": "managed-reference",  
+        "api-reference/beta/api/*.md": "managed-reference",
+        "api-reference/v1.0/resources/*.md": "managed-reference",  
+        "api-reference/beta/resources/*.md": "managed-reference" 
+      }
+    },
     "template": [],
     "dest": "microsoft-graph-docs",
     "markdownEngineName": "markdig"
