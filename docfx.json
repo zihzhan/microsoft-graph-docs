@@ -20,7 +20,8 @@
         "exclude": [],
         "dest": ".",
         "group": "all"
-      },{
+      },
+      {
         "src": "api-reference/v1.0/",
         "files": [
           "api/**.md",
