@@ -1,21 +1,16 @@
 {
   "build": {
     "groups": {
-      "all": {
-        "dest": "all",
-        "moniker_range": "graph-rest-1.0 || graph-rest-beta"
+      "v1.0": {
+        "dest": "v1temp",
+        "moniker_range": ">= graph-rest-1.0"
+      },
+      "beta": {
+        "dest": "betatemp",
+        "moniker_range": "<= graph-rest-beta"
       }
     },
     "content": [
-      {
-        "src": "api-reference/v1.0/",
-        "files": [
-          "api/**.md",
-          "resources/**.md"
-        ],
-        "exclude": [],
-        "group": "all"
-      },
       {
         "src": "concepts",
         "files": [
@@ -25,7 +20,15 @@
         "exclude": [],
         "dest": ".",
         "group": "all"
-      },
+      },{
+        "src": "api-reference/v1.0/",
+        "files": [
+          "api/**.md",
+          "resources/**.md"
+        ],
+        "exclude": [],
+        "group": "v1.0"
+      },      
       {
         "src": "api-reference/beta/",
         "files": [
@@ -33,7 +36,7 @@
           "resources/**.md"
         ],
         "exclude": [],
-        "group": "all"
+        "group": "beta"
       }
     ],
     "resource": [
