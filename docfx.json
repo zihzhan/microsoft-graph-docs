@@ -1,43 +1,71 @@
 {
-  "build": {
-    "groups": {
-      "v1.0": {
-        "dest": "v1temp",
-        "moniker_range": ">= graph-rest-1.0"
-      },
-      "beta": {
-        "dest": "betatemp",
-        "moniker_range": "graph-rest-beta"
-      }
-    },
+  "build": {    
     "content": [
       {
-        "src": "concepts",
         "files": [
           "**.md",
           "**.yml"
         ],
-        "exclude": [],
+        "group": "v1.0",
+        "src": "concepts",
         "dest": ".",
-        "group": "graph-rest-1.0"
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       },
       {
-        "src": "api-reference/v1.0/",
+        "files": [
+          "**.md",
+          "**.yml"
+        ],
+        "group": "beta",
+        "src": "concepts",
+        "dest": ".",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
         "files": [
           "api/**.md",
           "resources/**.md"
         ],
-        "exclude": [],
-        "group": "v1.0"
+        "src": "api-reference/v1.0/",        
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       },      
       {
-        "src": "api-reference/beta/",
-        "files": [
+       "files": [
           "api/**.md",
           "resources/**.md"
         ],
-        "exclude": [],
-        "group": "beta"
+        "src": "api-reference/beta/",       
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       }
     ],
     "resource": [
@@ -46,6 +74,20 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "group": "beta",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -54,6 +96,16 @@
         ]
       }
     ],
+    "groups": {
+      "v1.0": {
+        "dest": "v1temp",
+        "moniker_range": ">= graph-rest-1.0"
+      },
+      "beta": {
+        "dest": "betatemp",
+        "moniker_range": "graph-rest-beta"
+      }     
+    },    
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": { 
