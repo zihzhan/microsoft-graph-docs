@@ -38,7 +38,8 @@
       {
         "files": [
           "api/**.md",
-          "resources/**.md"
+          "resources/**.md",
+          "**.yml"
         ],
         "src": "api-reference/v1.0/",        
         "group": "v1.0",
@@ -54,7 +55,8 @@
       {
        "files": [
           "api/**.md",
-          "resources/**.md"
+          "resources/**.md",
+          "**.yml"
         ],
         "src": "api-reference/beta/",       
         "group": "beta",
