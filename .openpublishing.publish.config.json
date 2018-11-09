@@ -50,7 +50,7 @@
     {
       "ReferenceTOC": "api/toc.yml",
       "ReferenceTOCUrl": "/graph/api/toc.json",
-      "ConceptualTOC": "toc.yml",
+      "ConceptualTOC": "concepts/toc.yml",
       "ConceptualTOCUrl": "/graph/toc.json"
     }
   ]
