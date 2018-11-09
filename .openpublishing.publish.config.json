@@ -48,7 +48,7 @@
   "targets": {},
   "JoinTOCPlugin": [
     {
-      "ReferenceTOC": "api/toc.yml",
+      "ReferenceTOC": "toc.yml",
       "ReferenceTOCUrl": "/graph/api/toc.json",
       "ConceptualTOC": "concepts/toc.yml",
       "ConceptualTOCUrl": "/graph/toc.json"
