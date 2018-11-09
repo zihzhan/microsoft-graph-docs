@@ -53,8 +53,8 @@ School Data Sync management APIs support end-to-end scenarios for managing sync;
 ## API reference
 Looking for the API reference for this service?
 
-- [Education API in Microsoft Graph v1.0](../api-reference/v1.0/resources/education-overview.md)
-- [Education API in Microsoft Graph beta](../api-reference/beta/resources/education-overview.md)
+- [Education API in Microsoft Graph v1.0](/graph/api/resources/education-overview?view=graph-rest-1.0)
+- [Education API in Microsoft Graph beta](/graph/api/resources/education-overview?view=graph-rest-beta)
 
 
 ## Next Steps

@@ -53,7 +53,7 @@ For users and groups, there are restrictions on using some query parameters:
 Removed instances are represented by their **id** and an `@removed` object. The `@removed` object may include additional information about why the instance was removed. For example,  "@removed": {"reason": “changed”}.
 
 Possible @removed reasons can be *changed* or *deleted*.
-- *Changed* indicates the item was deleted and can be restored from [deletedItems](../api-reference/beta/resources/directory.md).
+- *Changed* indicates the item was deleted and can be restored from [deletedItems](/graph/api/resources/directory?view=graph-rest-beta).
 - *Deleted* indicates the item is deleted and cannot be restored.
 
 The `@removed` object can be returned in the initial delta query response and in tracked (deltaLink) responses. Clients using delta query requests should be designed to handle these objects in the responses.
@@ -64,23 +64,23 @@ Delta query is currently supported for the following resources.
 
 | **Resource collection** | **API** |
 |:------ | :------ |
-| Applications (preview) | [delta](../api-reference/beta/api/application_delta.md) function of the [application](../api-reference/beta/resources/application.md) resource (preview) |
-| Directory roles | [delta](../api-reference/beta/api/directoryrole_delta.md) function of the [directoryRole](../api-reference/beta/resources/directoryrole.md) resource (preview) |
-| Events in a calendar view (date range) of the primary calendar | [delta](../api-reference/v1.0/api/event_delta.md) function of the [event](../api-reference/v1.0/resources/event.md) resource |
-| Groups | [delta](../api-reference/v1.0/api/group_delta.md) function of the [group](../api-reference/v1.0/resources/group.md) resource |
-| Mail folders | [delta](../api-reference/v1.0/api/mailfolder_delta.md) function of the [mailFolder](../api-reference/v1.0/resources/mailFolder.md) resource |
-| Messages in a folder | [delta](../api-reference/v1.0/api/message_delta.md) function of the [message](../api-reference/v1.0/resources/message.md) resource |
-| Personal contact folders | [delta](../api-reference/v1.0/api/contactfolder_delta.md) function of the [contactFolder](../api-reference/v1.0/resources/contactfolder.md) resource |
-| Personal contacts in a folder | [delta](../api-reference/v1.0/api/contact_delta.md) function of the [contact](../api-reference/v1.0/resources/contact.md) resource |
-| Service principals (preview) | [delta](../api-reference/beta/api/serviceprincipal_delta.md) function of the [servicePrincipal](../api-reference/beta/resources/serviceprincipal.md) resource (preview) |
-| Users | [delta](../api-reference/v1.0/api/user_delta.md) function of the [user](../api-reference/v1.0/resources/user.md) resource |
-| Drive items\* | [delta](../api-reference/v1.0/api/driveitem_delta.md) function of the [driveItem](../api-reference/v1.0/resources/driveitem.md) resource |
-| Planner items\*\* | [delta](../api-reference/beta/api/planneruser_list_delta.md) function of the all segment of [plannerUser](../api-reference/beta/resources/planneruser.md) resource (preview) |
+| Applications (preview) | [delta](/graph/api/api/application_delta?view=graph-rest-beta) function of the [application](/graph/api/resources/application?view=graph-rest-beta) resource (preview) |
+| Directory roles | [delta](/graph/api/api/directoryrole_delta?view=graph-rest-beta) function of the [directoryRole](/graph/api/resources/directoryrole?view=graph-rest-beta) resource (preview) |
+| Events in a calendar view (date range) of the primary calendar | [delta](/graph/api/api/event_delta?view=graph-rest-1.0) function of the [event](/graph/api/resources/event?view=graph-rest-1.0) resource |
+| Groups | [delta](/graph/api/api/group_delta?view=graph-rest-1.0) function of the [group](/graph/api/resources/group?view=graph-rest-1.0) resource |
+| Mail folders | [delta](/graph/api/api/mailfolder_delta?view=graph-rest-1.0) function of the [mailFolder](/graph/api/resources/mailFolder?view=graph-rest-1.0) resource |
+| Messages in a folder | [delta](/graph/api/api/message_delta?view=graph-rest-1.0) function of the [message](/graph/api/resources/message?view=graph-rest-1.0) resource |
+| Personal contact folders | [delta](/graph/api/api/contactfolder_delta?view=graph-rest-1.0) function of the [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-1.0) resource |
+| Personal contacts in a folder | [delta](/graph/api/api/contact_delta?view=graph-rest-1.0) function of the [contact](/graph/api/resources/contact?view=graph-rest-1.0) resource |
+| Service principals (preview) | [delta](/graph/api/api/serviceprincipal_delta?view=graph-rest-beta) function of the [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) resource (preview) |
+| Users | [delta](/graph/api/api/user_delta?view=graph-rest-1.0) function of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource |
+| Drive items\* | [delta](/graph/api/api/driveitem_delta?view=graph-rest-1.0) function of the [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) resource |
+| Planner items\*\* | [delta](/graph/api/api/planneruser_list_delta?view=graph-rest-beta) function of the all segment of [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) resource (preview) |
 
 > \* The usage pattern for OneDrive resources is similar to the other supported resources with some minor syntax differences. Delta query for drives will be updated in the future to be consistent with other resource types. For more detail about the current syntax, see
 [Track changes for a Drive](https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/item_delta).
 
-> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](../api-reference/beta/api/planneruser_list_delta.md).
+> \*\* The usage pattern for Planner resources is similar to other supported resources with a few differences.  For details, see [Track changes for Planner](/graph/api/api/planneruser_list_delta?view=graph-rest-beta).
 
 ## Prerequisites
 
