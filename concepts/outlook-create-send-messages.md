@@ -68,9 +68,9 @@ MailTips can tell you information such as the recipient's mailbox is restricted 
 @-mentions are notifications to alert users if they are mentioned in messages. The [mention](/graph/api/resources/mention?view=graph-rest-beta) resource enables apps to set and get the common online social gesture, the '@' prefix, in emails.
 You can:
 
-- Create @-mentions when [creating a message](../api-reference/beta/api/user_post_messages.md#request-2)
-- [Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)
-- [Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)
+- Create @-mentions when [creating a message](/graph/api/api/user_post_messages?view=graph-rest-beta#request-2)
+- [Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/api/user_list_messages?view=graph-rest-beta#request-2)
+- [Get all the @-mention is a message](/graph/api/api/message_get?view=graph-rest-beta#request-2)
 
 ## Other shared capabilities
 
@@ -86,17 +86,17 @@ Take advantage of the following common capabilities that are shared among Micros
 Find out more about:
 
 - [Why integrate with Outlook mail](outlook-mail-concept-overview.md)
-- [Using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](../api-reference/v1.0/resources/mail_api_overview.md#common-use-cases) in Microsoft Graph v1.0.
+- [Using the mail API](/graph/api/resources/mail_api_overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail_api_overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
 
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
     "Error: /concepts/outlook-create-send-messages.md:
-        BookmarkSkippedDocFileNotFound: Link '[creating a message](../api-reference/beta/api/user_post_messages.md#request-2)'.",
+        BookmarkSkippedDocFileNotFound: Link '[creating a message](/graph/api/api/user_post_messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](../api-reference/beta/api/user_list_messages.md#request-2)'.",
+      BookmarkSkippedDocFileNotFound: Link '[Get all the messages in a user's mailbox that contain an @-mention of the user](/graph/api/api/user_list_messages?view=graph-rest-beta#request-2)'.",
     "Error: /concepts/outlook-create-send-messages.md:
-      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](../api-reference/beta/api/message_get.md#request-2)'."
+      BookmarkSkippedDocFileNotFound: Link '[Get all the @-mention is a message](/graph/api/api/message_get?view=graph-rest-beta#request-2)'."
   ]
 }-->

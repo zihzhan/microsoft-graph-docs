@@ -106,7 +106,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | :-------------- | :---------- | :--------------------------------------- |
 | Change          | Beta        | The [application](/graph/api/resources/application?view=graph-rest-beta) resource was updated to add a calls collection. |
 | Change          | Beta        | The [operation](/graph/api/resources/operation?view=graph-rest-beta) resource was updated to support long-running calls and meetings APIs. |
-| Addition        | Beta        | Added the [call](/graph/api/resources/call?view=graph-rest-beta) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](/graph/api/api/application_post_calls?view=graph-rest-beta), [retrieving a a call](/graph/api/api/call_get?view=graph-rest-beta), [deleting (hanging up) a call](/graph/api/api/call_delete?view=graph-rest-beta), [answering a call](/graph/api/api/call_answer?view=graph-rest-beta), [rejecting a call](/graph/api/api/call_reject?view=graph-rest-beta), [redirecting a call](/graph/api/api/call_redirect?view=graph-rest-beta), and [transferring a call](/graph/api/api/call_transfer?view=graph-rest-beta). We've also added APIs to support [IVR scenarios](../api-reference/beta/resources/calls-api-ivr-overview): [playing a prompt](/graph/api/api/call_playprompt?view=graph-rest-beta), [recording a call](/graph/api/api/call_record?view=graph-rest-beta), [cancel media processing](/graph/api/api/call_cancelmediaprocessing?view=graph-rest-beta), and [subscribing to touch tone notifications](/graph/api/api/call_subscribetotone?view=graph-rest-beta). |
+| Addition        | Beta        | Added the [call](/graph/api/resources/call?view=graph-rest-beta) resource for managing audio/video calls (initially, in Microsoft Teams), including APIs for [creating calls](/graph/api/api/application_post_calls?view=graph-rest-beta), [retrieving a a call](/graph/api/api/call_get?view=graph-rest-beta), [deleting (hanging up) a call](/graph/api/api/call_delete?view=graph-rest-beta), [answering a call](/graph/api/api/call_answer?view=graph-rest-beta), [rejecting a call](/graph/api/api/call_reject?view=graph-rest-beta), [redirecting a call](/graph/api/api/call_redirect?view=graph-rest-beta), and [transferring a call](/graph/api/api/call_transfer?view=graph-rest-beta). We've also added APIs to support [IVR scenarios](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-beta): [playing a prompt](/graph/api/api/call_playprompt?view=graph-rest-beta), [recording a call](/graph/api/api/call_record?view=graph-rest-beta), [cancel media processing](/graph/api/api/call_cancelmediaprocessing?view=graph-rest-beta), and [subscribing to touch tone notifications](/graph/api/api/call_subscribetotone?view=graph-rest-beta). |
 | Addition        | Beta        | Added the [participant](/graph/api/resources/call?view=graph-rest-beta) resource and APIs for managing the participants in audio/video calls and meetings, including [retrieving a participant object](/graph/api/api/participant_get?view=graph-rest-beta), [configuring the audio mixer for a participant](/graph/api/api/participant_configuremixer?view=graph-rest-beta), muting [one](/graph/api/api/participant_mute?view=graph-rest-beta) or [all](/graph/api/api/participant_muteall?view=graph-rest-beta) of the participants, [retrieving a list of the participants](/graph/api/api/call_list_participants?view=graph-rest-beta) in a call/meeting, and [inviting participants](/graph/api/api/participant_invite?view=graph-rest-beta) to a call/meeting. |
 | Addition        | Beta        | Added APIs for applications to manage and participate in calls and meetings, including the ability to [share content](/graph/api/api/call_changescreensharingrole?view=graph-rest-beta), [mute and unmute itself](/graph/api/api/call_unmute?view=graph-rest-beta), and [update the metadata associated with a call](/graph/api/api/call_updatemetadata?view=graph-rest-beta). |
 | Addition        | Beta        | Added the [audio routing group](/graph/api/resources/audioroutinggroup?view=graph-rest-beta) resource and APIs for managing private audio routes between participants in a multiparty conversation, including [creating audio routing groups](/graph/api/api/call_post_audioroutinggroups?view=graph-rest-beta), [retrieving a list of them](/graph/api/api/audioroutinggroup_get?view=graph-rest-beta), and [updating](/graph/api/api/audioroutinggroup_update?view=graph-rest-beta) and [deleting](/graph/api/api/audioroutinggroup_delete?view=graph-rest-beta) them. |
@@ -355,23 +355,23 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | beta       | Added **activityGroupName**, **cloudAppStates**, **confidence**, and **registryKeyStates** properties to [alert](../api-reference/beta/resources/alert.md ). |
-|Deletion|beta| Removed **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** and **type** properties from [alert](../api-reference/beta/resources/alert.md ). |
+| Addition        | beta       | Added **activityGroupName**, **cloudAppStates**, **confidence**, and **registryKeyStates** properties to [alert](/graph/api/resources/alert?view=graph-rest-beta). |
+|Deletion|beta| Removed **activityGroupStates**, **applicationStates**, **malwareWasRunning**, **riskScore** and **type** properties from [alert](/graph/api/resources/alert?view=graph-rest-beta). |
 |Change|beta| Changed **comments** type from a `String` to a `String collection`, and changed **severity** type from a `String` to a [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) enum in [alert](/graph/api/resources/alert?view=graph-rest-beta). |
 | Addition        | beta       | Added the following resource types: <br/> [cloudAppSecurityState](/graph/api/resources/cloudappsecuritystate?view=graph-rest-beta) <br/> [fileHash](/graph/api/resources/filehash?view=graph-rest-beta) <br/> [registryKeyState](/graph/api/resources/registrykeystate?view=graph-rest-beta) |
 |Deletion|beta| Removed the following resource types: <br/> **activityGroupState**  <br/> **applicationSecurityState** |
 | Addition        | beta       | Added the following enums: <br/> [alertSeverity](/graph/api/resources/alertseverityenumtype?view=graph-rest-beta) <br/> [connectionDirection](/graph/api/resources/connectiondirectionenumtype?view=graph-rest-beta) <br/> [connectionStatus](/graph/api/resources/connectionstatusenumtype?view=graph-rest-beta) <br/> [emailRole](/graph/api/resources/emailroleenumtype?view=graph-rest-beta) <br/> [fileHashType](/graph/api/resources/filehashtypeenumtype?view=graph-rest-beta) <br/> [registryHive](/graph/api/resources/registryhiveenumtype?view=graph-rest-beta)  <br/> [registryOperation](/graph/api/resources/registryoperationenumtype?view=graph-rest-beta) <br/> [registryValueType](/graph/api/resources/registryvaluetypeenumtype?view=graph-rest-beta)|
 |Deletion|beta| Removed the following enum types: <br/> **alertType** <br/> **applicationPermissionsRequired** |
-| Addition        | beta       | Added **fileHash** property to [fileSecurityState](../api-reference/beta/resources/filesecuritystate.md ).|
+| Addition        | beta       | Added **fileHash** property to [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta).|
 |Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [fileSecurityState](/graph/api/resources/filesecuritystate?view=graph-rest-beta). |
 | Addition | beta | Added **os** property to [hostSecurityState](/graph/api/resources/hostsecuritystate?view=graph-rest-beta).|
 | Addition | beta | Added **category**, **family**, and **wasRunning** properties to [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta).|
 |Deletion|beta| Removed **aliases** property from [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta). |
-|Change|beta| Moved **malwareWasRunning** property from  [alert](../api-reference/beta/resources/alert.md ) to [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta) and renamed to **wasRunning**. |
-| Addition        | beta       | Added **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName**, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status**, and **urlParameters** properties to [networkConnection](../api-reference/beta/resources/networkconnection.md ).|
-|Change|beta| Changed **uri** property to **destinationUrl** in [networkConnection](../api-reference/beta/resources/networkconnection.md ). |
-| Addition        | beta       | Added **fileHash** property to [process](../api-reference/beta/resources/process.md ).|
-|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](../api-reference/beta/resources/process.md ). |
+|Change|beta| Moved **malwareWasRunning** property from  [alert](/graph/api/resources/alert?view=graph-rest-beta) to [malwareState](/graph/api/resources/malwarestate?view=graph-rest-beta) and renamed to **wasRunning**. |
+| Addition        | beta       | Added **applicationName**, **destinationDomain**, **direction**, **domainRegisteredDateTime**, **localDnsName**, **natDestinationAddress**, **natDestinationPort**, **natSourceAddress**, **natSourcePort**, **riskScore**, **status**, and **urlParameters** properties to [networkConnection](/graph/api/resources/networkconnection?view=graph-rest-beta).|
+|Change|beta| Changed **uri** property to **destinationUrl** in [networkConnection](/graph/api/resources/networkconnection?view=graph-rest-beta). |
+| Addition        | beta       | Added **fileHash** property to [process](/graph/api/resources/process?view=graph-rest-beta).|
+|Deletion|beta| Removed **authenticodeHash256** and **sha256** properties from [process](/graph/api/resources/process?view=graph-rest-beta). |
 | Addition        | beta       | Added **aadUserId**, **emailRole**, **isVpn**, and **logonIp** properties to [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta).|
 |Change|beta| Changed **logonIpAddress** property to **logonIp** in [userSecurityState](/graph/api/resources/usersecuritystate?view=graph-rest-beta). |
 | Addition        | beta       | Added **wasRunning** property to [vulnerabilityState](/graph/api/resources/vulnerabilitystate?view=graph-rest-beta).|
@@ -440,7 +440,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 ### Webhooks
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type) for drive root items to 3 days. |
 
 
 ## June 2018
@@ -1004,7 +1004,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 |Change type|Version|Description|
 |:---|:---|:---|
-|Addition|Beta|Added extra navigation properties and improve filtering support for [roster API](../api-reference/beta/resources/education-overview).|
+|Addition|Beta|Added extra navigation properties and improve filtering support for [roster API](/graph/api/resources/education-overview?view=graph-rest-beta).|
 
 ### Microsoft Intune APIs
 |Change type|Version|Description|
@@ -1266,7 +1266,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | Change type | Version | Description                              |
 |:------------|:--------|:-----------------------------------------|
-| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](../api-reference/v1.0/resources/subscription.md#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
+| Breaking change | Beta and v1.0 | Reduced [webhooks](/graph/api/resources/webhooks?view=graph-rest-1.0) [maximum length of subscription expiration time](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type) for drive root items. The new value is the supported maximum expiration time for drive root items. |
 
 ## October 2017
 
@@ -1766,7 +1766,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Change          | Beta        | Application API update. This is first set of changes including property renaming and restructuring of the [application](/graph/api/resources/application?view=graph-rest-beta) entity.<br/>**New entities:** [api](../api-reference/beta/resources/api]), [informationalUrl](/graph/api/resources/informationalUrl?view=graph-rest-beta), [installedClient](/graph/api/resources/installedclient?view=graph-rest-beta), [permissionScope](/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), [web](/graph/api/resources/web?view=graph-rest-beta).<br/>**Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls.<br/>**New properties:** tags. |
+| Change          | Beta        | Application API update. This is first set of changes including property renaming and restructuring of the [application](/graph/api/resources/application?view=graph-rest-beta) entity.<br/>**New entities:** [api](/graph/api/resources/api]?view=graph-rest-beta), [informationalUrl](/graph/api/resources/informationalUrl?view=graph-rest-beta), [installedClient](/graph/api/resources/installedclient?view=graph-rest-beta), [permissionScope](/graph/api/resources/permissionscope?view=graph-rest-beta), [preauthorizedApplication](/graph/api/resources/preauthorizedapplication?view=graph-rest-beta), [web](/graph/api/resources/web?view=graph-rest-beta).<br/>**Removed properties:** addIns, appRoles, availableToOtherOrganizations, knownClientApplications, oauth2AllowUrlPathMatching, recordConsentConditions.<br/>**Renamed properties:** appId to id, identifierUris to applicationAliases, availableToOtherTenants to orgRestrictions, mainLogo to logo, oauth2Permissions to publishedPermissionsScopes, publicClient to allowPublicClient, replyUrls to redirectUrls.<br/>**New properties:** tags. |
 
 ### Remove Deprecated Planner API
 | **Change type** | **Version** | **Description**                          |
@@ -1955,7 +1955,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Addition        | v1.0 and beta | For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you're scheduling for. See details in the [request body](../api-reference/v1.0/api/user_findmeetingtimes#request-body) section. |
+| Addition        | v1.0 and beta | For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you're scheduling for. See details in the [request body](/graph/api/api/user_findmeetingtimes#request-body?view=graph-rest-1.0) section. |
 | Addition        | Beta          | Support getting an **event** body in plain text, as an alternative to the default HTML format. See [get](/graph/api/api/event_get?view=graph-rest-beta) and [list](/graph/api/api/user_list_events?view=graph-rest-beta) events for details. |
 
 ### Outlook mail
@@ -1972,7 +1972,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | Addition        | Beta        | New **outlook** navigation property added to [user](/graph/api/resources/user?view=graph-rest-beta), to access Outlook tasks. |
 | Addition        | Beta        | New entities - [outlookuser](/graph/api/resources/outlookuser?view=graph-rest-beta), [outlookTaskGroup](/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), [outlookTaskFolder](/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), and [outlookTask](/graph/api/resources/outlooktask?view=graph-rest-beta) - and their methods support organizing and accessing Outlook tasks. |
 | Addition        | Beta        | Outlook tasks support attachments ([attachment](/graph/api/resources/attachment?view=graph-rest-beta), [fileAttachment](/graph/api/resources/fileattachment?view=graph-rest-beta), [itemAttachment](/graph/api/resources/itemattachment?view=graph-rest-beta), and [referenceAttachment](/graph/api/resources/referenceattachment?view=graph-rest-beta) resources). |
-| Addition        | Beta        | Outlook tasks support [extended properties](../api-reference/beta/resources/extended-properties-overview) ([singleValueLegacyExtendedProperty](/graph/api/resources/singlevaluelegacyextendedproperty?view=graph-rest-beta) and [multiValueLegacyExtendedProperty](/graph/api/resources/multivaluelegacyextendedproperty?view=graph-rest-beta) resources). |
+| Addition        | Beta        | Outlook tasks support [extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-beta) ([singleValueLegacyExtendedProperty](/graph/api/resources/singlevaluelegacyextendedproperty?view=graph-rest-beta) and [multiValueLegacyExtendedProperty](/graph/api/resources/multivaluelegacyextendedproperty?view=graph-rest-beta) resources). |
 
 ### Planner APIs
 
@@ -2365,7 +2365,7 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version** | **Description**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Addition        | v1.0        | [Extended properties](../api-reference/v1.0/resources/extended-properties-overview) are now supported by the following resources: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post. |
+| Addition        | v1.0        | [Extended properties](/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) are now supported by the following resources: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post. |
 
 ### Groups
 

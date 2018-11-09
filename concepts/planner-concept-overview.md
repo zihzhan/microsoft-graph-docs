@@ -45,5 +45,5 @@ Looking for the API reference for this service?
 ## Next steps
 
 - [Use the Planner API](/graph/api/resources/planner_overview?view=graph-rest-1.0)
-- [Work with plans](../api-reference/v1.0/resources/planner_overview.md#plans)
-- [Work with tasks](../api-reference/v1.0/resources/planner_overview.md#tasks)
+- [Work with plans](/graph/api/resources/planner_overview?view=graph-rest-1.0#plans)
+- [Work with tasks](/graph/api/resources/planner_overview?view=graph-rest-1.0#tasks)
