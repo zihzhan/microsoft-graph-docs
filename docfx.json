@@ -135,10 +135,10 @@
       },
       "ms.topic": {
         "concepts/*.md": "conceptual",  
-        "api-reference/v1.0/api/*.md": "managed-reference",  
-        "api-reference/beta/api/*.md": "managed-reference",
-        "api-reference/v1.0/resources/*.md": "managed-reference",  
-        "api-reference/beta/resources/*.md": "managed-reference" 
+        "api-reference/v1.0/api/*.md": "reference",  
+        "api-reference/beta/api/*.md": "reference",
+        "api-reference/v1.0/resources/*.md": "reference",  
+        "api-reference/beta/resources/*.md": "reference" 
       }
     },
     "template": [],
