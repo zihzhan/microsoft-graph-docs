@@ -1,206 +1,209 @@
 name: Graph Docs
 items:
 - name: EXPLORE
-- name: Overview
-  href: concepts/overview.md
-- name: Services in Microsoft Graph
-  href: concepts/overview-major-services.md
   items:
-  - name: Users you can reach
-    href: concepts/users-you-can-reach.md
+  - name: Overview
+    href: concepts/overview.md
+  - name: Services in Microsoft Graph
+    href: concepts/overview-major-services.md
     items:
-    - name: National cloud deployments
-      href: concepts/deployments.md
-    - name: Hybrid deployments (preview)
-      href: concepts/hybrid_rest_support.md
-  - name: Versioning and support
-    href: concepts/versioning_and_support.md
-  - name: Terms of use
-    href: https://developer.microsoft.com/graph/terms-of-use.md
-- name: Microsoft Graph data connect (preview)
-  href: concepts/data-connect-overview.md
+    - name: Users you can reach
+      href: concepts/users-you-can-reach.md
+      items:
+      - name: National cloud deployments
+        href: concepts/deployments.md
+      - name: Hybrid deployments (preview)
+        href: concepts/hybrid_rest_support.md
+    - name: Versioning and support
+      href: concepts/versioning_and_support.md
+    - name: Terms of use
+      href: https://developer.microsoft.com/graph/terms-of-use.md
+  - name: Microsoft Graph data connect (preview)
+    href: concepts/data-connect-overview.md
 - name: LEARN
-- name: Users
-  href: concepts/azuread-users-concept-overview.md
-- name: Groups
-  href: concepts/office365-groups-concept-overview.md
-- name: Calendar
-  href: concepts/outlook-calendar-concept-overview.md
   items:
-  - name: Find meeting times
-    href: concepts/findmeetingtimes_example.md
-  - name: Get free/busy schedule
-    href: concepts/outlook-get-free-busy-schedule.md
-  - name: Schedule recurring events
-    href: concepts/outlook-schedule-recurring-events.md
-  - name: Get shared events
-    href: concepts/outlook-get-shared-events-calendars.md
-  - name: Immutable ID (preview)
-    href: concepts/outlook-immutable-id.md
-- name: Cross-device experiences
-  href: concepts/cross-device-concept-overview.md
-  items:
-  - name: Activity feed
-    href: concepts/activity-feed-concept-overview.md
-  - name: Device relay (preview)
-    href: concepts/device-relay-concept-overview.md
-  - name: Notifications (preview)
-    href: concepts/notifications-concept-overview.md
-  - name: Build cross-device apps
-    href: concepts/cross-device-app-configuration.md
-- name: Customer booking (preview)
-  href: concepts/booking-concept-overview.md
-- name: Data access (preview)
-  href: concepts/data-connect-concept-overview.md
-  items:
-  - name: Get started
-    href: concepts/data-connect-get-started.md
-- name: Devices and apps
-  href: concepts/intune-concept-overview.md
-- name: Education
-  href: concepts/education-concept-overview.md
-- name: Files
-  href: concepts/onedrive-concept-overview.md
-- name: Identity and access
-  href: concepts/azuread-identity-access-management-concept-overview.md
-- name: Mail
-  href: concepts/outlook-mail-concept-overview.md
-  items:
-  - name: Create and send messages
-    href: concepts/outlook-create-send-messages.md
-  - name: Organize messages
-    href: concepts/outlook-organize-messages.md
-  - name: Get shared messages
-    href: concepts/outlook-share-messages-folders.md
-  - name: Immutable ID (preview)
-    href: concepts/outlook-immutable-id.md
-- name: Notes
-  href: concepts/integrate_with_onenote.md
-  items:
-  - name: Get OneNote content
-    href: concepts/onenote-get-content.md
-  - name: Open the OneNote client
-    href: concepts/open_onenote_client.md
-  - name: Create pages
-    href: concepts/onenote-create-page.md
-  - name: Update page content
-    href: concepts/onenote_update_page.md
-  - name: Add images, videos, and files
-    href: concepts/onenote_images_files.md
-  - name: Create absolute positioned elements
-    href: concepts/onenote-abs-pos.md
-  - name: Extract data
-    href: concepts/onenote-extract-data.md
-  - name: Use note tags
-    href: concepts/onenote-note-tags.md
-  - name: RESOURCES
-  - name: Input and output HTML
-    href: concepts/onenote_input_output_html.md
-  - name: Best practices
-    href: concepts/onenote_best_practices.md
-  - name: Branding guidelines
-    href: concepts/onenote-branding.md
-  - name: Error codes
-    href: concepts/onenote_error_codes.md
-- name: Personal contacts
-  href: concepts/outlook-contacts-concept-overview.md
-  items:
-  - name: Get shared contacts
-    href: concepts/outlook-get-shared-contacts-folders.md
-  - name: Immutable ID (preview)
-    href: concepts/outlook-immutable-id.md
-- name: Reports
-  href: concepts/reportroot-concept-overview.md
-- name: Security
-  href: concepts/security-concept-overview.md
-  items:
-  - name: Data flow
-    href: concepts/security-dataflow.md
-  - name: Authorization
-    href: concepts/security-authorization.md
-  - name: Integrate with a SIEM
-    href: concepts/security_siemintegration.md
+  - name: Users
+    href: concepts/azuread-users-concept-overview.md
+  - name: Groups
+    href: concepts/office365-groups-concept-overview.md
+  - name: Calendar
+    href: concepts/outlook-calendar-concept-overview.md
     items:
-    - name: Splunk
-      href: concepts/security-splunk-siemintegration.md
-    - name: QRadar
-      href: concepts/security-qradar-siemintegration.md
-- name: Sites and lists
-  href: concepts/sharepoint-concept-overview.md
-- name: Social intelligence
-  href: concepts/social-intel-concept-overview.md
-  items:
-  - name: Get information about relevant people
-    href: concepts/people_example.md
-- name: Tasks and plans
-  href: concepts/planner-concept-overview.md
-- name: Teamwork
-  href: concepts/teams-concept-overview.md
-- name: Workbooks and charts
-  href: concepts/excel-concept-overview.md
-  items:
-  - name: Manage sessions
-    href: concepts/excel-manage-sessions.md
-  - name: Display a chart image
-    href: concepts/excel-display-chart-image.md
-  - name: Use workbook functions
-    href: concepts/excel-use-functions.md
-  - name: Update a range format
-    href: concepts/excel-update-range-format.md
-  - name: Write data to a workbook
-    href: concepts/excel-write-to-workbook.md
+    - name: Find meeting times
+      href: concepts/findmeetingtimes_example.md
+    - name: Get free/busy schedule
+      href: concepts/outlook-get-free-busy-schedule.md
+    - name: Schedule recurring events
+      href: concepts/outlook-schedule-recurring-events.md
+    - name: Get shared events
+      href: concepts/outlook-get-shared-events-calendars.md
+    - name: Immutable ID (preview)
+      href: concepts/outlook-immutable-id.md
+  - name: Cross-device experiences
+    href: concepts/cross-device-concept-overview.md
+    items:
+    - name: Activity feed
+      href: concepts/activity-feed-concept-overview.md
+    - name: Device relay (preview)
+      href: concepts/device-relay-concept-overview.md
+    - name: Notifications (preview)
+      href: concepts/notifications-concept-overview.md
+    - name: Build cross-device apps
+      href: concepts/cross-device-app-configuration.md
+  - name: Customer booking (preview)
+    href: concepts/booking-concept-overview.md
+  - name: Data access (preview)
+    href: concepts/data-connect-concept-overview.md
+    items:
+    - name: Get started
+      href: concepts/data-connect-get-started.md
+  - name: Devices and apps
+    href: concepts/intune-concept-overview.md
+  - name: Education
+    href: concepts/education-concept-overview.md
+  - name: Files
+    href: concepts/onedrive-concept-overview.md
+  - name: Identity and access
+    href: concepts/azuread-identity-access-management-concept-overview.md
+  - name: Mail
+    href: concepts/outlook-mail-concept-overview.md
+    items:
+    - name: Create and send messages
+      href: concepts/outlook-create-send-messages.md
+    - name: Organize messages
+      href: concepts/outlook-organize-messages.md
+    - name: Get shared messages
+      href: concepts/outlook-share-messages-folders.md
+    - name: Immutable ID (preview)
+      href: concepts/outlook-immutable-id.md
+  - name: Notes
+    href: concepts/integrate_with_onenote.md
+    items:
+    - name: Get OneNote content
+      href: concepts/onenote-get-content.md
+    - name: Open the OneNote client
+      href: concepts/open_onenote_client.md
+    - name: Create pages
+      href: concepts/onenote-create-page.md
+    - name: Update page content
+      href: concepts/onenote_update_page.md
+    - name: Add images, videos, and files
+      href: concepts/onenote_images_files.md
+    - name: Create absolute positioned elements
+      href: concepts/onenote-abs-pos.md
+    - name: Extract data
+      href: concepts/onenote-extract-data.md
+    - name: Use note tags
+      href: concepts/onenote-note-tags.md
+    - name: RESOURCES
+    - name: Input and output HTML
+      href: concepts/onenote_input_output_html.md
+    - name: Best practices
+      href: concepts/onenote_best_practices.md
+    - name: Branding guidelines
+      href: concepts/onenote-branding.md
+    - name: Error codes
+      href: concepts/onenote_error_codes.md
+  - name: Personal contacts
+    href: concepts/outlook-contacts-concept-overview.md
+    items:
+    - name: Get shared contacts
+      href: concepts/outlook-get-shared-contacts-folders.md
+    - name: Immutable ID (preview)
+      href: concepts/outlook-immutable-id.md
+  - name: Reports
+    href: concepts/reportroot-concept-overview.md
+  - name: Security
+    href: concepts/security-concept-overview.md
+    items:
+    - name: Data flow
+      href: concepts/security-dataflow.md
+    - name: Authorization
+      href: concepts/security-authorization.md
+    - name: Integrate with a SIEM
+      href: concepts/security_siemintegration.md
+      items:
+      - name: Splunk
+        href: concepts/security-splunk-siemintegration.md
+      - name: QRadar
+        href: concepts/security-qradar-siemintegration.md
+  - name: Sites and lists
+    href: concepts/sharepoint-concept-overview.md
+  - name: Social intelligence
+    href: concepts/social-intel-concept-overview.md
+    items:
+    - name: Get information about relevant people
+      href: concepts/people_example.md
+  - name: Tasks and plans
+    href: concepts/planner-concept-overview.md
+  - name: Teamwork
+    href: concepts/teams-concept-overview.md
+  - name: Workbooks and charts
+    href: concepts/excel-concept-overview.md
+    items:
+    - name: Manage sessions
+      href: concepts/excel-manage-sessions.md
+    - name: Display a chart image
+      href: concepts/excel-display-chart-image.md
+    - name: Use workbook functions
+      href: concepts/excel-use-functions.md
+    - name: Update a range format
+      href: concepts/excel-update-range-format.md
+    - name: Write data to a workbook
+      href: concepts/excel-write-to-workbook.md
 - name: DEVELOP
-- name: Get auth tokens
-  href: concepts/auth_overview.md
   items:
-  - name: Register your app
-    href: concepts/auth_register_app_v2.md
-  - name: Get access on behalf of a user
-    href: concepts/auth_v2_user.md
-  - name: Get access without a user
-    href: concepts/auth_v2_service.md
-  - name: Permissions
-    href: concepts/permissions_reference.md
-  - name: Manage app access (CSPs)
-    href: concepts/auth_cloudsolutionprovider.md
-- name: Use the API
-  href: concepts/use_the_api.md
-  items:
-  - name: Paging
-    href: concepts/paging.md
-  - name: Use query parameters
-    href: concepts/query_parameters.md
-  - name: Batch requests
-    href: concepts/json_batching.md
-  - name: Throttling
-    href: concepts/throttling.md
-  - name: Change notifications
-    href: concepts/webhooks.md
-  - name: Track changes
-    href: concepts/delta_query_overview.md
+  - name: Get auth tokens
+    href: concepts/auth_overview.md
     items:
-    - name: Get changes to events (example)
-      href: concepts/delta_query_events.md
-    - name: Get changes to groups (example)
-      href: concepts/delta_query_groups.md
-    - name: Get changes to messages (example)
-      href: concepts/delta_query_messages.md
-    - name: Get changes to users (example)
-      href: concepts/delta_query_users.md
-  - name: Add custom data
-    href: concepts/extensibility_overview.md
+    - name: Register your app
+      href: concepts/auth_register_app_v2.md
+    - name: Get access on behalf of a user
+      href: concepts/auth_v2_user.md
+    - name: Get access without a user
+      href: concepts/auth_v2_service.md
+    - name: Permissions
+      href: concepts/permissions_reference.md
+    - name: Manage app access (CSPs)
+      href: concepts/auth_cloudsolutionprovider.md
+  - name: Use the API
+    href: concepts/use_the_api.md
     items:
-    - name: Use open extensions (example)
-      href: concepts/extensibility_open_users.md
-    - name: Use schema extensions (example)
-      href: concepts/extensibility_schema_groups.md
-  - name: RESOURCES
-  - name: Best practices
-    href: concepts/best-practices-concept.md
-  - name: Known issues
-    href: concepts/known_issues.md
-  - name: Changelog
-    href: concepts/changelog.md
-  - name: Errors
-    href: concepts/errors.md
+    - name: Paging
+      href: concepts/paging.md
+    - name: Use query parameters
+      href: concepts/query_parameters.md
+    - name: Batch requests
+      href: concepts/json_batching.md
+    - name: Throttling
+      href: concepts/throttling.md
+    - name: Change notifications
+      href: concepts/webhooks.md
+    - name: Track changes
+      href: concepts/delta_query_overview.md
+      items:
+      - name: Get changes to events (example)
+        href: concepts/delta_query_events.md
+      - name: Get changes to groups (example)
+        href: concepts/delta_query_groups.md
+      - name: Get changes to messages (example)
+        href: concepts/delta_query_messages.md
+      - name: Get changes to users (example)
+        href: concepts/delta_query_users.md
+    - name: Add custom data
+      href: concepts/extensibility_overview.md
+      items:
+      - name: Use open extensions (example)
+        href: concepts/extensibility_open_users.md
+      - name: Use schema extensions (example)
+        href: concepts/extensibility_schema_groups.md
+    - name: RESOURCES
+    - name: Best practices
+      href: concepts/best-practices-concept.md
+    - name: Known issues
+      href: concepts/known_issues.md
+    - name: Changelog
+      href: concepts/changelog.md
+    - name: Errors
+      href: concepts/errors.md
 ...
