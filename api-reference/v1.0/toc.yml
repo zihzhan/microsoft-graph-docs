@@ -1,8 +1,5 @@
 name: Reference
 items:
-- name: v1.0 reference
-  href: concepts/v1-overview
-  items:
   - name: Users
     href: resources/users
     items:

@@ -1,8 +1,5 @@
 name: Reference
 items:
-- name: Beta reference
-  href: beta-overview
-  items:
   - name: Users
     href: resources/users
     items:
