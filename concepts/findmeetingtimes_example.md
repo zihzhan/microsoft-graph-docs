@@ -1,7 +1,7 @@
 # Find possible meeting times on the Outlook calendar
 
 In a workplace or school, looking for a common time and place to meet often incurs overhead. Microsoft Graph applications can use 
-[findMeetingTimes](../api-reference/v1.0/api/user_findmeetingtimes.md) to identify any possible meeting times that satisfy time, location, and other constraints.   
+[findMeetingTimes](/graph/api/api/user_findmeetingtimes?view=graph-rest-1.0) to identify any possible meeting times that satisfy time, location, and other constraints.   
 
 The **findMeetingTimes** action lets you specify conditions such as the meeting date/time range, duration, optional or required attendees, and
 nature of the activity (**activityDomain**). The action takes into account the attendees' and organizer's normal work schedules and free/busy status, and suggests 
@@ -246,7 +246,7 @@ and other [parameters](../api-reference/v1.0/api/user_findmeetingtimes.md#reques
 
 After getting meeting time suggestions, you may want to:
 
-1. [Create an event and send it as a meeting request](../api-reference/v1.0/api/user_post_events.md).
-2. [Add an attachment](../api-reference/v1.0/api/event_post_attachments.md) to the event.
+1. [Create an event and send it as a meeting request](/graph/api/api/user_post_events?view=graph-rest-1.0).
+2. [Add an attachment](/graph/api/api/event_post_attachments?view=graph-rest-1.0) to the event.
 
 Find out more about [integrating with Outlook calendar](outlook-calendar-concept-overview.md).

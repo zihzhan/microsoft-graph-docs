@@ -41,8 +41,8 @@ To learn about these models in more detail, visit the [SharePoint Dev Center][] 
 ## API reference
 Looking for the API reference for this service?
 
-- [SharePoint API in Microsoft Graph v1.0](../api-reference/v1.0/resources/sharepoint.md)
-- [SharePoint API in Microsoft Graph beta](../api-reference/beta/resources/sharepoint.md)
+- [SharePoint API in Microsoft Graph v1.0](/graph/api/resources/sharepoint?view=graph-rest-1.0)
+- [SharePoint API in Microsoft Graph beta](/graph/api/resources/sharepoint?view=graph-rest-beta)
 
 ## Next steps
 

@@ -315,10 +315,10 @@ When you get a file resource, you don't need to include an **Accept** content ty
 
 For more information about GET requests, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](../api-reference/v1.0/api/page_get.md)
-- [GET Sections](../api-reference/v1.0/api/section_get.md)
-- [GET SectionGroups](../api-reference/v1.0/api/sectiongroup_get.md)
-- [GET Notebooks](../api-reference/v1.0/api/notebook_get.md) 
+- [GET Pages](/graph/api/api/page_get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/api/section_get?view=graph-rest-1.0)
+- [GET SectionGroups](/graph/api/api/sectiongroup_get?view=graph-rest-1.0)
+- [GET Notebooks](/graph/api/api/notebook_get?view=graph-rest-1.0) 
 
 
 
@@ -624,10 +624,10 @@ Property names are case-sensitive in query expressions.
 
 For the list of properties and property types, see the following resources in the Microsoft Graph API REST reference:
 
-- [GET Pages](../api-reference/v1.0/api/page_get.md)
-- [GET Sections](../api-reference/v1.0/api/section_get.md)
-- [GET SectionGroups](../api-reference/v1.0/api/sectiongroup_get.md)
-- [GET Notebooks](../api-reference/v1.0/api/notebook_get.md) 
+- [GET Pages](/graph/api/api/page_get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/api/section_get?view=graph-rest-1.0)
+- [GET SectionGroups](/graph/api/api/sectiongroup_get?view=graph-rest-1.0)
+- [GET Notebooks](/graph/api/api/notebook_get?view=graph-rest-1.0) 
 
 
 
