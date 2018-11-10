@@ -8,6 +8,7 @@
         ],
         "group": "v1.0",
         "src": "concepts",
+        "dest": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -24,6 +25,7 @@
         ],
         "group": "beta",
         "src": "concepts",
+        "dest": "concepts",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
