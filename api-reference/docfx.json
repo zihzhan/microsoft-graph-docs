@@ -3,45 +3,10 @@
     "content": [
       {
         "files": [
-          "**.md",
-          "**.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
-        "group": "v1.0",
-        "src": "concepts",
-        "dest": "concepts",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "**.md",
-          "**.yml"
-        ],
-        "group": "beta",
-        "src": "concepts",
-        "dest": "concepts",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      },
-      {
-        "files": [
-          "api/**.md",
-          "resources/**.md",
-          "**.yml"
-        ],
-        "src": "api-reference/v1.0/",        
+        "src": "v1.0/",
         "group": "v1.0",
         "exclude": [
           "**/obj/**",
@@ -54,11 +19,10 @@
       },      
       {
        "files": [
-          "api/**.md",
-          "resources/**.md",
-          "**.yml"
+          "**/*.md",
+          "**/*.yml"
         ],
-        "src": "api-reference/beta/",       
+        "src": "beta/",
         "group": "beta",
         "exclude": [
           "**/obj/**",
@@ -114,31 +78,32 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
       "feedback_product_url": "https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback/category/101632-microsoft-graph-o365-rest-apis",
-      "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "author": "jthake-msft",
       "ms.author": "jthake-msft",
       "ms.date": "06/11/2018"
     },
-    "fileMetadata": {   
+    "fileMetadata": {
+	  "breadcrumb_path": {
+	    "1.0/**": "/graph/breadcrumb/toc.json?view=graph-rest-1.0",
+		"beta/**": "/graph/breadcrumb/toc.json?view=graph-rest-beta"
+	  },
       "monikerRange": {
-        "api-reference/1.0/**": "graph-rest-1.0",
-        "api-reference/beta/**": "graph-rest-beta"
+        "1.0/**": "graph-rest-1.0",
+        "beta/**": "graph-rest-beta"
       },
       "feedback_system": {},
       "ms.service": {
-        "concepts/*.md": "microsoft-graph", 
-        "api-reference/v1.0/api/*.md": "microsoft-graph",  
-        "api-reference/beta/api/*.md": "microsoft-graph",
-        "api-reference/v1.0/resources/*.md": "microsoft-graph",  
-        "api-reference/beta/resources/*.md": "microsoft-graph"    
+        "v1.0/api/*.md": "microsoft-graph",  
+        "beta/api/*.md": "microsoft-graph",
+        "v1.0/resources/*.md": "microsoft-graph",  
+        "beta/resources/*.md": "microsoft-graph"    
       },
-      "ms.topic": {
-        "concepts/*.md": "conceptual",  
-        "api-reference/v1.0/api/*.md": "reference",  
-        "api-reference/beta/api/*.md": "reference",
-        "api-reference/v1.0/resources/*.md": "reference",  
-        "api-reference/beta/resources/*.md": "reference" 
+      "ms.topic": {  
+        "v1.0/api/*.md": "reference",  
+        "beta/api/*.md": "reference",
+        "v1.0/resources/*.md": "reference",  
+        "beta/resources/*.md": "reference" 
       }
     },
     "template": [],

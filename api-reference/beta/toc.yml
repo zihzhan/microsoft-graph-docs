@@ -1,5 +1,7 @@
 name: Reference
 items:
+  - name: overview
+    href: overview.md
   - name: Users
     href: resources/users
     items:
