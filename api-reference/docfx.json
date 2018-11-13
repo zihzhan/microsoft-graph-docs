@@ -100,6 +100,38 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+       "files": [
+          "overview.md"
+        ],
+        "src": "v1.0/",
+		"dest": "api/",
+        "group": "v1.0",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      },
+      {
+       "files": [
+          "overview.md"
+        ],
+        "src": "beta/",
+		"dest": "api/",
+        "group": "beta",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
       }
     ],
     "resource": [

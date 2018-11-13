@@ -1,6 +1,6 @@
 - name: Microsoft Graph
   tocHref: /graph/
-  topicHref: /graph/concepts/overview
+  topicHref: /graph/overview
   items:
   - name: V1.0
     tocHref: /graph/api/
