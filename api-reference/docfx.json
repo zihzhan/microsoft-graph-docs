@@ -84,10 +84,10 @@
       "ms.date": "06/11/2018"
     },
     "fileMetadata": {
-	  "breadcrumb_path": {
-	    "1.0/**": "/graph/breadcrumb/toc.json?view=graph-rest-1.0",
-		"beta/**": "/graph/breadcrumb/toc.json?view=graph-rest-beta"
-	  },
+      "breadcrumb_path": {
+        "1.0/**": "/graph/api/breadcrumb/toc.json?view=graph-rest-1.0",
+        "beta/**": "/graph/api/breadcrumb/toc.json?view=graph-rest-beta"
+      },
       "monikerRange": {
         "1.0/**": "graph-rest-1.0",
         "beta/**": "graph-rest-beta"
