@@ -2,6 +2,6 @@
   tocHref: /graph/
   topicHref: /graph/overview
   items:
-  - name: V1.0
+  - name: Beta
     tocHref: /graph/api/
     topicHref: /graph/api/overview?view=graph-rest-beta
