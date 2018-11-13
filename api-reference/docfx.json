@@ -4,6 +4,8 @@
       {
         "files": [
           "api/**/*.md",
+		  "api/**/*.yml",
+		  "resources/**/*.md",
           "resources/**/*.yml"
         ],
         "src": "v1.0/",
@@ -20,6 +22,8 @@
       {
        "files": [
           "api/**/*.md",
+		  "api/**/*.yml",
+		  "resources/**/*.md",
           "resources/**/*.yml"
         ],
         "src": "beta/",
