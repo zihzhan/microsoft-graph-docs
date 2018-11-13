@@ -22,7 +22,6 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "group": "beta",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
