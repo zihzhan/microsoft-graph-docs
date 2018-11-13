@@ -214,5 +214,5 @@ items:
 - name: API v1.0
   href: v1-overview.md
 - name: API Beta
-  href: ../api-reference/beta/beta-overview.md
+  href: https://review.docs.microsoft.com/en-us/graph/resources/users?view=graph-rest-beta
 
