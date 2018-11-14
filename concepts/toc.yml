@@ -212,7 +212,7 @@ items:
       - name: Errors
         href: errors.md
 - name: API v1.0
-  href: v1-overview.md
+  href: https://review.docs.microsoft.com/en-us/graph/resources/users?view=graph-rest-1.0
 - name: API Beta
-  href: https://review.docs.microsoft.com/en-us/graph/resources/users?view=graph-rest-beta
+  href: https://review.docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-beta
 
