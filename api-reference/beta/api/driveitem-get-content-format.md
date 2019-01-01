@@ -48,14 +48,6 @@ The following values are valid for the **format** parameter:
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned. |
 
-## Example
-
-<!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
-
-```http
-GET /drive/items/{item-id}/content?format={format}
-```
-
 ## Response
 
 Returns a `302 Found` response redirecting to a pre-authenticated download URL for the converted file.
@@ -64,16 +56,28 @@ To download the converted file, your app must follow the `Location` header in th
 
 Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
 
+### Errors
+
+See [Error Responses][error-response] for more information about how errors are returned.
+
+## Example
+
+##### Request
+
+<!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
+
+```http
+GET /drive/items/{item-id}/content?format={format}
+```
+
+##### Response
+
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
 ```http
 HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
-
-### Error responses
-
-See [Error Responses][error-response] for more information about how errors are returned.
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

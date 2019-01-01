@@ -59,7 +59,7 @@ If successful, this call returns a `204 No Content` response to indicate that re
 HTTP/1.1 204 No Content
 ```
 
-### Error responses
+### Errors
 
 See [Error Responses][error-response] for more info about
 how errors are returned.

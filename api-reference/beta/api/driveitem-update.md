@@ -51,6 +51,11 @@ For best performance your app should not include properties that haven't changed
 
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
+### Errors
+
+See [Error Responses][error-response] for details about how errors are returned.
+
+
 ## Example
 
 This example renames the DriveItem resource to "new-file-name.docx".
@@ -82,10 +87,6 @@ Content-type: application/json
   "file": { }
 }
 ```
-
-## Error responses
-
-See [Error Responses][error-response] for details about how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

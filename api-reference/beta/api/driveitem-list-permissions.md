@@ -65,6 +65,11 @@ This property is an [**itemReference**](../resources/itemreference.md) resource 
 
 SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
+### Errors
+
+Read the [Error Responses][error-response] topic for more information about
+how errors are returned.
+
 ## Example
 
 This example retrieves the collection of permissions on an item in the signed in user's drive.
@@ -130,10 +135,6 @@ Content-Type: application/json
 The **permissions** relationship of DriveItem cannot be expanded as part of a call to [get DriveItem](driveitem-get.md) or a collection of DriveItems.
 You must access the permissions property directly.
 
-## Error responses
-
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
 
 [error-response]: /graph/errors
 

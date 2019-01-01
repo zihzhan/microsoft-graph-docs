@@ -53,7 +53,12 @@ The contents of the request body should be the binary stream of the file to be u
 
 ## Response
 
-If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.
+If successful, this method returns a `201 Created` response code and a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.
+
+### Errors
+
+See [Error Responses][error-response] for details about
+how errors are returned.
 
 ## Example (upload a new file)
 
@@ -116,11 +121,6 @@ Content-Type: application/json
   "file": { }
 }
 ```
-
-## Error responses
-
-See [Error Responses][error-response] for details about
-how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

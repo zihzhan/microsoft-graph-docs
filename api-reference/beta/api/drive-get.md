@@ -140,7 +140,7 @@ Content-type: application/json
 }
 ```
 
-### Error response codes
+### Errors
 
 If the drive does not exist and cannot be provisioned automatically (when using delegated authentication) an `HTTP 404` response will be returned.
 

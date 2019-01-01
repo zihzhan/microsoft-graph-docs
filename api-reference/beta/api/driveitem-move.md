@@ -55,6 +55,11 @@ Your app needs to provide the actual ID of the root folder for the parent refere
 
 If successful, this method returns a `200 OK` response code and updated [DriveItem](../resources/driveitem.md) resource in the response body.
 
+### Errors
+
+See [Error Responses][error-response] for more info about
+how errors are returned.
+
 ## Example
 
 This example moves an item specified by {item-id} into a folder in the user's drive with the ID `new-parent-folder-id`.
@@ -94,11 +99,6 @@ Content-type: application/json
   }
 }
 ```
-
-## Error responses
-
-See [Error Responses][error-response] for more info about
-how errors are returned.
 
 [error-response]: /graph/errors
 

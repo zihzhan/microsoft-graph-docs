@@ -40,6 +40,11 @@ In the request body, supply a JSON representation of the [DriveItem](../resource
 
 If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.
 
+### Errors
+
+Read the [Error Responses][error-response] topic for more info about
+how errors are returned.
+
 ## Example
 
 ### Request
@@ -100,10 +105,6 @@ Content-Type: application/json
 }
 ```
 
-## Error response
-
-Read the [Error Responses][error-response] topic for more info about
-how errors are returned.
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 [folder-facet]: ../resources/folder.md

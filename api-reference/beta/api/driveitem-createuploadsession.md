@@ -402,7 +402,7 @@ Content-Type: application/json
 * A byte range size of 10 MiB for stable high speed connections is optimal. For slower or less reliable connections you may get better results from a smaller fragment size. The recommended fragment size is between 5-10 MiB.
 * Use a byte range size that is a multiple of 320 KiB (327,680 bytes). Failing to use a fragment size that is a multiple of 320 KiB can result in large file transfers failing after the last byte range is uploaded.
 
-## Error responses
+## Errors
 
 See the [Error Responses][error-response] topic for details about
 how errors are returned.

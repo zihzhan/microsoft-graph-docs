@@ -65,6 +65,19 @@ In addition to the collection of DriveItems, the response will also include one 
 | **@odata.nextLink**  | url    | A URL to retrieve the next available page of changes, if there are additional changes in the current set.                                        |
 | **@odata.deltaLink** | url    | A URL returned instead of **@odata.nextLink** after all current changes have been returned. Used to read the next set of changes in the future.  |
 
+### Errors
+
+There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
+In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
+After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
+
+| Error Type                       | Instructions                                                                                                                                                                                                                    |
+|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
+| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
+
+In addition to the resync errors, see [Error Responses][error-response] for details about how errors are returned.
+
 ## Example (Initial Request)
 
 Here is an example of how to call this API to establish your local state.
@@ -160,14 +173,6 @@ This response indicates that the item named `folder2` was deleted and the item `
 
 The final page of items will include the **@odata.deltaLink** property, which provides the URL that can be used later to retrieve changes since the current set of items.
 
-There may be cases when the service can't provide a list of changes for a given token (for example, if a client tries to reuse an old token after being disconnected for a long time, or if server state has changed and a new token is required).
-In these cases the service will return an `HTTP 410 Gone` error with an error response containing one of the error codes below, and a `Location` header containing a new nextLink that starts a fresh delta enumeration from scratch.
-After finishing the full enumeration, compare the returned items with your local state and follow these instructions.
-
-| Error Type                       | Instructions                                                                                                                                                                                                                    |
-|:---------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resyncChangesApplyDifferences`  | Replace any local items with the server's version (including deletes) if you're sure that the service was up to date with your local changes when you last sync'd. Upload any local changes that the server doesn't know about. |
-| `resyncChangesUploadDifferences` | Upload any local items that the service did not return, and upload any files that differ from the server's version (keeping both copies if you're not sure which one is more up-to-date).                                       |
 
 ## Retrieving the current deltaLink
 
@@ -215,9 +220,6 @@ Content-type: application/json
 * **lastModifiedBy**
 * **size**
 
-## Error responses
-
-In addition to the resync errors detailed above, see [Error Responses][error-response] for details about how errors are returned.
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
