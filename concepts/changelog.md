@@ -10,6 +10,41 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## January 2019
+
+### Microsoft Intune APIs
+
+|Change type|Version|Description|
+|:---|:---|:---|
+|Addition|beta|Added new complex types:<br/>[macOsVppAppAssignmentSettings](../api-reference/beta/resources/intune-apps-macosvppappassignmentsettings.md)<br/>|
+|Addition|beta|Added new entities:<br/>[windowsInformationProtectionDeviceRegistration](../api-reference/beta/resources/intune-mam-windowsinformationprotectiondeviceregistration.md)<br/>[windowsInformationProtectionWipeAction](../api-reference/beta/resources/intune-mam-windowsinformationprotectionwipeaction.md)<br/>|
+|Addition|beta|Added new enum types:<br/>[androidKeyguardFeature](../api-reference/beta/resources/intune-deviceconfig-androidkeyguardfeature.md)<br/>[derivedCredentialProviderType](../api-reference/beta/resources/intune-deviceconfig-derivedcredentialprovidertype.md)<br/>[dmaGuardDeviceEnumerationPolicyType](../api-reference/beta/resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)<br/>[iosWallpaperDisplayLocation](../api-reference/beta/resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)<br/>|
+|Addition|beta|Added the **appsRecommendSkippingFirstUseHints**, **passwordBlockKeyguardFeatures**, **systemWindowsBlocked**, **vpnAlwaysOnPackageIdentifier** and **vpnAlwaysOnLockdownMode** properties to the [androidDeviceOwnerGeneralDeviceConfiguration](../api-reference/beta/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **arm64** member to the [windowsArchitecture](../api-reference/beta/resources/intune-apps-windowsarchitecture.md) enum type|
+|Addition|beta|Added the **autoTrigger** and **persistent** properties to the [vpnDnsRule](../api-reference/beta/resources/intune-deviceconfig-vpndnsrule.md) complex type|
+|Addition|beta|Added the **contactsAllowManagedToUnmanagedWrite** and **contactsAllowUnmanagedToManagedRead** properties to the [iosGeneralDeviceConfiguration](../api-reference/beta/resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) entity|
+|Addition|beta|Added the **derivedCredentialProvider** and **derivedCredentialUrl** properties to the [deviceManagementSettings](../api-reference/beta/resources/intune-deviceconfig-devicemanagementsettings.md) complex type|
+|Addition|beta|Added the **displayToneSetupDisabled** and **privacyPaneDisabled** properties to the [depEnrollmentBaseProfile](../api-reference/beta/resources/intune-enrollment-depenrollmentbaseprofile.md) entity|
+|Addition|beta|Added the **dmaGuardDeviceEnumerationPolicy**, **localSecurityOptionsDisableAdministratorAccount**, **localSecurityOptionsDisableGuestAccount**, **lanManagerWorkstationDisableInsecureGuestLogons** and **deviceGuardLaunchSystemGuard** properties to the [windows10EndpointProtectionConfiguration](../api-reference/beta/resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) entity|
+|Addition|beta|Added the **edgeKioskEnablePublicBrowsing** and **edgeKioskResetAfterIdleTimeInMinutes** properties to the [windowsKioskConfiguration](../api-reference/beta/resources/intune-deviceconfig-windowskioskconfiguration.md) entity|
+|Addition|beta|Added the **homeButtonScreenDisabled**, **iMessageAndFaceTimeScreenDisabled**, **onBoardingScreenDisabled**, **screenTimeScreenDisabled**, **simSetupScreenDisabled**, **softwareUpdateScreenDisabled** and **watchMigrationScreenDisabled** properties to the [depIOSEnrollmentProfile](../api-reference/beta/resources/intune-enrollment-depiosenrollmentprofile.md) entity|
+|Addition|beta|Added the **notConfigured** member to the [sharedPCAllowedAccountType](../api-reference/beta/resources/intune-deviceconfig-sharedpcallowedaccounttype.md) enum type|
+|Addition|beta|Added the **qualityUpdatesPauseStartDate**, **featureUpdatesPauseStartDate** and **userPauseAccess** properties to the [windowsUpdateForBusinessConfiguration](../api-reference/beta/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) entity|
+|Addition|beta|Added the **requireCompanyPortalOnSetupAssistantEnrolledDevices** property to the [enrollmentProfile](../api-reference/beta/resources/intune-enrollment-enrollmentprofile.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [deviceManagementScript](../api-reference/beta/resources/intune-devices-devicemanagementscript.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [managedAppPolicy](../api-reference/beta/resources/intune-mam-managedapppolicy.md) entity|
+|Addition|beta|Added the **roleScopeTagIds** property to the [mobileApp](../api-reference/beta/resources/intune-apps-mobileapp.md) entity|
+|Addition|beta|Added the **taskManagerBlockEndTask**, **authenticationPreferredAzureADTenantDomainName** and **bluetoothBlockPromptedProximalConnections** properties to the [windows10GeneralConfiguration](../api-reference/beta/resources/intune-deviceconfig-windows10generalconfiguration.md) entity|
+|Addition|beta|Added the **trustedNetworkDomains** property to the [windows10VpnConfiguration](../api-reference/beta/resources/intune-deviceconfig-windows10vpnconfiguration.md) entity|
+|Addition|beta|Added the **wallpaperDisplayLocation** and **wallpaperImage** properties to the [iosDeviceFeaturesConfiguration](../api-reference/beta/resources/intune-deviceconfig-iosdevicefeaturesconfiguration.md) entity|
+|Addition|beta|Added the **windowsDefault** member to the [automaticUpdateMode](../api-reference/beta/resources/intune-deviceconfig-automaticupdatemode.md) enum type|
+|Addition|beta|Added the **windowsInformationProtectionDeviceRegistrations** and **windowsInformationProtectionWipeActions** navigation properties to the [deviceAppManagement](../api-reference/beta/resources/intune-apps-deviceappmanagement.md) entity|
+|Addition|beta|Added the **windowsInformationProtectionDeviceRegistrations** navigation property to the [user](../api-reference/beta/resources/intune-devices-user.md) entity|
+|Addition|beta|Added the [wipe](../api-reference/beta/api/intune-mam-windowsinformationprotectiondeviceregistration-wipe.md) action on [windowsInformationProtectionDeviceRegistration](../api-reference/beta/resources/intune-mam-windowsinformationprotectiondeviceregistration.md) |
+|Deletion|beta|Removed the **assignedAccessMultiModeProfiles** navigation property from the [windows10GeneralConfiguration](../api-reference/beta/resources/intune-deviceconfig-windows10generalconfiguration.md) entity|
+|Deletion|beta|Removed the **assignedAccessSingleModeUserName** and **assignedAccessSingleModeAppUserModelId** properties from the [windows10GeneralConfiguration](../api-reference/beta/resources/intune-deviceconfig-windows10generalconfiguration.md) entity|
+|Deletion|beta|Removed the **windows10Home**, **windows10HomeChina**, **windows10HomeN**, **windows10HomeSingleLanguage**, **windows10Mobile**, **windows10IoTCore** and **windows10IoTCoreCommercial** members from the [windows10EditionType](../api-reference/beta/resources/intune-deviceconfig-windows10editiontype.md) enum type|
+
 ## December 2018
 
 ### Security APIs

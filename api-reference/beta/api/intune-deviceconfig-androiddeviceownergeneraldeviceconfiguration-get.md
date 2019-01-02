@@ -6,13 +6,14 @@ author: "tfitzmac"
 
 # Get androidDeviceOwnerGeneralDeviceConfiguration
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Read properties and relationships of the [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -32,7 +33,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.
+
 ## Request headers
 |Header|Value|
 |:---|:---|
@@ -46,6 +48,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
@@ -57,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2409
+Content-Length: 2854
 
 {
   "value": {
@@ -76,6 +79,7 @@ Content-Length: 2409
     "appsAllowInstallFromUnknownSources": true,
     "appsAutoUpdatePolicy": "userChoice",
     "appsDefaultPermissionPolicy": "prompt",
+    "appsRecommendSkippingFirstUseHints": true,
     "bluetoothBlockConfiguration": true,
     "bluetoothBlockContactSharing": true,
     "cameraBlocked": true,
@@ -95,10 +99,16 @@ Content-Length: 2409
         "appId": "App Id value"
       }
     ],
+    "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
+    "kioskModeExitCode": "Kiosk Mode Exit Code value",
+    "kioskModeVirtualHomeButtonEnabled": true,
     "microphoneForceMute": true,
     "networkEscapeHatchAllowed": true,
     "nfcBlockOutgoingBeam": true,
     "passwordBlockKeyguard": true,
+    "passwordBlockKeyguardFeatures": [
+      "camera"
+    ],
     "passwordExpirationDays": 6,
     "passwordMinimumLength": 5,
     "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
@@ -119,16 +129,17 @@ Content-Length: 2409
     "systemUpdateWindowStartMinutesAfterMidnight": 11,
     "systemUpdateWindowEndMinutesAfterMidnight": 9,
     "systemUpdateInstallType": "postpone",
+    "systemWindowsBlocked": true,
     "usersBlockAdd": true,
     "usersBlockRemove": true,
     "volumeBlockAdjustment": true,
+    "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
+    "vpnAlwaysOnLockdownMode": true,
     "wifiBlockEditConfigurations": true,
     "wifiBlockEditPolicyDefinedConfigurations": true
   }
 }
 ```
-
-
 
 
 

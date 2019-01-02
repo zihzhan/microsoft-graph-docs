@@ -6,13 +6,14 @@ author: "tfitzmac"
 
 # Update depOnboardingSetting
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Update the properties of a [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -62,17 +63,18 @@ The following table shows the properties that are required when you create the [
 If successful, this method returns a `200 OK` response code and an updated [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 Content-type: application/json
-Content-length: 589
+Content-length: 584
 
 {
+  "@odata.type": "#microsoft.graph.depOnboardingSetting",
   "appleIdentifier": "Apple Identifier value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
   "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
   "shareTokenWithSchoolDataSyncService": true,
@@ -109,8 +111,6 @@ Content-Length: 697
   "dataSharingConsentGranted": true
 }
 ```
-
-
 
 
 

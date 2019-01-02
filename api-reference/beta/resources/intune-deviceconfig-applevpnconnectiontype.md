@@ -6,11 +6,12 @@ author: "tfitzmac"
 
 # appleVpnConnectionType enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Apple VPN connection type.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -28,8 +29,6 @@ Apple VPN connection type.
 |f5Access2018|11|F5 Access 2018.|
 |citrixSso|12|Citrix Sso.|
 |paloAltoGlobalProtectV2|13|Palo Alto Networks GlobalProtect V2.|
-
-
 
 
 

@@ -6,11 +6,12 @@ author: "tfitzmac"
 
 # embeddedSIMDeviceStateValue enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Describes the various states for an embedded SIM activation code.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -22,8 +23,6 @@ Describes the various states for an embedded SIM activation code.
 |error|5|Designates that there is error with this profile.|
 |deleted|6|Designates that the profile is deleted from the device.|
 |removedByUser|7|Designates that the profile is removed from the device by the user|
-
-
 
 
 

@@ -6,13 +6,14 @@ author: "tfitzmac"
 
 # Create deviceManagementScript
 
-> **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Create a new [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object.
+
 ## Prerequisites
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions-reference.md).
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
@@ -49,9 +50,10 @@ The following table shows the properties that are required when you create the d
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 
 
 
@@ -59,12 +61,13 @@ The following table shows the properties that are required when you create the d
 If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) object in the response body.
 
 ## Example
+
 ### Request
 Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
-Content-length: 422
+Content-length: 420
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -74,10 +77,12 @@ Content-length: 422
     "@odata.type": "microsoft.graph.runSchedule"
   },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -86,7 +91,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 530
+Content-Length: 592
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementScript",
@@ -101,11 +106,12 @@ Content-Length: 530
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "runAsAccount": "user",
   "enforceSignatureCheck": true,
-  "fileName": "File Name value"
+  "fileName": "File Name value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
-
 
 
 

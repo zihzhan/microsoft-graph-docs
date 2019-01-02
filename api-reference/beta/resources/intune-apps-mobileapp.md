@@ -6,11 +6,12 @@ author: "tfitzmac"
 
 # mobileApp resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 An abstract class containing the base properties for Intune mobile apps.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -38,6 +39,8 @@ An abstract class containing the base properties for Intune mobile apps.
 |notes|String|Notes for the app.|
 |uploadState|Int32|The upload state.|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+|isAssigned|Boolean|The value indicating whether the app is assigned to at least one group.|
+|roleScopeTagIds|String collection|List of scope tag ids for this mobile app.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -77,11 +80,13 @@ Here is a JSON representation of the resource.
   "developer": "String",
   "notes": "String",
   "uploadState": 1024,
-  "publishingState": "String"
+  "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
 
 
 

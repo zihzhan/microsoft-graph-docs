@@ -6,11 +6,12 @@ author: "tfitzmac"
 
 # deviceManagementSubscriptionState enum type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Tenant mobile device management subscription state.
+
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
@@ -21,8 +22,6 @@ Tenant mobile device management subscription state.
 |deleted|4|Deleted|
 |blocked|5|Blocked|
 |lockedOut|8|LockedOut|
-
-
 
 
 

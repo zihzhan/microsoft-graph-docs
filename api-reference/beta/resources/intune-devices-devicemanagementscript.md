@@ -6,11 +6,12 @@ author: "tfitzmac"
 
 # deviceManagementScript resource type
 
-> **Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
 
 > **Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.
 
 Intune will provide customer the ability to run their Powershell scripts on the enrolled windows 10 Azure Active Directory joined devices. The script can be run once or periodically.
+
 ## Methods
 |Method|Return Type|Description|
 |:---|:---|:---|
@@ -31,9 +32,10 @@ Intune will provide customer the ability to run their Powershell scripts on the 
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-devices-runasaccounttype.md)|Indicates the type of execution context the device management script runs in. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked.|
 |fileName|String|Script file name.|
+|roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -66,11 +68,12 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String"
+  "fileName": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
 
 
 
