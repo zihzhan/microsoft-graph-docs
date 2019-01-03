@@ -1,6 +1,7 @@
 ---
 title: "resourceOperation resource type"
-description: "This defines an operation or action that can be performed on an Intune resource (or entity)."  author: "tfitzmac"
+description: "This defines an operation or action that can be performed on an Intune resource (or entity)."
+author: "tfitzmac"
 ---
 
 # resourceOperation resource type
