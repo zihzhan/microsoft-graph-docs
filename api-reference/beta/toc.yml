@@ -1657,11 +1657,6 @@
             href: api/intune-cirrus-officeclientconfigurationassignment-update.md
         - name: Office configuration
           href: resources/intune-cirrus-officeconfiguration.md
-          items:
-          - name: 
-            href: api/intune-cirrus-officeconfiguration.md
-          - name: 
-            href: api/intune-cirrus-officeconfiguration.md
         - name: Office configuration assignment target
           href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
         - name: Office configuration group assignment target
