@@ -3,7 +3,7 @@ title: "endpoint resource type"
 description: "An endpoint contains URI and identifying information for a print service instance."
 localization_priority: Normal
 author: "BraedenP"
-ms.prod: "Universal Print service"
+ms.prod: "Universal Print"
 ---
 
 # endpoint resource type
@@ -36,7 +36,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.print.printServiceEndpoint"
+  "@odata.type": "microsoft.graph.printServiceEndpoint"
 }-->
 
 ```json

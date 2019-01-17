@@ -1,14 +1,14 @@
 ---
 title: "print resource type"
-description: "The Print feature is used to discover print printServiceEndpoints that can be used to use and manage printers and print jobs within the Microsoft Universal print service."
+description: "The Print feature enables discovering printServiceEndpoints that can be used manage printers and print jobs within Universal Print."
 localization_priority: Normal
 author: "BraedenP"
-ms.prod: "Universal Print service"
+ms.prod: "Universal Print"
 ---
 
 # print resource type
 
-The Print feature is used to discover print [printServiceEndpoints](printserviceendpoint.md) that can be used to use and manage printers and print jobs within the Microsoft Universal print service.
+The Print feature enables discovering [printServiceEndpoints](printserviceendpoint.md) that can be used manage printers and print jobs within Universal Print.
 
 ## Methods
 

@@ -3,7 +3,7 @@ title: "printService resource type"
 description: "A printService is an Azure AD tenant-specific description of a print service instance. Services exist for each component of the printing infrastructure (e.g., discovery, notifications, registration and IPP) and has one or more endpoints. Check the service's "state" to determine whether that service is enabled for the user's Azure AD tenant."
 localization_priority: Normal
 author: "BraedenP"
-ms.prod: "Universal Print service"
+ms.prod: "Universal Print"
 ---
 
 # printService resource type
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.print.printService"
+  "@odata.type": "microsoft.graph.printService"
 }-->
 
 ```json

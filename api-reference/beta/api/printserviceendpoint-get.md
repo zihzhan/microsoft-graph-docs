@@ -3,7 +3,7 @@ title: "Get printServiceEndpoint"
 description: "Retrieve the properties of a particular printServiceEndpoint object."
 localization_priority: Normal
 author: "BraedenP"
-ms.prod: "Universal Print service"
+ms.prod: "Universal Print"
 ---
 
 # Get printServiceEndpoint
@@ -36,6 +36,8 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [printServiceEndpoint](../resources/printserviceendpoint.md) object in the response body.
+
+If the user's Azure AD tenant is not enrolled in a Universal Print subscription, this method returns a `403 Forbidden` response code.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -51,7 +53,7 @@ The following is an example of the response. Note: The response object shown her
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.print.printServiceEndpoint"
+  "@odata.type": "microsoft.graph.printServiceEndpoint"
 } -->
 ```http
 HTTP/1.1 200 OK

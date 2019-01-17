@@ -3,7 +3,7 @@ title: "List printServices"
 description: "Retrieve a list of printService objects for the user's Azure AD tenant."
 localization_priority: Normal
 author: "BraedenP"
-ms.prod: "Universal Print service"
+ms.prod: "Universal Print"
 ---
 
 # List printServices
@@ -37,7 +37,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and collection of [printService](../resources/printservice.md) objects in the response body.
 
-If the user's Azure AD tenant is not enrolled in a Microsoft Universal print service subscription, this method returns a `403 Forbidden` response code.
+If the user's Azure AD tenant is not enrolled in a Universal Print subscription, this method returns a `403 Forbidden` response code.
 ## Example
 ##### Request
 The following is an example of the request.
@@ -53,7 +53,7 @@ The following is an example of the response. Note: The response object shown her
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.print.printService",
+  "@odata.type": "microsoft.graph.printService",
   "isCollection": true
 } -->
 ```http
