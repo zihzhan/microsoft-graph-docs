@@ -8030,6 +8030,9 @@
           href: api/teamstab-delete.md
       - name: Chat message
         href: resources/chatmessage.md
+        items: 
+        - name: Update with DLP violation
+          href: resources/chatmessage-update-dlpviolation.md
       - name: Calendar
         href: resources/event.md
         items:
