@@ -13,7 +13,7 @@ Read the properties and relationships of an attachment, attached to an [event](.
 An attachment can be one of the following types:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource).
-* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#request-2) below.
+* An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource). You can use `$expand` to further get the properties of that item. See an [example](#example-3-get-item-attachment-and-item-properties) below.
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).
 
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
@@ -106,9 +106,10 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [attachment](../resources/attachment.md) object in the response body.
 
-## Example (file attachment)
+## Examples
 
-### Request
+### Example 1: Get file attachment
+#### Request
 
 Here is an example of the request to get a file attachment on an event.
 <!-- {
@@ -120,7 +121,7 @@ Here is an example of the request to get a file attachment on an event.
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-### Response
+#### Response
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -148,9 +149,9 @@ Content-length: 199
 }
 ```
 
-## Example (item attachment)
+### Example 2: Get item attachment
 
-### Request 1
+#### Request
 
 The first example shows how to get an item attachment on a message. The properties of the **itemAttachment** are returned.
 <!-- {
@@ -162,7 +163,7 @@ The first example shows how to get an item attachment on a message. The properti
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
 
-### Response 1
+#### Response
 
 <!-- {
   "blockType": "response",
@@ -186,7 +187,8 @@ Content-type: application/json
 }
 ```
 
-### Request 2
+### Example 3: Get item attachment and properties
+#### Request
 
 The next example shows how to use `$expand` to get the properties of the item that is attached to the message. In this example, that item is
 a message; the properties of that attached message are also returned.
@@ -199,7 +201,7 @@ a message; the properties of that attached message are also returned.
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
 
-### Response 2
+#### Response 
 
 <!-- {
   "blockType": "response",
@@ -278,9 +280,9 @@ Content-type: application/json
 }
 ```
 
-## Example (reference attachment)
+### Example 4: Get reference attachment
 
-### Request
+#### Request
 
 Here is an example of the request to get a reference attachment on an event.
 <!-- {
@@ -292,7 +294,7 @@ Here is an example of the request to get a reference attachment on an event.
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
 
-### Response
+#### Response
 
 <!-- {
   "blockType": "response",
