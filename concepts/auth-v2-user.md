@@ -227,6 +227,60 @@ A successful token response will look similar to the following.
 | scope |The permissions (scopes) that the access_token is valid for. |
 | refresh_token |A new OAuth 2.0 refresh token. You should replace the old refresh token with this newly acquired refresh token to ensure your refresh tokens remain valid for as long as possible. |
 
+## Common use cases
+
+### Getting the authenticated user profile URL
+
+The following request gets the profile image of the signed-in user assuming the User.Read permission was applied during the OAuth flow app permissions.
+
+https://graph.microsoft.com/v1.0/me/photo/$value
+
+Tip: The `/me` endpoint provides quick access to all resources related to the authenticated user.
+
+```
+GET https://graph.microsoft.com/v1.0/me/photo/$value 
+Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
+Host: graph.microsoft.com
+
+```
+
+### Get another user's profile URL
+
+The following request gets the profile image of a user, assuming the User.Read permission was applied during the OAuth flow app permissions.
+
+https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/photo/$value
+
+For example, for the email address (userPrincipalName) ChrisG@contoso.onmicrosoft.com, the URL will be the following.
+
+```
+GET https://graph.microsoft.com/v1.0/users/ChrisG@contoso.onmicrosoft.com/photo/$value 
+Authorization: Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw
+Host: graph.microsoft.com
+
+```
+
+### Display the authenticated profile URL as an image
+
+The following example shows a generic flow that you can apply to any language and framework, using any HTTP client to fetch the user resource to a view on your front end.
+
+---using PHP + Guzzle HTTP Client
+```php
+    $client = new \GuzzleHttp\Client(['base_uri' => 'https://graph.microsoft.com/v1.0/']);
+    $request = $client->request('GET', 'me/photo/%24value', [
+        'headers' => [
+            'Content-Type' => 'application/json',
+            'Authorization' => 'Bearer eyJ0eXAiO ... 0X2tnSQLEANnSPHY0gKcgw'
+        ]
+    ]);
+    
+    $body = (string) $request->getBody();
+    $photo = base64_encode($body);
+
+    # Front-end view
+    <img src="data:image/jpg;base64, {{ $photo }}" alt="Avatar" />
+```
+[Guzzle HTTP Client](https://github.com/guzzle/guzzle)
+
 ## Supported app scenarios and additional resources
 You can call Microsoft Graph on behalf of a user from the following kinds of apps: 
 
