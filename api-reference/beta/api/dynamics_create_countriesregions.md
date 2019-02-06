@@ -12,6 +12,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/03/2018
 ms.author: solsen
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Create countriesRegions

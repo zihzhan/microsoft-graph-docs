@@ -11,6 +11,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/06/2018
 ms.author: solsen
+ms.prod: "dynamics-365-business-central"
 ---
 
 # Dynamics 365 Business Central API overview (preview)
