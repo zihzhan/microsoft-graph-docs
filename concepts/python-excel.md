@@ -16,9 +16,9 @@ This walkthrough describes how to make requests to the Excel REST API from a Pyt
 
 
 ## Authorization and scopes
-You can use the [Azure AD v2.0 endpoint](https://developer.microsoft.com/graph/docs/concepts/auth_overview) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
+You can use the [Azure AD v2.0 endpoint](auth-overview.md) to authenticate Excel REST API calls. All APIs require the `Authorization: Bearer {access-token}` HTTP header.   
   
-One of the following [permission scopes](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) is required to use the Excel resource:
+One of the following [permission scopes](permissions-reference.md) is required to use the Excel resource:
 
 * Files.Read 
 * Files.ReadWrite
@@ -212,8 +212,8 @@ content-type: application/json;odata.metadata
 
 With the **Workbook-Session-Id** HTTP header, you can begin issuing requests to fetch data, create charts, and much more. 
 
-* [Common Excel API scenarios](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel#common-excel-scenarios)
-* [Working with Excel in Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/excel)
+* [Common Excel API scenarios](/graph/api/resources/excel?view=graph-rest-1.0#common-excel-scenarios)
+* [Working with Excel in Microsoft Graph](/graph/api/resources/excel?view=graph-rest-1.0)
 
 The Excel REST API in Microsoft Graph provides a powerful way to access and interact with data in Excel workbooks. Explore what else is possible with Microsoft Graph.
 

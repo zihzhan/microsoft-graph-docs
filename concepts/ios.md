@@ -6,11 +6,11 @@ This sample uses a standard iOS HTTPS library to make REST calls to the Microsof
 
 You can send an email with this sample, but it does not retrieve the authenticated user's photo or embed it in the email.
 
-- [Get started with Microsoft Graph in an Objectve-C iOS App](ios_objectivec.md)
+- [Get started with Microsoft Graph in an Objectve-C iOS App](ios-objectivec.md)
 
 ## iOS Swift Connect REST sample
 This sample uses the Foundation HTTP library and [PromiseKit](https://github.com/mxcl/PromiseKit/blob/master/README.md) to access the Microsoft Graph endpoint using REST operations with the **Promises** asynchronous pattern. It uses the [Microsoft Authentication Library (MSAL)](https://github.com/AzureAD/microsoft-authentication-library-for-objc/blob/dev/README.md) to authenticate a user. This library lets your app authenticate a user from Office 365 or an MSA user.
 
 The sample shows you how to access the user's Azure profile through the Graph. You also learn how to get the user's profile photo, upload the photo to the user's OneDrive storage and embed the photo in the body of an Outlook email message.
 
-- [Get started with Microsoft Graph in an iOS App](ios_swift.md)
+- [Get started with Microsoft Graph in an iOS App](ios-swift.md)

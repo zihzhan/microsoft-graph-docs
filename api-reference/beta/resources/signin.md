@@ -5,8 +5,8 @@ This resource details user or application sign-in activity in your directory.
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[List signIn](../api/signin_list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
-|[Get signIn](../api/signin_get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
+|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
+|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
 
 ## Properties
 | Property	   | Type	|Description|

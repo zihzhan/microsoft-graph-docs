@@ -20,7 +20,7 @@ git@github.com:microsoftgraph/console-java-connect-sample.git
 
 When you [register the Console Java Connect app](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#register-your-app), assign delegated scopes (permissions) to the sample. Be sure to scopes as shown in the following image:
 
-![Java connect console sample permissions](../concepts/images/console-java-connnect-sample-permissions.JPG)
+![Java connect console sample permissions](images.md)/console-java-connnect-sample-permissions.JPG)
 
 After you register the application and [configure the sample](https://github.com/microsoftgraph/console-java-connect-sample/blob/master/README.md#configure-your-app) for the **Application Id** you get from the application registration, you can build and run the sample.
 
@@ -191,4 +191,4 @@ This package contains all of the logic that makes calls on Microsoft Graph.
 
 If there's a particular sample you'd like to see, please let us know by [submitting an issue](https://github.com/microsoftgraph/console-java-connect-sample/issues). We're very interested in your feedback on any Microsoft Graph scenario you'd like to build in Java!
 
-The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](https://developer.microsoft.com/graph/docs/concepts/overview) or the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.
+The Microsoft Graph API is a very powerful, unifiying API that can be used to interact with all kinds of Microsoft data. Check out the [developer documentation](overview.md) or the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to explore what else you can accomplish with Microsoft Graph.

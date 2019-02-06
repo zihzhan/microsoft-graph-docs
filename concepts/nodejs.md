@@ -109,7 +109,7 @@ The app calls Microsoft Graph to get user information and to send an email on th
 
 		function uploadFile(accessToken, file, callback) {
 		  // This operation only supports files up to 4MB in size.
-		  // To upload larger files, see `https://developer.microsoft.com/graph/docs/api-reference/v1.0/api/item_createUploadSession`.
+		  // To upload larger files, see `/graph/api/item_createUploadSession?view=graph-rest-1.0`.
 		  request
 		   .put('https://graph.microsoft.com/v1.0/me/drive/root/children/mypic.jpg/content')
 		   .send(file)
