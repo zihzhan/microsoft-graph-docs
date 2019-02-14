@@ -212,8 +212,7 @@
       "author": "MSGraphDocsVteam",
       "ms.author": "MSGraphDocsVteam",
       "ms.suite": "microsoft-graph",
-      "ms.prod": "non-product-specific",	
-      "ms.date": "11/27/2018",
+      "ms.prod": "non-product-specific",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "searchScope": ["graph"]
     },
