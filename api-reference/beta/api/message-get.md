@@ -8,6 +8,9 @@ ms.prod: "outlook"
 
 # Get message
 
+Check out the date !
+
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
