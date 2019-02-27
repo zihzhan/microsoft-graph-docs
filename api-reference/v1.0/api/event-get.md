@@ -81,8 +81,9 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
-## Example
-##### Request 1
+## Examples
+### Example 1: Get an event with its date-time properties returned in the specified time zone
+#### Request
 The first example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
@@ -99,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGIAAAoZDOFAAA=?$select=subje
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-##### Response 1
+#### Response
 
 Here is an example of the response. The **body** property is returned in the default format of HTML.
 
@@ -180,7 +181,8 @@ Content-length: 1928
 ```
 
 
-##### Request 2
+### Example 2: Get an event returned in text format
+#### Request
 
 The second example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
 to return specific properties. 
@@ -193,7 +195,7 @@ to return specific properties.
 ```http
 GET https://graph.microsoft.com/v1.0/me/events/AAMkADAGAADDdm4NAAA=?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
-##### Response 2
+#### Response
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
 
 Because the request does not specify any `Prefer: outlook.timezone` header, 

@@ -80,8 +80,9 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [event](../resources/event.md) object in the response body.
-## Example
-##### Request 1
+## Examples
+### Example 1: Get an event with its date-time properties returned in the specified time zone
+#### Request
 The first example gets the specified event. It specifies the following:
 
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time. 
@@ -97,7 +98,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
 GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### Response 1
+#### Response
 Here is an example of the response. Because no `Prefer: outlook.body-content-type` header was specified, the **body** property is returned in the default HTML format. 
 
 <!-- {
@@ -175,7 +176,8 @@ Content-length: 1928
 }
 ```
 
-##### Request 2
+### Example 2: Get an event returned in text format
+#### Request
 The second example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** property of the specified event in text format.
 
 The request also uses a `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
@@ -188,7 +190,7 @@ The request also uses a `$select` query parameter to return specific properties.
 GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text"
 ```
-##### Response 2
+#### Response
 Here is an example of the response. The **body** property is returned in text format. 
 
 <!-- {
@@ -216,8 +218,8 @@ Content-length: 636
 }
 ```
 
-
-##### Request 3
+### Example 3: Get an event that takes place in multiple locations
+#### Request
 
 The third example shows getting an event that specifies more than one location. The request specifies a `$select` query parameter 
 to return specific properties. 
@@ -229,7 +231,7 @@ to return specific properties.
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
-##### Response 3
+#### Response
 Here is an example of the response. The **locations** property includes details for the 3 locations that the event is organized for. 
 
 Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header, 

@@ -84,7 +84,7 @@ By default, requests using a `deltaLink` or `nextLink` return the same propertie
 - If the property has never been set before it will not be included in the response at all.
 
 
-> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be large because they contain all property values  - as shown in the [second example](#request-2) below.
+> **Note:** With this behavior, by looking at the response it is not possible to tell whether a property is changing or not. Also, the delta responses tend to be larger because they always contain the properties as initially requested - as shown in the [first](#example-1-initial-request-to-track-changes-on-the-default-set-of-properties) and [second](#example-2-initial-request-to-track-changes-on-selected-properties) examples below.
 
 #### Alternative: return only the changed properties
 
@@ -93,11 +93,11 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 - If the property has changed, the new value is included in the response. This includes properties being set to null value.
 - If the property has not changed, the property is not included in the response at all. (Different from the default behavior.)
 
-> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#request-3) below.
+> **Note:** The header can be added to a `deltaLink` request at any point in time in the delta cycle. The header only affects the set of properties included in the response and it does not affect how the delta query is executed. See the [third example](#example-3-initial-request-to-track-only-the-selected-properties-that-have-changed) below.
 
-### Example
-
-#### Request 1
+## Examples
+### Example 1: Initial request to track changes on the default set of properties
+#### Request
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
 <!-- {
@@ -109,7 +109,7 @@ The following is an example of the request. There is no `$select` parameter, so 
 GET https://graph.microsoft.com/v1.0/groups/delta
 ```
 
-#### Response 1
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
@@ -155,7 +155,8 @@ Content-type: application/json
 }
 ```
 
-#### Request 2
+### Example 2: Initial request to track changes on selected properties
+#### Request
 
 The next example shows the initial request selecting 3 properties for change tracking, with default response behavior:
 <!-- {
@@ -167,7 +168,7 @@ The next example shows the initial request selecting 3 properties for change tra
 GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,description,mailNickname
 ```
 
-#### Response 2
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that all 3 properties are included in the response and it is not known which ones have changed since the `deltaLink` was obtained.
 
@@ -195,7 +196,8 @@ Content-type: application/json
 }
 ```
 
-#### Request 3
+### Example 3: Initial request to track only the selected properties that have changed
+#### Request
 
 The next example shows the initial request selecting 3 properties for change tracking, with alternative minimal response behavior:
 <!-- {
@@ -208,7 +210,7 @@ GET https://graph.microsoft.com/v1.0/groups/delta?$select=displayName,descriptio
 Prefer: return=minimal
 ```
 
-#### Response 3
+#### Response
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. Note that the `mailNickname` property is not included, which means it has not changed since the last delta query; `displayName` and `description` are included which means their values have changed.
 
