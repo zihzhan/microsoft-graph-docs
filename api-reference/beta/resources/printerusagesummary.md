@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
     "printerManufacturer": "String",
     "printerModel": "String",
     "completedJobCount": 1,
-    "incompleteJobsCount": 1
+    "incompleteJobCount": 1
 }
 ```
 

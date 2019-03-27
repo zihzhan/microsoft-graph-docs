@@ -17,6 +17,18 @@ Represents the current status of a print job.
 |processingStateDescription|string|A human-readable description of the print job's current processing state. Read-only.|
 |acquiredByPrinter|boolean|True if the job was acquired by a printer; false otherwise. Read-only.|
 
+## printJobProcessingState enum
+
+|Member|Value|Description|
+|:---|:---|:---|
+|pending|0|The print job is pending processing by the printer.|
+|processing|1|The print job is currently being processed by the printer.|
+|paused|2|The print job has been paused by a user.|
+|stopped|3|The print job has been stopped because an issue with the printer needs to be addressed before the job can continue. More information can be found in the printer state resource.|
+|completed|4|The print job has completed successfully and no further processing will take place.|
+|canceled|5|The print job has been canceled by a user and no further processing will take place.|
+|aborted|6|The print job has been aborted by a user or the printer and no further processing will take place.|
+
 ## JSON representation
 
 The following is a JSON representation of the resource.

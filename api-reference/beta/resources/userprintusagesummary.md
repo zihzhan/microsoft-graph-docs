@@ -16,7 +16,7 @@ Represents print-related statistics for a particular user.
 |user|[identity](identity.md)|The user that the statistics pertain to.|
 |userPrincipalName|string|The principal name of the user that the statistics pertain to.|
 |completedJobCount|int32|The number of jobs the user completed.|
-|incompleteJobsCount|int32|The number of jobs the user submitted but did not complete.|
+|incompleteJobCount|int32|The number of jobs the user submitted but did not complete.|
 
 ## JSON representation
 
@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 {
   "user": {"@odata.type": "microsoft.graph.identity"},
   "userPrincipalName": "String",
-  "completedJobsCount": 1,
-  "incompleteJobsCount": 1
+  "completedJobCount": 1,
+  "incompleteJobCount": 1
 }
 ```
 
