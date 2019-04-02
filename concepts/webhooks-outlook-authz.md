@@ -51,7 +51,7 @@ You may choose to use the same URL for both endpoints, in which case you will re
 
 ## Migrating existing subscriptions
 
-If the app has existing subscriptions, it will have to replace them with new subscriptions that include the `lifecycleNotificationUrl`. It is not possible to update (`PATCH`) the existing subscriptions.
+If the app has existing subscriptions, it will continue to receive resource data notifications as before, but it will not receive any lifecycle notifications. To subscribe to subscription lifecycle notifications, an app will have to replace the older subscriptions with new subscriptions that include the `lifecycleNotificationUrl`. It is not possible to update (`PATCH`) the existing subscriptions to include the `lifecycleNotificationUrl`.
 
 ## Responding to authorization challenges
 
@@ -113,7 +113,9 @@ Content-Type: application/json
 You may retry these actions later, at any time, without having to wait for another authorization challenge, for example when the conditions of access have change. 
 Note that any resource changes in the time period from when the authorization challenge was sent, to when the app re-authorizes the subscription successfully, will be lost. The app will need to fetch those changes on its own.
 
-@@@provide guidance as in the Outlook API blog@@@
+5. Perform a data resync to identify changes that were not delivered as notifications. 
+  
+    You can perform this data resync by using the last known time you received a notification for this resource. For example, while listening to notifications for new messages on an user's mailbox, you can use the following query to fetch the list of messages that were missed: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
 
 ## Responding to data re-sync notifications
 
@@ -136,8 +138,8 @@ These signals inform the app that some notifications may have not been delivered
 ```
 
 A few things to note about this type of notification:
-- The `"lifecycleEvent": "dataResyncRequired"` field designates this as a signal about missed notifications..
-- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state
+- The `"lifecycleEvent": "dataResyncRequired"` field designates this as a signal about missed notifications.
+- The notification does not contain any information about a specific resource, because it is not related to a resource change, but to the subscription state.
 - `value` is an array, so multiple signals may be batched together, the same as for resource notifications. You should process each notification in the batch, and react to it.
 
 ### Action to take
@@ -145,7 +147,8 @@ A few things to note about this type of notification:
 1. [Acknowledge](webhooks.md#notifications) the receipt of the notification, by responding to the POST call with `202 - Accepted`.
   - If you ignore these, signals, do nothing else. Otherwise:
 2. [Validate](webhooks.md#notifications) the authenticity of the notification.
-3. Perform data resync, from the last known time you received a notification for this resource, e.g.: `GET https://graph.microsoft.com/v1.0/users/{id}/messages?$filter=createdDateTime+ge+{LastTimeNotificationWasReceived}`
+
+3. Perform a full data resync of the resource to identify the changes that were not delivered. 
 
 
 ## Future-proof the code handling lifecycle notifications
