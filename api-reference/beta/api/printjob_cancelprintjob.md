@@ -9,13 +9,12 @@ In addition to the below permissions, the user's tenant must have an active Univ
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) or Application | PrintJob.ReadWrite.All |
+|Delegated (work or school account)| PrintJob.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/printers/<id>/jobs/<id>/cancelPrintJob
-
 ```
 ## Request headers
 | Name          | Description   |

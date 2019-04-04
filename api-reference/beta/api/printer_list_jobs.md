@@ -9,7 +9,7 @@ In addition to the below permissions, the user's tenant must have an active Univ
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) or Application | PrintJob.Read.All |
+|Delegated (work or school account)| PrintJob.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -52,7 +52,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 125
+Content-length: 319
 
 {
   "value": [

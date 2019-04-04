@@ -9,7 +9,7 @@ In addition to the below permissions, the user's tenant must have an active Univ
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) or Application | Printer.ReadWrite.All |
+|Delegated (work or school account)| Printer.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

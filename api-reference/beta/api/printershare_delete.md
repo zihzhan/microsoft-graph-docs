@@ -9,14 +9,13 @@ In addition to the below permissions, the user's tenant must have an active Univ
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) or Application | Printer.ReadWrite.All |
+|Delegated (work or school account)| Printer.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /print/printerShares/<id>
 DELETE /print/printers/<id>/share
-
 ```
 ## Request headers
 | Name          | Description   |
@@ -25,7 +24,6 @@ DELETE /print/printers/<id>/share
 
 ## Request body
 Do not supply a request body for this method.
-
 
 ## Response
 If successful, this method returns `204, No Content` response code. It does not return anything in the response body. A DELETE request for a printer share that does not exist is considered successful.

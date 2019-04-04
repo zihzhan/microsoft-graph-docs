@@ -31,7 +31,7 @@ GET /reports/getPrinterUsageSummary
 |`periodEnd`|`Edm.DateTimeOffset`|Yes|The end date (inclusive) for the time period to include data from.|
 
 ## Response
-If successful, this method returns `200, OK` response code and collection of [groupPrintUsageSummary](../resources/groupprintusagesummary.md) objects in the response body.
+If successful, this method returns `200, OK` response code and a [printerUsageSummary](../resources/printerusagesummary.md) object in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -55,15 +55,15 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 123
+Content-length: 229
 
 {
-    "value": [
-        {
-            "completedJobCount": 1,
-            "incompleteJobCount": 1
-        }
-    ]
+    "printer": {"@odata.type": "microsoft.graph.directoryObject"},
+    "printerName": "String",
+    "printerManufacturer": "String",
+    "printerModel": "String",
+    "completedJobCount": 1,
+    "incompleteJobCount": 1
 }
 ```
 

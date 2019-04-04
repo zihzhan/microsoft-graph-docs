@@ -1,6 +1,7 @@
 # Get printerShare
 
 Retrieve the properties and relationships of a printer share.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
@@ -8,7 +9,7 @@ In addition to the below permissions, the user's tenant must have an active Univ
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account) or Application | Printer.Read.All |
+|Delegated (work or school account)| Printer.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +50,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 85
+Content-length: 98
 
 {
   "id": "Guid (identifier)",

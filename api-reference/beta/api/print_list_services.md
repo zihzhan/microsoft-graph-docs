@@ -1,6 +1,7 @@
 # List services
 
 Retrieve a list of printservice objects.
+
 ## Permissions
 
 No permissions are needed to call this API, but the user's tenant must have an active Universal Print subscription.
@@ -44,7 +45,7 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
+Content-length: 250
 
 {
   "value": [

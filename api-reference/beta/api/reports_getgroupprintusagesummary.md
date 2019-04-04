@@ -31,7 +31,7 @@ GET /reports/getGroupPrintUsageSummary
 |`periodEnd`|`Edm.DateTimeOffset`|Yes|The end date (inclusive) for the time period to include data from.|
 
 ## Response
-If successful, this method returns `200, OK` response code and collection of [groupPrintUsageSummary](../resources/groupprintusagesummary.md) objects in the response body.
+If successful, this method returns `200, OK` response code and a [groupPrintUsageSummary](../resources/groupprintusagesummary.md) object in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -55,17 +55,13 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
+Content-length: 149
 
 {
-    "value": [
-        {
-            "group": {"@odata.type": "microsoft.graph.identity"},
-            "groupMail": "String",
-            "completedJobCount": 1,
-            "incompleteJobCount": 1
-        }
-    ]
+    "group": {"@odata.type": "microsoft.graph.identity"},
+    "groupMail": "String",
+    "completedJobCount": 1,
+    "incompleteJobCount": 1
 }
 ```
 

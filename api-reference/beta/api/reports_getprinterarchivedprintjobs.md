@@ -31,7 +31,7 @@ GET /reports/getPrinterArchivedPrintJobs
 |`periodEnd`|`Edm.DateTimeOffset`|No|The end date (inclusive) for the time period to include data from.|
 
 ## Response
-If successful, this method returns `200, OK` response code and collection of [archivedPrintJob](../resources/archivedPrintJob.md) objects in the response body.
+If successful, this method returns `200, OK` response code and collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -55,7 +55,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 325
+Content-length: 324
 
 {
     "value": [
@@ -63,7 +63,7 @@ Content-length: 325
             "id": "String (identifier)",
             "printer": {"@odata.type": "microsoft.graph.directoryObject"},
             "createdBy": {"@odata.type": "microsoft.graph.userIdentity"},
-            "processingState": {"@odata.type": "microsoft.graph.directoryObject"}
+            "processingState": {"@odata.type": microsoft.graph.directoryObject"}
         }
     ]
 }

@@ -31,7 +31,7 @@ GET /reports/getOverallPrintUsageSummary()
 |`topListsSize`|`Edm.Int`|Yes|The number of entities to include the "top user" and "top printers" lists. Maximum 10.|
 
 ## Response
-If successful, this method returns `200, OK` response code and collection of [overallPrintUsageSummary](../resources/overallPrintUsageSummary.md) objects in the response body.
+If successful, this method returns `200, OK` response code and an [overallPrintUsageSummary](../resources/overallprintusagesummary.md) object in the response body.
 
 ## Example
 The following is an example of how to call this API.
@@ -55,17 +55,20 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 226
+Content-length: 334
 
 {
-    "value": [
-        {
-            "group": {"@odata.type": "microsoft.graph.identity"},
-            "groupMail": "String",
-            "completedJobCount": 1,
-            "incompleteJobCount": 1
-        }
-    ]
+    "topUsers": [
+        {"@odata.type": "microsoft.graph.userPrintUsageSummary"}
+    ],
+    "topPrinters": [
+        {"@odata.type": "microsoft.graph.printerUsageSummary"}
+    ],
+    "daysInPeriod": 1,
+    "activeUsersCount": 1,
+    "activePrintersCount": 1,
+    "totalJobsProcessed": 1,
+    "totalIncompleteJobs": 1
 }
 ```
 
