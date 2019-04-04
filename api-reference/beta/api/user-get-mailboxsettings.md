@@ -241,7 +241,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-		"Error: get_mailboxsettings_1/workingHours:\r\n      Schema validation failed on property 'workingHours' ['microsoft.graph.workingHours']",
 		"Error: get_mailboxsettings_1/workingHours/endTime:\r\n      Expected type TimeOfDay but actual was String. Property: endTime, actual value: '17:00:00.0000000'",
 		"Error: get_mailboxsettings_1/workingHours/startTime:\r\n      Expected type TimeOfDay but actual was String. Property: startTime, actual value: '08:00:00.0000000'"
 	]
