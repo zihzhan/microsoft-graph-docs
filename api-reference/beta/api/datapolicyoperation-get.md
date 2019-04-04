@@ -73,5 +73,8 @@ Content-length: 212
   "description": "Get dataPolicyOperation",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+	"Error: get_datapolicyoperation/progress:\r\n      Expected type String but actual was Double. Property: progress, actual value: '12.4555'"
+  ]
 }-->

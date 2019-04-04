@@ -241,7 +241,9 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/user-get-mailboxsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+		"Error: get_mailboxsettings_1/workingHours:\r\n      Schema validation failed on property 'workingHours' ['microsoft.graph.workingHours']",
+		"Error: get_mailboxsettings_1/workingHours/endTime:\r\n      Expected type TimeOfDay but actual was String. Property: endTime, actual value: '17:00:00.0000000'",
+		"Error: get_mailboxsettings_1/workingHours/startTime:\r\n      Expected type TimeOfDay but actual was String. Property: startTime, actual value: '08:00:00.0000000'"
+	]
 }
 -->
