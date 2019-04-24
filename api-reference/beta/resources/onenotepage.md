@@ -51,7 +51,7 @@ Here is a JSON representation of the resource.
     "parentSection"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.onenoteEntitySchemaObjectModel",  
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
