@@ -3,8 +3,11 @@
   - name: Overview of Microsoft Graph
     href: /graph/overview?toc=./toc.json
   - name: Get auth tokens
-    href: /graph/auth-overview?toc=./ref/toc.json
     items:
+    - name: Overview
+      href: /graph/concepts/auth/index.yml?toc=./ref/toc.json
+    - name: Basics
+      href: /graph/concepts/auth/auth-concepts.md?toc=./ref/toc.json
     - name: Register your app
       href: /graph/auth-register-app-v2?toc=./ref/toc.json
     - name: Get access on behalf of a user
