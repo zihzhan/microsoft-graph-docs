@@ -5,9 +5,9 @@
   - name: Get auth tokens
     items:
     - name: Overview
-      href: /graph/concepts/auth/index.yml?toc=./ref/toc.json
+      href: /graph/auth/index.yml?toc=./ref/toc.json
     - name: Basics
-      href: /graph/concepts/auth/auth-concepts.md?toc=./ref/toc.json
+      href: /graph/auth/auth-concepts.md?toc=./ref/toc.json
     - name: Register your app
       href: /graph/auth-register-app-v2?toc=./ref/toc.json
     - name: Get access on behalf of a user

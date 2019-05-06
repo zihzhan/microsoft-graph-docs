@@ -8,7 +8,8 @@ ms.prod: "microsoft-identity-platform"
 
 # Register an application with the Microsoft identity platform
 
-This page shows you how to add and register an application using the **App registrations** experience in the Azure portal so that your app can be integrated with the Microsoft identity platform and call Microsoft Graph. 
+This page shows you how to add and register an application using the **App registrations** experience in the Azure portal so that your app can be integrated with the Microsoft identity platform and call Microsoft Graph.
+
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/93j0MmRruFo]
 
