@@ -56,7 +56,7 @@ Inside a cell, the `vlookup` function looks like this:
 
 The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
 Request: 
-
+<!-- { "blockType": "request" } -->
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
 content-type: Application/Json 
@@ -72,7 +72,7 @@ workbook-session-id: {session-id}
 ```
 
 Response:
-
+<!-- { "blockType": "response" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 
@@ -99,7 +99,7 @@ Inside a cell, the `median` function looks like this example:
 The example below shows how to call the `median` function and one or more input ranges with the Excel REST API. 
 
 Request: 
-
+<!-- { "blockType": "request" } -->
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
 content-type: Application/Json 
@@ -115,7 +115,7 @@ workbook-session-id: {session-id}
 ```
 
 Response:
-
+<!-- { "blockType": "response" } -->
 ```http
 HTTP code: 200 OK
 content-type: application/json;odata.metadata 

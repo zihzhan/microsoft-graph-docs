@@ -55,7 +55,7 @@ The request should be a JSON object with the following properties.
 | zoom        | number        | Optional. Zoom level to start at, if applicable.
 
 ## Response
-
+<!-- { "blockType": "response" } -->
 ```json
 {
     "getUrl": "https://www.onedrive.com/embed?foo=bar&bar=baz",
