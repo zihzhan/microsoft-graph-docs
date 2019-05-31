@@ -55,11 +55,14 @@ Inside a cell, the `vlookup` function looks like this:
 (See the documentation for the [VLOOKUP Excel function](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1).)
 
 The example below shows how to call the `vlookup` function and pass these parameters with the Excel REST API.
-Request: 
-<!-- { "blockType": "request" } -->
+Request:
+
+<!-- { 
+    "blockType": "request"
+} -->
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/vlookup
-content-type: Application/Json 
+content-type: application/json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -72,9 +75,13 @@ workbook-session-id: {session-id}
 ```
 
 Response:
-<!-- { "blockType": "response" } -->
+
+<!-- { 
+    "blockType": "response",
+    "@odata.type": "microsoft.graph.workbookFunctionResult"
+} -->
 ```http
-HTTP code: 200 OK
+HTTP/1.1 200 OK
 content-type: application/json;odata.metadata 
 
 {
@@ -98,11 +105,14 @@ Inside a cell, the `median` function looks like this example:
 
 The example below shows how to call the `median` function and one or more input ranges with the Excel REST API. 
 
-Request: 
-<!-- { "blockType": "request" } -->
+Request:
+
+<!-- { 
+    "blockType": "request"
+} -->
 ```http 
 POST https://graph.microsoft.com/beta/me/drive/root:/book1.xlsx:/workbook/functions/median
-content-type: Application/Json 
+content-type: application/json 
 authorization: Bearer {access-token} 
 workbook-session-id: {session-id}
 
@@ -115,9 +125,13 @@ workbook-session-id: {session-id}
 ```
 
 Response:
-<!-- { "blockType": "response" } -->
+
+<!-- { 
+    "blockType": "response", 
+    "@odata.type": "microsoft.graph.workbookFunctionResult"
+} -->
 ```http
-HTTP code: 200 OK
+HTTP/1.1 200 OK
 content-type: application/json;odata.metadata 
 
 {

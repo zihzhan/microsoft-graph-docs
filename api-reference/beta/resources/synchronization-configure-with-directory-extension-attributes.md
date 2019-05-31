@@ -15,12 +15,16 @@ This article assumes that you have already added an application that supports sy
 ## Find the service principal object by display name
 
 The following example shows how to find a service principal object with the display name "Salesforce Sandbox".
-
+<!-- { 
+    "blockType": "request"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 Authorization: Bearer {Token}
 ```
-
+<!-- { 
+    "blockType": "response"
+} -->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
@@ -50,11 +54,16 @@ The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.
 
 The following example shows you how to get the `jobId` that you need to work with. Generally, the response returns only one job.
 
+<!-- { 
+    "blockType": "request"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 Authorization: Bearer {Token}
 ```
-
+<!-- { 
+    "blockType": "response"
+} -->
 ```json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
