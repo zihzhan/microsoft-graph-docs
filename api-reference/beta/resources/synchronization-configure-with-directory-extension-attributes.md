@@ -25,7 +25,10 @@ Authorization: Bearer {Token}
 <!-- { 
     "blockType": "response"
 } -->
-```json
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName)",
     "value": [
@@ -64,7 +67,10 @@ Authorization: Bearer {Token}
 <!-- { 
     "blockType": "response"
 } -->
-```json
+```http
+HTTP/1.1 200 OK
+content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals('60443998-8cf7-4e61-b05c-a53b658cb5e1')/synchronization/jobs",
     "value": [
