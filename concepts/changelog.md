@@ -64,6 +64,8 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
+| Addition | beta | Added the [conversationMember](/api-reference/beta/resources/conversationmember.md) resource and associated methods to the [channel](/api-reference/beta/resources/channel.md) resource.|
+| Addition | beta | Added the `membershipType` property to the [channel](/api-reference/beta/resources/channel.md) resource.
 
 
 ### OneDrive and SharePoint APIs
