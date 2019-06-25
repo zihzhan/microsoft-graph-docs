@@ -35,6 +35,7 @@ where files are shared, and where tabs are added.
 |[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| Get the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
 |[Update channel member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel.|
+|[Delete channel member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member of a channel.|
 
 
 ## Properties

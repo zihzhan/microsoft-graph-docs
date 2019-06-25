@@ -20,6 +20,7 @@ This type inherits from [conversationMember](conversationmember.md).
 |[List members](../api/conversationmember-list.md) | [conversationmember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Get  member](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Get a single user in the chat.|
 |[Update member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a single user in the channel.|
+|[Delete member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a single user in the channel.|
 
 ## Properties
 | Property	   | Type	|Description|

@@ -2,7 +2,7 @@
 title: "Update conversationMember"
 description: "Update a member of a channel."
 author: "dafranc"
-localization_priority: Priority
+localization_priority: Normal
 ms.prod "microsoft-teams"
 ---
 
