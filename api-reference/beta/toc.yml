@@ -7873,7 +7873,7 @@
           items:
           - name: List risk detection
             href: api/riskdetection-list.md
-          - name: Get risky detection
+          - name: Get risky detection 
             href: api/riskdetection-get.md
       - name: Identity provider
         href: resources/identityprovider.md
