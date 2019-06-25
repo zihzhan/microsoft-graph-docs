@@ -816,3 +816,11 @@ Possible values for user account types (group membership), per Windows definitio
 |normal|
 |high|
 |urgent|
+
+### channelMembershipType values
+
+|Member  | Value|
+|:-------|:-----|
+|standard| 0    |
+|private | 1    |
+|unknownFutureValue| 2  |

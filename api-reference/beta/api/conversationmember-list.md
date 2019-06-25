@@ -1,6 +1,6 @@
 ---
 title: "List conversationMembers"
-description: "Retrieve a member of a chat."
+description: "Retrieve a member of a chat or channel."
 author: "nkramer"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md)
+List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chat.md) or [channel](../resources/channel.md).
 
 ## Permissions
 
@@ -18,15 +18,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)|Chat.Read, Chat.ReadWrite|
+|Delegated (work or school account)|For **user** or **chat** resource:<br/>Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application| Chat.Read.All, Chat.ReadWrite.All |
+|Application| For **user** or **chat** resource:<br/>Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource:<br/>Group.Read.All, Group.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{id}/members
 GET /users/{id}/chats/{id}/members
+GET /teams/{id}/channels/{id}/members
 ```
 
 ## Optional query parameters
