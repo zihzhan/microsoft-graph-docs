@@ -75,7 +75,8 @@ Content-length: 201
 {
   "id": "id-value",
   "displayName": "Architecture Discussion",
-  "description": "This channel is where we debate all future architecture plans"
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard"
 }
 ```
 #### SDK sample code

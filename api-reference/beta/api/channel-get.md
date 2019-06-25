@@ -72,7 +72,8 @@ Content-length: 201
 {
     "description": "description-value",
     "displayName": "display-name-value",
-    "id": "id-value"
+    "id": "id-value",
+    "membershipType": "membership-type-value"
 }
 ```
 #### SDK sample code
