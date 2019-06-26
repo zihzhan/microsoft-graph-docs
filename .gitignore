@@ -7,3 +7,7 @@ nuget.exe
 apidoc.exe
 *.dll
 .vs/
+
+#Test-Docs-Local.ps1 related files
+ApiDoctor.log
+apidoctor/
