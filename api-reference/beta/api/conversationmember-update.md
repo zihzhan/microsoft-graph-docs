@@ -3,7 +3,7 @@ title: "Update conversationMember"
 description: "Update a member of a channel."
 author: "dafranc"
 localization_priority: Normal
-ms.prod "microsoft-teams"
+ms.prod: "microsoft-teams"
 ---
 
 # Update conversationMember

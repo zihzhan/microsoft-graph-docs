@@ -3,7 +3,7 @@ title: "Delete conversationMember"
 description: "Delete a member of a channel."
 author: "dafranc"
 localization_priority: Normal
-ms.prod "microsoft-teams"
+ms.prod: "microsoft-teams"
 ---
 
 # Delete conversationMember
