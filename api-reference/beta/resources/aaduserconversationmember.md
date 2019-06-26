@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory user in a [chat](chat.md). 
+Represents an Azure Active Directory user in a [chat](chat.md) or a [channel](channel.md). 
 This type inherits from [conversationMember](conversationmember.md).
 
 ## Methods
