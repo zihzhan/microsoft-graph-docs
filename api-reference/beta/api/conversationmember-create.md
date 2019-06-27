@@ -12,7 +12,8 @@ ms.prod: "microsoft-teams"
 
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
 
->**Note:** This operation is only supported on channels with a `channelType` of `private`
+> [!NOTE]
+>This operation is only supported on channels with a `channelType` of `private`
 
 ## Permissions
 

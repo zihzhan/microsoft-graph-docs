@@ -12,7 +12,8 @@ ms.prod: "microsoft-teams"
 
 Update a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
->**Note:** This operation is only supported on channels with a `channelType` of `private`
+> [!NOTE]
+>This operation is only supported on channels with a `channelType` of `private`
 
 ## Permissions
 
