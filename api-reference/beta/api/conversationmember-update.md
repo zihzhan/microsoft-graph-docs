@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Update conversationMember
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [beta-disclaimer](../../includes/private-preview-disclaimer.md)]
 
 Update a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
