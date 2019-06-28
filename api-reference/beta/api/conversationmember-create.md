@@ -1,7 +1,7 @@
 ---
 title: "Add conversationMember"
 description: "Add a member to a channel."
-author: "dafranc"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
