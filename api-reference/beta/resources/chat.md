@@ -36,6 +36,7 @@ Participants can be users or apps.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+| installedApps | [teamsAppInstallation](teamsAppInstallation.md) collection | A collection of all the apps in the chat. Nullable. |
 | members | [conversationMember](conversationmember.md) collection | A collection of all people in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 
