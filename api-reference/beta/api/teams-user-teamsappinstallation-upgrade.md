@@ -1,12 +1,12 @@
 ---
-title: "Upgrade an app for user"
+title: "Upgrade an app installed for user"
 description: "Upgrades an app installation in the personal scope of a user"
 author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Upgrade an app for user
+# Upgrade an app already installed for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
