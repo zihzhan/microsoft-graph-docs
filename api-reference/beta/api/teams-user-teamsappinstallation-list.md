@@ -1,12 +1,12 @@
 ---
-title: "List apps of user"
+title: "List apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
 author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List apps in team
+# List apps installed for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
