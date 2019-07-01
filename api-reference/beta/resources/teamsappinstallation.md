@@ -17,10 +17,14 @@ Any bots that are part of the app will become part of any team/chat that the app
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List apps](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
-|[Add app](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adds (installs) an app to a team.|
-|[Remove app](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
-|[Upgrade app](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
+|[List apps installed in team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in a team.|
+|[Install app to team](../api/teamsappinstallation-add.md) | | Adds (installs) an app to a team.|
+|[Uninstall app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
+|[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
+|[List apps installed for user](../api/teams-user-teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in the personal scope of a user.|
+|[Install app for user](../api/teams-user-teamsappinstallation-add.md) | | Adds (installs) an app in the personal scope of a user.|
+|[Uninstall app for user](../api/teams-user-teamsappinstallation-remove.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
+|[Upgrade app installed for user](../api/teams-user-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 
 ## Properties
 
