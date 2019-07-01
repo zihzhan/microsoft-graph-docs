@@ -10,8 +10,8 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [teamsApp](teamsapp.md) installed in a [team](team.md). 
-Any bots that are part of the app will become part of any team the app is added to.
+A [teamsApp](teamsapp.md) installed in a [team](team.md) or a [chat](chat.md). 
+Any bots that are part of the app will become part of any team/chat that the app is added to.
 
 ## Methods
 
