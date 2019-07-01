@@ -59,4 +59,4 @@ The following is a JSON representation of the resource.
 -->
 
 ## See Also
-- [UserTeamwork resource](resources/userteamwork.md)
+- [UserTeamwork resource](userteamwork.md)
