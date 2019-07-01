@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Delete app from team
+# Uninstall app for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
