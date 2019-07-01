@@ -60,6 +60,6 @@ The following is a JSON representation of the resource.
 -->
 
 ## See Also
-- [List apps installed for a user](api/teams-user-teamsappinstallation-list.md)
-- [Install app for a user](api/teams-user-teamsappinstallation-add.md)
-- [Uninstall app for a user](api/teams-user-teamsappinstallation-delete.md)
+- [List apps installed for a user](../api/teams-user-teamsappinstallation-list.md)
+- [Install app for a user](../api/teams-user-teamsappinstallation-add.md)
+- [Uninstall app for a user](../api/teams-user-teamsappinstallation-delete.md)
