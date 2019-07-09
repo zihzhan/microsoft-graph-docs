@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Delete conversationMember
 
-[!INCLUDE [beta-disclaimer](../../includes/private-preview-disclaimer.md)]
+[!INCLUDE [private-preview-disclaimer](../../includes/private-preview-disclaimer.md)]
 
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
