@@ -50,7 +50,7 @@ public class CustomHttpRequest
         // Send the request and get the response.
         HttpResponseMessage httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
 
-        // take a response payload from a successful request and deserialize it into a strong type.
+        // Take a response payload from a successful request and deserialize it into a strong type.
         ResponseHandler responseHandler = new ResponseHandler(new Serializer());
         T result = await responseHandler.HandleResponse<T>(httpResponseMessage);
         return result;
