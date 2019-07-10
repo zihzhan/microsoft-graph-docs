@@ -5,14 +5,14 @@ localization_priority: Normal
 author: TitusGicheru
 ---
 
-# Send Custom HTTP Request
+# Send custom HTTP request
 
-The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI. We can use this when the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. Here's an example of using the client library to set **MailboxSettings**.
+The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI. We can use this when the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. Here's an example of using the client library to set or get **MailboxSettings**. Please note you can use the example below to get other Microsoft Graph resources other than the MailboxSettings.
 
 # [C#](#tab/CS)
 
 ```csharp
-public class SendHttpRequest
+public class CustomHttpRequest
 {
     /// <summary>
     /// Creates a native HttpClient  
@@ -23,7 +23,7 @@ public class SendHttpRequest
     /// <param name="content">The Content used to initialize the String Content</param>
     /// <param name="mediaType">Media Types e.g. application/json, text/message</param>
     /// <returns>Task<T></returns>
-    public async Task<T> SetCustomRequestAsync<T>(Uri requestUri, HttpMethod httpMethod, string content, string mediaType)
+    public async Task<T> SendHttpRequestAsync<T>(Uri requestUri, HttpMethod httpMethod, string content, string mediaType)
     {     
         /* The client already has implementation on the below
            * Redirect Handler:
@@ -33,6 +33,8 @@ public class SendHttpRequest
             * Compression Handler
                 A middleware component that requests, detects and decompresses response bodies.  
         */
+
+        // Get an AuthenticationProvider 
         IAuthenticationProvider authenticationProvider = GetAuthenticationProvider();
         HttpClient httpClient = GraphClientFactory.Create(authenticationProvider);
 
@@ -49,6 +51,31 @@ public class SendHttpRequest
         HttpResponseMessage httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
 
         // take a response payload from a successful request and deserialize it into a strong type.
+        ResponseHandler responseHandler = new ResponseHandler(new Serializer());
+        T result = await responseHandler.HandleResponse<T>(httpResponseMessage);
+        return result;
+    }
+
+    /// <summary>
+    /// Returns Generic T
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="requestUri">The Microsoft Graph Uri to request</param>
+    /// <param name="httpMethod">The HttpMethod e.g. GET, POST, PATCH, PUT</param>
+    /// <returns>Task<T></returns>
+    public async Task<T> GetCustomRequestAsync<T>(Uri requestUri, HttpMethod httpMethod)
+    {
+        // Get an AuthenticationProvider 
+        IAuthenticationProvider authenticationProvider = GetAuthenticationProvider();
+        HttpClient httpClient = GraphClientFactory.Create(authenticationProvider);
+
+        // Create the request 
+        HttpRequestMessage httpRequestMessage = new HttpRequestMessage(httpMethod, requestUri);
+
+        // Send the request and get the response.
+        HttpResponseMessage httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
+
+        // Take a response payload from a successful request and deserialize it into a strong type.
         ResponseHandler responseHandler = new ResponseHandler(new Serializer());
         T result = await responseHandler.HandleResponse<T>(httpResponseMessage);
         return result;
