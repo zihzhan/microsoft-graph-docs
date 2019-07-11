@@ -1,29 +1,30 @@
 ---
-title: "Install app for user"
-description: "Installs an app in the personal scope of the specified user."
+title: "Uninstall app for user"
+description: "Uninstalls an app from the personal scope of the specified user."
 author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Install app for user
+# Uninstall app for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
+Uninstalls an [app](../resources/teamsappinstallation.md) from the personal scope of specified [user](../resources/user.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  User.ReadWrite.All, Directory.ReadWrite.All     |
+|Delegated (work or school account) |User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+|Application | User.ReadWrite.All, Directory.ReadWrite.All  |
 
 ## HTTP request
+<!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id}/teamwork/installedApps
+DELETE /users/{id}/teamwork/installedApps/{id}
 ```
 
 ## Request headers
@@ -32,31 +33,25 @@ POST /users/{id}/teamwork/installedApps
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
-
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 OK` response code.
+If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+
 ## Example
 #### Request
 The following is an example of the request.
 ```http
-POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
-{
-   "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-}
+DELETE https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 ```
 #### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
 ```http
-HTTP/1.1 201 OK
-Content-type: application/json
-Content-length: 0
+HTTP/1.1 204 No Content
 ```
-
 ## See also
+
+- [List apps installed for a user](../api/user-list-teamsappinstallation.md)
+- [Install app for a user](../api/user-add-teamsappinstallation.md)
+- [Upgrade installed app for a user](../api/user-upgrade-teamsappinstallation.md)
