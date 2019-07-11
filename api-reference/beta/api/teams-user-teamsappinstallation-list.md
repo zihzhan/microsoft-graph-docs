@@ -1,16 +1,16 @@
 ---
-title: "List apps in team"
-description: "Retrieve the list of apps installed in the specified team."
-author: "nkramer"
+title: "List apps installed for user"
+description: "Retrieve the list of apps installed in the personal scope of the specified user."
+author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# List apps in team
+# List apps installed for user
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
+Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 
@@ -18,16 +18,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Group.Read.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.Read.All, Group.ReadWrite.All  |
+|Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All  |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/installedApps
+GET /users/{id}//teamwork/installedApps
 ```
 
 ## Optional query parameters
@@ -53,23 +53,18 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ### Request
 
 The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_owners"
-}-->
-
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 
 ### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
@@ -86,40 +81,26 @@ Content-length: 55
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
 
 ## Example -- getting the names of the installed apps
 
 ### Request
 
 The following is an example of the request.
-<!-- {
-  "blockType": "request",
-  "name": "get_owners"
-}-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
+GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition
 ```
 
 ### Response
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
 } -->
 
@@ -160,31 +141,3 @@ Content-length: 55
   ]
 }
 ```
-#### SDK sample code
-# [C#](#tab/cs)
-[!INCLUDE [sample-code](../includes/get_owners-Cs-snippets.md)]
-
-# [Javascript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/get_owners-Javascript-snippets.md)]
-
----
-
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!--
-{
-  "type": "#page.annotation",
-  "description": "List owners",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)",
-    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/cs](C#)'. Did you mean: #c (score: 5)",
-    "Error: /api-reference/beta/api/teamsappinstallation-list.md:\r\n      BookmarkMissing: '[#tab/javascript](Javascript)'. Did you mean: #javascript (score: 4)"
-  ]
-}
--->

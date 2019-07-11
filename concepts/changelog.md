@@ -11,19 +11,40 @@ This changelog covers what's changed in Microsoft Graph, including the v1.0 and 
 
 For details about known issues with Microsoft Graph APIs, see [Known issues](known-issues.md).
 
+## July 2019
+
+### Microsoft Teams APIs
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the `membershipType` property to the [channel](/api-reference/beta/resources/channel.md) resource.
+| Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource and associated methods. |
+| Addition | beta | Added the `discoverySettings` property to the [team](/api-reference/beta/resources/team.md) resource.
+| Addition | beta | Added the `primaryChannel` property to the [team](/api-reference/beta/resources/team.md) resource.
+| Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resources and associated methods. |
+| Addition | beta | Added the [aadUserConversationMember](/api-reference/beta/resources/aaduserconversationmember.md) resources and associated methods. |
+| Addition | beta | Added the [channelMembershipType](/api-reference/beta/resources/channelmembershiptype.md) resource. |
+| Addition | beta | Added the `members` property to the [channel](/api-reference/beta/resources/channel.md) resource.|
+| Addition | beta | Added the `installedApps` property to the [chat](/api-reference/beta/resources/chat.md) resource.|
+| Change | beta | Changed type of `joinedTeams` property of the [user](/api-reference/beta/resources/user.md) resource.|
+| Addition | beta | Added navigation binding for `chats` property of the [user](/api-reference/beta/resources/user.md) resource.|
+
+
 ## June 2019
 
+### Identity Protection APIs
+| **Change type** | **Version** | **Description**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta | Added the [riskDetection API](/graph/api/resources/riskdetection?view=graph-rest-beta), which represents risk detections in Azure AD Identity Protection. |
 
-### Azure AD APIs
+
+### Identity and access
 
 | **Change type** | **Version** | **Description**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Addition        | Beta  | Introduced the new resource type [applicationTemplate](/graph/api/resources/applicationtemplate.md). This resource type supports [instantiate](/graph/api/applicationtemplate-instantiate.md), [list](/graph/api/applicationtemplate-instantiate.md) and [get](/graph/api/applicationtemplate-get.md) applications from the Azure AD application gallery.|
-
-### Directory APIs
-
-| **Change type** | **Version** | **Description**                          |
-| :-------------- | :---------- | :--------------------------------------- |
+| Addition | beta|Added new resources: </br> [detailsInfo](/graph/api/resources/detailsInfo?view=graph-rest-beta)</br> [initiator](/graph/api/resources/initiator?view=graph-rest-beta)</br> [modifiedProperty](/graph/api/resources/modifiedProperty?view=graph-rest-beta)</br> [provisionedIdentity](/graph/api/resources/provisionedIdentity?view=graph-rest-beta)</br> [provisioningObjectsummary](/graph/api/resources/provisioningObjectsummary?view=graph-rest-beta)</br> [provisioningStep](/graph/api/resources/provisioningStep?view=graph-rest-beta)</br> [provisioningsystemDetails](/graph/api/resources/provisioningsystemDetails?view=graph-rest-beta)</br> [statusBase](/graph/api/resources/statusBase?view=graph-rest-beta)|
+| Addition |beta |Added the [List provisioningObjectSummary](/graph/api/resources/provisioning-object-summary-list?view=graph-rest-beta) operation</br>|                     |
 | Addition | v1.0 | Added the **signInSessionsValidFromDateTime** property on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 | Addition | v1.0 | Added the [revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) action on the [user](/graph/api/resources/user?view=graph-rest-1.0) resource. |
 
@@ -64,8 +85,6 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Addition | beta | Added the [teamDiscoverySettings](/api-reference/beta/resources/teamdiscoverysettings.md) resource and associated methods. |
-| Addition | beta | Added the [conversationMember](/api-reference/beta/resources/conversationmember.md) resource and associated methods to the [channel](/api-reference/beta/resources/channel.md) resource.|
-| Addition | beta | Added the `membershipType` property to the [channel](/api-reference/beta/resources/channel.md) resource.
 
 
 ### OneDrive and SharePoint APIs
