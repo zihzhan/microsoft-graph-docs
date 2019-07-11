@@ -1,31 +1,53 @@
 ---
-title: "Use the HttpClient to send and retrieve Graph objects"
+title: "Use the HttpClient to send and retrieve Microsoft Graph objects"
 description: "Contains an example of how to configure an HttpClient to work with Microsoft Graph."
 localization_priority: Normal
-author: TitusGicheru
+author: @microsoftgraph/sdk-contributors
 ---
 
 # Send custom HTTP request
 
-The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI. We can use this when the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. Here's an example of using the client library to set or get **MailboxSettings**. Please note you can use the example below to get other Microsoft Graph resources other than the MailboxSettings.
+The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI. We can use this when the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. 
+
+ Here's an example of using the client library to set or get **MailboxSettings**. Please note you can use the example below to get other Microsoft Graph resources other than the MailboxSettings.
 
 # [C#](#tab/CS)
 
 ```csharp
 public class CustomHttpRequest
 {
+    public void Main()
+    {
+        Uri requestUri = new Uri("https://graph.microsoft.com/v1.0/me/MailboxSettings");
+
+        // Checkout Microsoft Graph supported time zones from the link below
+        // https://docs.microsoft.com/en-us/graph/api/resources/datetimetimezone?view=graph-rest-1.0
+        string jsonContent = @"{
+                                'timeZone': 'Pacific Standard Time',
+                                    'language': {
+                                    'locale': 'en-CA'
+                                    }
+                                }";
+        HttpMethod httpMethod = new HttpMethod("PATCH");
+        string mediaType = "application/json";
+
+        MailboxSettings mailboxSettings = SendHttpRequestAsync<MailboxSettings>(requestUri,
+                httpMethod, jsonContent, mediaType)
+                        .GetAwaiter().GetResult();
+
+        Console.WriteLine($"Current MailboxSettings TimeZone: {mailboxSettings.TimeZone}");
+        Console.WriteLine($"Current MailboxSettings Locale: {mailboxSettings.Language.Locale}");
+        Console.ReadLine();
+    }
+
     /// <summary>
-    /// Creates a native HttpClient  
+    /// Creates a native HttpClient preconfigured with default middleware
     /// </summary>
-    /// <typeparam name="T">The generic type parameter T</typeparam>
-    /// <param name="requestUri">Microsoft Graph Uri to request</param>
-    /// <param name="httpMethod">The HttpMethod e.g. GET, POST, PATCH, PUT</param>
-    /// <param name="content">The Content used to initialize the String Content</param>
-    /// <param name="mediaType">Media Types e.g. application/json, text/message</param>
-    /// <returns>Task<T></returns>
     public async Task<T> SendHttpRequestAsync<T>(Uri requestUri, HttpMethod httpMethod, string content, string mediaType)
     {     
-        /* The client already has implementation on the below
+        IAuthenticationProvider authenticationProvider = GetAuthenticationProvider();
+
+        /* The GraphClientFactory returns an HttpClient with the following default middleware implementations.
            * Redirect Handler:
                  A piece of client-side middleware designed to handle 3XX responses transparently so that application code doesn’t need to.
             * Retry Handler:
@@ -33,46 +55,15 @@ public class CustomHttpRequest
             * Compression Handler
                 A middleware component that requests, detects and decompresses response bodies.  
         */
-
-        // Get an AuthenticationProvider 
-        IAuthenticationProvider authenticationProvider = GetAuthenticationProvider();
         HttpClient httpClient = GraphClientFactory.Create(authenticationProvider);
 
-        // Create the content and pass in the correct media type
         HttpContent httpContent = new StringContent(content, Encoding.UTF8, mediaType);
 
-        // Create the request and add the content.
         HttpRequestMessage httpRequestMessage = new HttpRequestMessage(httpMethod, requestUri)
         {
             Content = httpContent
         };
 
-        // Send the request and get the response.
-        HttpResponseMessage httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
-
-        // Take a response payload from a successful request and deserialize it into a strong type.
-        ResponseHandler responseHandler = new ResponseHandler(new Serializer());
-        T result = await responseHandler.HandleResponse<T>(httpResponseMessage);
-        return result;
-    }
-
-    /// <summary>
-    /// Returns Generic T
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="requestUri">The Microsoft Graph Uri to request</param>
-    /// <param name="httpMethod">The HttpMethod e.g. GET, POST, PATCH, PUT</param>
-    /// <returns>Task<T></returns>
-    public async Task<T> GetCustomRequestAsync<T>(Uri requestUri, HttpMethod httpMethod)
-    {
-        // Get an AuthenticationProvider 
-        IAuthenticationProvider authenticationProvider = GetAuthenticationProvider();
-        HttpClient httpClient = GraphClientFactory.Create(authenticationProvider);
-
-        // Create the request 
-        HttpRequestMessage httpRequestMessage = new HttpRequestMessage(httpMethod, requestUri);
-
-        // Send the request and get the response.
         HttpResponseMessage httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
 
         // Take a response payload from a successful request and deserialize it into a strong type.
@@ -89,14 +80,10 @@ public class CustomHttpRequest
     /// provider based on your scenario
     /// https://docs.microsoft.com/en-us/graph/sdks/choose-authentication-providers?tabs=CS
     /// </summary>
-    /// <returns>IAuthenticationProvider</returns>
     private IAuthenticationProvider GetAuthenticationProvider()
     {
         string clientId = "Enter_ClientId";
-        string[] scopes = {
-            "User.Read",
-            "MailboxSettings.ReadWrite"
-            };
+        string[] scopes = { "User.Read", "MailboxSettings.ReadWrite" };
 
         IPublicClientApplication clientApplication = InteractiveAuthenticationProvider.CreateClientApplication(clientId);
         InteractiveAuthenticationProvider authenticationProvider = new InteractiveAuthenticationProvider(clientApplication, scopes);
