@@ -17,17 +17,17 @@ For details about known issues with Microsoft Graph APIs, see [Known issues](kno
 
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the `members` property to the [channel](/api-reference/beta/resources/channel.md) resource.|
+| Addition | beta | Added the `installedApps` property to the [chat](/api-reference/beta/resources/chat.md) resource.|
+| Addition | beta | Added navigation binding for `chats` property of the [user](/api-reference/beta/resources/user.md) resource.|
+| Addition | beta | Added the `primaryChannel` property to the [team](/api-reference/beta/resources/team.md) resource.
+| Addition | beta | Added the `discoverySettings` property to the [team](/api-reference/beta/resources/team.md) resource.
 | Addition | beta | Added the `membershipType` property to the [channel](/api-reference/beta/resources/channel.md) resource.
 | Addition | beta | Added the [teamwork](/api-reference/beta/resources/teamwork.md) resource and associated methods. |
-| Addition | beta | Added the `discoverySettings` property to the [team](/api-reference/beta/resources/team.md) resource.
-| Addition | beta | Added the `primaryChannel` property to the [team](/api-reference/beta/resources/team.md) resource.
 | Addition | beta | Added the [userTeamwork](/api-reference/beta/resources/userteamwork.md) resources and associated methods. |
 | Addition | beta | Added the [aadUserConversationMember](/api-reference/beta/resources/aaduserconversationmember.md) resources and associated methods. |
 | Addition | beta | Added the [channelMembershipType](/api-reference/beta/resources/channelmembershiptype.md) resource. |
-| Addition | beta | Added the `members` property to the [channel](/api-reference/beta/resources/channel.md) resource.|
-| Addition | beta | Added the `installedApps` property to the [chat](/api-reference/beta/resources/chat.md) resource.|
 | Change | beta | Changed type of `joinedTeams` property of the [user](/api-reference/beta/resources/user.md) resource.|
-| Addition | beta | Added navigation binding for `chats` property of the [user](/api-reference/beta/resources/user.md) resource.|
 
 ## June 2019
 
