@@ -144,6 +144,6 @@ Content-length: 55
 
 ## See also
 
-- [Install apps installed for a user](../api/teamsappinstallation-user-add.md)
+- [Install apps installed for a user](../api/teamsappinstallation-add-user.md)
 - [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
 - [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)

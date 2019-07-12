@@ -52,6 +52,6 @@ HTTP/1.1 204 No Content
 ```
 ## See also
 
-- [List apps installed for a user](../api/teamsappinstallation-user-list.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-user-upgrade.md)
-- [Install app for a user](../api/teamsappinstallation-user-add.md)
+- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
+- [Install apps installed for a user](../api/teamsappinstallation-add-user.md)
+- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)

@@ -58,6 +58,6 @@ HTTP/1.1 204 No Content
 ```
 ## See also
 
-- [List apps installed for a user](../api/teamsappinstallation-user-list.md)
-- [Uninstall app for a user](../api/teamsappinstallation-user-delete.md)
-- [Install app for a user](../api/teamsappinstallation-user-add.md)
+- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
+- [Install apps installed for a user](../api/teamsappinstallation-add-user.md)
+- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)

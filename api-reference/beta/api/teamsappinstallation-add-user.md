@@ -75,6 +75,6 @@ Content-length: 0
 
 ## See also
 
-- [List apps installed for a user](../api/teamsappinstallation-user-list.md)
-- [Uninstall app for a user](../api/teamsappinstallation-user-delete.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-user-upgrade.md)
+- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
+- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
+- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
