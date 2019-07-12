@@ -1,7 +1,7 @@
 ---
 title: "Uninstall app for user"
 description: "Uninstalls an app from the personal scope of the specified user."
-author: "anandjo"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -50,8 +50,13 @@ The following is an example of the response. Note: The response object shown her
 ```http
 HTTP/1.1 204 No Content
 ```
+
 ## See also
 
-- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
-- [Install apps installed for a user](../api/teamsappinstallation-add-user.md)
+- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
+- [Install apps for a user](../api/teamsappinstallation-add-user.md)
 - [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
+- [Install apps for a Team](../api/teamsappinstallation-add.md)
+- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
+- [List installed apps for a Team](../api/teamsappinstallation-list.md)
+- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

@@ -2,7 +2,7 @@
 title: "conversationMember resource type"
 description: "Represents a user in a conversation."
 localization_priority: Normal
-author: "nkramer"
+author: "clearab"
 ms.prod: "microsoft-teams"
 doc_type: "resourcePageType"
 ---

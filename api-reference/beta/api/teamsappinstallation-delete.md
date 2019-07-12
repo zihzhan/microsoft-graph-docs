@@ -72,3 +72,13 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+## See also
+
+- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
+- [Install apps for a user](../api/teamsappinstallation-add-user.md)
+- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
+- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
+- [Install apps for a Team](../api/teamsappinstallation-add.md)
+- [List installed apps for a Team](../api/teamsappinstallation-list.md)
+- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

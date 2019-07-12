@@ -1,7 +1,7 @@
 ---
 title: "Add app to team"
 description: "Installs an app to the specified team."
-author: "nkramer"
+author: "clearab"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -86,3 +86,10 @@ Content-length: 401
 
 ## See also
 
+- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
+- [Install apps for a user](../api/teamsappinstallation-add-user.md)
+- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
+- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
+- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
+- [List installed apps for a Team](../api/teamsappinstallation-list.md)
+- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

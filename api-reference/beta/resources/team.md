@@ -1,7 +1,7 @@
 ---
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
-author: "nkramer"
+author: "clearab"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
