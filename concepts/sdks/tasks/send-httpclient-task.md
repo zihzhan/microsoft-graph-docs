@@ -7,11 +7,12 @@ author: @microsoftgraph/sdk-contributors
 
 # Send custom HTTP request
 
-The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI. We can use this when the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier. 
+Sometimes, the functionality that you want to use isn't a part of the client library. In this case, you can still use the client library to make your life easier.
 
- Here's an example of using the client library to set or get **MailboxSettings**. Please note you can use the example below to get other Microsoft Graph resources other than the MailboxSettings.
+Here's an example of using the client library to set or get **MailboxSettings**. Please note you can use the example below to get other Microsoft Graph resources other than the MailboxSettings.
 
 # [C#](#tab/CS)
+The **GraphClientFactory** provides an **HttpClient** object preconfigured with default middleware and therefore supports sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 
 ```csharp
 public class CustomHttpRequest
