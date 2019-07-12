@@ -61,7 +61,7 @@ The following is a JSON representation of the resource.
 
 ## See Also
 
-- [List apps installed for a user](../api/user-list-teamsappinstallation.md)
-- [Install app for user](../api/user-add-teamsappinstallation.md)
-- [Uninstall app for a user](../api/user-delete-teamsappinstallation.md)
-- [Upgrade installed app for a user](../api/user-upgrade-teamsappinstallation.md)
+- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
+- [Install app for user](../api/teamsappinstallation-add-user.md)
+- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
+- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
