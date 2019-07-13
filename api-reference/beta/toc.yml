@@ -9156,10 +9156,16 @@
           href: api/chat-list-messages.md
         - name: Get message in chat
           href: api/chat-get-message.md
-        - name: Get members in chat
+        - name: List members in chat
           href: api/conversationmember-list.md
-        - name: Get one member in chat
+        - name: Get a member in chat
           href: api/conversationmember-get.md
+        - name: Add a member to a chat
+          href: api/conversationmember-add.md
+        - name: Delete a member from a chat
+          href: api/conversationmember-delete.md
+        - name: Update a member in a chat
+          href: api/conversationmember-update.md
       - name: Chat message
         href: resources/chatmessage.md
         items:

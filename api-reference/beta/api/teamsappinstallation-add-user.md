@@ -2,6 +2,7 @@
 title: "Install app for user"
 description: "Installs an app in the personal scope of the specified user."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -10,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
+Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +46,7 @@ If successful, this method returns a `201 OK` response code.
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -56,9 +57,11 @@ POST https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 }
 ```
 
-#### Response
+### Response
 
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response.
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -72,13 +75,3 @@ HTTP/1.1 201 OK
 Content-type: application/json
 Content-length: 0
 ```
-
-## See also
-
-- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
-- [Install apps for a Team](../api/teamsappinstallation-add.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [List installed apps for a Team](../api/teamsappinstallation-list.md)
-- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

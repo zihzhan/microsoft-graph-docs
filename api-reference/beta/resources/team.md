@@ -2,6 +2,7 @@
 title: "team resource type"
 description: "A team in Microsoft Teams is a collection of channels. "
 author: "clearab"
+doc_type: "resourcePageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -10,12 +11,9 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A team in Microsoft Teams is a collection of [channel](channel.md) objects. 
-A channel represents a topic, and therefore a logical isolation of discussion, within a team.
+A team in Microsoft Teams is a collection of [channel](channel.md) objects. A channel represents a topic, and therefore a logical isolation of discussion, within a team.
 
-Every team is associated with a [group](../resources/group.md).
-The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}.
-For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
+Every team is associated with a [group](../resources/group.md). The group has the same ID as the team - for example, /groups/{id}/team is the same as /teams/{id}. For more information about working with groups and members in teams, see [Use the Microsoft Graph REST API to work with Microsoft Teams](teams-api-overview.md).
 
 ## Methods
 

@@ -2,6 +2,7 @@
 title: "List apps installed for user"
 description: "Retrieve the list of apps installed in the personal scope of the specified user."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -141,13 +142,3 @@ Content-length: 55
   ]
 }
 ```
-
-## See also
-
-- [Install apps for a user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
-- [Install apps for a Team](../api/teamsappinstallation-add.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [List installed apps for a Team](../api/teamsappinstallation-list.md)
-- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

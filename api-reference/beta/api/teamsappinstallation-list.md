@@ -2,6 +2,7 @@
 title: "List apps in team"
 description: "Retrieve the list of apps installed in the specified team."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -196,13 +197,3 @@ Content-length: 55
   ]
 }
 -->
-
-## See also
-
-- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
-- [Install apps for a user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
-- [Install apps for a Team](../api/teamsappinstallation-add.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

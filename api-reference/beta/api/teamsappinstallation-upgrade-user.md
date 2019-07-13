@@ -2,6 +2,7 @@
 title: "Upgrade an app installed for user"
 description: "Upgrades an app installation in the personal scope of a user"
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -45,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -53,9 +54,9 @@ The following is an example of the request.
 POST /users/{id}/teamwork/installedApps/{id}/upgrade
 ```
 
-#### Response
+### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
@@ -63,12 +64,3 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-## See also
-
-- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
-- [Install apps for a user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Install apps for a Team](../api/teamsappinstallation-add.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [List installed apps for a Team](../api/teamsappinstallation-list.md)
-- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

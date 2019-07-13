@@ -2,6 +2,7 @@
 title: "Add app to team"
 description: "Installs an app to the specified team."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -10,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Installs an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
+Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,29 +35,37 @@ POST /teams/{id}/installedApps
 
 ## Request body
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |teamsApp|String|The id of the app to add.|
-
 
 ## Response
 
 If successful, this method returns a `200 OK` response code.
+
 ## Example
-#### Request
+
+### Request
+
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 {
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -83,13 +92,3 @@ Content-length: 401
   "suppressions": []
 }
 -->
-
-## See also
-
-- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
-- [Install apps for a user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [List installed apps for a Team](../api/teamsappinstallation-list.md)
-- [Upgrade installed app for a Team](../api/teamsappinstallation-upgrade.md)

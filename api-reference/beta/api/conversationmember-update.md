@@ -1,7 +1,8 @@
 ---
 title: "Update conversationMember"
-description: "Update a member of a channel."
+description: "Update the role of a conversationMember in a channel."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -10,10 +11,10 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [private-preview-disclaimer](../../includes/private-preview-disclaimer.md)]
 
-Update a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).
 
 > [!NOTE]
->This operation is only supported on channels with a `channelType` of `private`
+>This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelMembershipType-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelMembershipType-values) will return a 400 Bad Request response.
 
 ## Permissions
 
@@ -31,10 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 
-## Optional query parameters
-
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -45,8 +42,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
 
@@ -56,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ## Example
 
-#### Request
+### Request
 
 Here is an example of the request.
 <!-- {
@@ -73,7 +69,7 @@ content-length: 26
 }
 ```
 
-#### Response
+### Response
 
 Here is an example of the response.
 

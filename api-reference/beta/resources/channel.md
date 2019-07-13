@@ -2,6 +2,7 @@
 title: "channel resource type"
 description: "A channel is a collection of chatMessages within a team. "
 author: "clearab"
+doc_type: "resourcePageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -34,7 +35,7 @@ where files are shared, and where tabs are added.
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
 |[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| Get the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
-|[Add channel member](../api/conversationmember-create.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
+|[Add channel member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
 |[Update channel member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel. Only supported for `channelType` of `private`.|
 |[Delete channel member](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Delete a member of a channel. Only supported for `channelType` of `private`.|
 
@@ -44,11 +45,11 @@ where files are shared, and where tabs are added.
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
-|id|String|The channels's unique identifier. Read-only.|
+|id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|`channelMembershipType`|The type of the channel. Can be set during creation and cannot be changed. Default: `standard`.|
+|membershipType|[channelMembershipType](../resources/enums.md#channelMembershipType-values)|The type of the channel. Can be set during creation and cannot be changed. Default: `standard`.|
 
 
 ## Relationships
@@ -57,7 +58,6 @@ where files are shared, and where tabs are added.
 |messages|[chatMessage](chatmessage.md) collection|A collection of all the messages in the channel. A navigation property. Nullable. Currently this API only supports reading but will eventually support writing messages too.|
 |tabs|[teamsTab](../resources/teamstab.md) collection|A collection of all the tabs in the channel. A navigation property.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
-
 
 ## JSON representation
 

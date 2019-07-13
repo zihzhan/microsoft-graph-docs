@@ -1,7 +1,8 @@
 ---
 title: "Upgrade an app in a team"
 description: "Upgrades an app installation in a team"
-author: "nkramer"
+author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -43,7 +44,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ## Example
 
-#### Request
+### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -53,8 +54,8 @@ The following is an example of the request.
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### Response
-The following is an example of the response. 
+### Response
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
@@ -79,12 +80,3 @@ HTTP/1.1 204 No Content
 }
 -->
 
-## See also
-
-- [List installed apps for a user](../api/teamsappinstallation-list-user.md)
-- [Install apps for a user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)
-- [Install apps for a Team](../api/teamsappinstallation-add.md)
-- [Uninstall app for a Team](../api/teamsappinstallation-delete.md)
-- [List installed apps for a Team](../api/teamsappinstallation-list.md)

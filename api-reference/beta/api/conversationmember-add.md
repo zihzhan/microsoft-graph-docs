@@ -1,7 +1,8 @@
 ---
 title: "Add conversationMember"
-description: "Add a member to a channel."
+description: "Add a conversationMember to a channel."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -13,7 +14,7 @@ ms.prod: "microsoft-teams"
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
 
 > [!NOTE]
->This operation is only supported on channels with a `channelType` of `private`
+>This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelMembershipType-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelMembershipType-values) will return a 400 Bad Request response.
 
 ## Permissions
 
@@ -31,10 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 POST /teams/{id}/channels/{id}/members/{id}
 ```
 
-## Optional query parameters
-
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -43,10 +40,12 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request body
 
-| Property	   | Type	|Description|
+Include the following properties in the request body.
+
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |roles|string collection|The roles for that user.|
-|user|`user`|The user to add to the channel.|
+|user|[user](../resources/user.md)|The user to add to the channel.|
 
 ## Response
 
@@ -54,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ## Example
 
-#### Request
+### Request
 
 Here is an example of the request.
 <!-- {
@@ -73,7 +72,7 @@ content-length: 26
 }
 ```
 
-#### Response
+### Response
 
 Here is an example of the response.
 

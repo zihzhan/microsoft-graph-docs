@@ -1,7 +1,8 @@
 ---
 title: "Delete conversationMember"
-description: "Delete a member of a channel."
+description: "Delete a conversationMember from a channel."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
@@ -13,7 +14,7 @@ ms.prod: "microsoft-teams"
 Delete a [conversationMember](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
 > [!NOTE]
->This operation is only supported on channels with a `channelType` of `private`
+>This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelMembershipType-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelMembershipType-values) will return a 400 Bad Request response.
 
 ## Permissions
 
@@ -31,10 +32,6 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /teams/{id}/channels/{id}/members/{id}
 ```
 
-## Optional query parameters
-
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
-
 ## Request headers
 
 | Header       | Value |
@@ -51,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
-#### Request
+### Request
 
 Here is an example of the request.
 <!-- {
@@ -62,7 +59,7 @@ Here is an example of the request.
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 ```
 
-#### Response
+### Response
 
 Here is an example of the response.
 

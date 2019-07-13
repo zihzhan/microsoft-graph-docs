@@ -2,6 +2,7 @@
 title: "Get conversationMember"
 description: "Retrieve a member of a chat or channel."
 author: "clearab"
+doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ---
@@ -50,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ## Example
 
-##### Request
+#### Request
 
 Here is an example of the request.
 
@@ -76,10 +77,9 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 ---
 
+#### Response
 
-##### Response
-
-Here is an example of the response. 
+Here is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
