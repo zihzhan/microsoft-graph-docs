@@ -49,7 +49,7 @@ where files are shared, and where tabs are added.
 |isFavoriteByDefault|Boolean|Whether the channel should automatically be marked 'favorite' for all members of the team. Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink that will navigate to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
-|membershipType|[channelMembershipType](../resources/enums.md#channelMembershipType-values)|The type of the channel. Can be set during creation and cannot be changed. Default: `standard`.|
+|membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and cannot be changed. Default: `standard`.|
 
 
 ## Relationships

@@ -14,7 +14,7 @@ ms.prod: "microsoft-teams"
 Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md).
 
 > [!NOTE]
->This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelMembershipType-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelMembershipType-values) will return a 400 Bad Request response.
+>This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a 400 Bad Request response.
 
 ## Permissions
 
