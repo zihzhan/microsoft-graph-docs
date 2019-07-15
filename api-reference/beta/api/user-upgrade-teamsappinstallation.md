@@ -1,6 +1,6 @@
 ---
 title: "Upgrade an app installed for user"
-description: "Upgrades an app installation in the personal scope of a user"
+description: "Upgrade an app installation in the personal scope of a user"
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upgrades an [app installation](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md)
+Upgrade an [app](../resources/teamsappinstallation.md) installation in the personal scope of the specified [user](../resources/user.md)
 to the latest version of the app.
 
 ## Permissions
@@ -42,7 +42,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
 
