@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-UserTeamwork is a container for the range of Microsoft Teams functionalities that are available per user in the tenant.
+A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
 ## Methods
 
