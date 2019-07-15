@@ -1,6 +1,6 @@
 ---
 title: "teamsAppInstallation resource type"
-description: "A teamsApp installed in a team, a chat or a user's personal scope. "
+description: "A teamsApp installed in a team, a chat, or a user's personal scope. "
 author: "clearab"
 doc_type: resourcePageType
 localization_priority: Normal
@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md) or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team/chat/user's personal scope that the app is added to.
+A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app will become part of any team, chat, or user's personal scope that the app is added to.
 
 ## Methods
 
@@ -30,7 +30,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md) or t
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique id (not the teams appid). |
+| id                  | string   | A unique ID (not the team's ap ID). |
 
 ## Relationships
 
