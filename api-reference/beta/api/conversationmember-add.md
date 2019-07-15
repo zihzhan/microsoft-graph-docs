@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# Update conversationMember
+# Add conversationMember
 
 [!INCLUDE [private-preview-disclaimer](../../includes/private-preview-disclaimer.md)]
 
