@@ -33,7 +33,7 @@ where files are shared, and where tabs are added.
 |[Add tab](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adds (pins) a tab to a channel.|
 |[Remove tab](../api/teamstab-delete.md) | None | Removes (unpins) a tab from a channel.|
 |[Update tab](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Updates the tab properties.|
-|[List channel members](../api/conversationmember-list.md)| [conversationMember](conversationmember.md) collection| Get the members of a channel. |
+|[List channel members](../api/conversationmembers-list.md)| [conversationMember](conversationmember.md) collection| Get the members of a channel. |
 |[Get channel member](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Get a member of a channel. |
 |[Add channel member](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Add a member to a channel. Only supported for `channelType` of `private`.|
 |[Update channel member](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Update a member of a channel. Only supported for `channelType` of `private`.|

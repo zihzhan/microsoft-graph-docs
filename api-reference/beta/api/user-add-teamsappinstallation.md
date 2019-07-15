@@ -36,9 +36,11 @@ POST /users/{id}/teamwork/installedApps
 
 ## Request body
 
+The request body should contain the ID of the existing catalog app to be added.
+
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|teamsApp|String|The id of the app to add.|
+|teamsApp|String|The ID of the app to add.|
 
 ## Response
 

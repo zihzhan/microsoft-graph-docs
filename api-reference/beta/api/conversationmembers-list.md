@@ -1,6 +1,6 @@
 ---
 title: "List conversationMembers"
-description: "Retrieve a member of a chat or channel."
+description: "List all conversationMembers of a chat or channel."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Priority

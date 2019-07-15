@@ -21,10 +21,10 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md) or t
 |[Install app to team](../api/teamsappinstallation-add.md) | | Adds (installs) an app to a team.|
 |[Uninstall app from team](../api/teamsappinstallation-delete.md) | None | Removes (uninstalls) an app from a team.|
 |[Upgrade app installed in team](../api/teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app.|
-|[List apps installed for user](../api/teamsappinstallation-list-user.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in the personal scope of a user.|
-|[Install app for user](../api/teamsappinstallation-add-user.md) | | Adds (installs) an app in the personal scope of a user.|
-|[Uninstall app for user](../api/teamsappinstallation-delete-user.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
-|[Upgrade app installed for user](../api/teamsappinstallation-upgrade-user.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
+|[List apps installed for user](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsapp.md) | Lists apps installed in the personal scope of a user.|
+|[Install app for user](../api/user-add-teamsappinstallation.md) | | Adds (installs) an app in the personal scope of a user.|
+|[Uninstall app for user](../api/user-delete-teamsappinstallation.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
+|[Upgrade app installed for user](../api/user-upgrade-teamsappinstallation.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 
 ## Properties
 

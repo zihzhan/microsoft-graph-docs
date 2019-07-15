@@ -58,10 +58,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-## See Also
-
-- [List apps installed for a user](../api/teamsappinstallation-list-user.md)
-- [Install app for user](../api/teamsappinstallation-add-user.md)
-- [Uninstall app for a user](../api/teamsappinstallation-delete-user.md)
-- [Upgrade installed app for a user](../api/teamsappinstallation-upgrade-user.md)

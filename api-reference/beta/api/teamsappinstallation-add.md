@@ -29,6 +29,7 @@ POST /teams/{id}/installedApps
 ```
 
 ## Request headers
+
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
