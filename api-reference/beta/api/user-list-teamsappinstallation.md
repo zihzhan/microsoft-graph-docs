@@ -11,7 +11,7 @@ ms.prod: "microsoft-teams"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [apps installed](../resources/teamsappinstallation.md) in the personal scope of the specified [user](../resources/user.md).
+Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).
 
 ## Permissions
 
@@ -33,7 +33,7 @@ GET /users/{id}//teamwork/installedApps
 
 ## Optional query parameters
 
-This method supports the $filter, $select, and $expand [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -83,7 +83,9 @@ Content-length: 55
 }
 ```
 
-## Example -- getting the names of the installed apps
+## Examples
+
+The following example gets the names of the installed apps
 
 ### Request
 
