@@ -12,20 +12,15 @@ ms.prod: "microsoft-teams"
 
 A container for the range of Microsoft Teams functionalities that are available per user in the tenant.
 
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |id|string| A unique identifier. |
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
 

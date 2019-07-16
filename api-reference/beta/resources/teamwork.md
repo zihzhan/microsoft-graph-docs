@@ -12,21 +12,17 @@ ms.prod: "microsoft-teams"
 
 Teamwork is a container for the range of Microsoft Teams functionalities that are available for the organization.
 
-## Methods
-
-| Method       | Return Type  |Description|
-|:---------------|:--------|:----------|
-
 ## Properties
 
-| Property | Type	| Description |
+| Property | Type | Description |
 |:---------------|:--------|:----------|
 |id|string| A unique identifier. |
 
 ## Relationships
 
-| Relationship | Type	| Description |
+| Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|The apps installed in the personal scope of this user.|
 
 ## JSON representation
 
@@ -59,4 +55,5 @@ The following is a JSON representation of the resource.
 -->
 
 ## See Also
+
 - [userTeamwork resource](userteamwork.md)
