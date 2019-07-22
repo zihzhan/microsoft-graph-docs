@@ -8307,7 +8307,7 @@
             - name: List
               href: api/governanceroleassignment-list.md
             - name: Get
-                href: api/governanceroleassignment-get.md
+              href: api/governanceroleassignment-get.md
             - name: Export
               href: api/governanceroleassignment-export.md
           - name: Role assignment requests
