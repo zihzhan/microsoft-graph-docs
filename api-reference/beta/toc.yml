@@ -585,6 +585,172 @@
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+    - name: Authentication, security, and audit
+      items:
+      - name: Audit logs
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
+          items:
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
+        - name: Provisioning logs
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List directory provisioning
+            href: api/provisioningobjectsummary-list.md
+      - name: Data policy operation
+        href: resources/datapolicyoperation.md
+        items:
+        - name: Get data policy operation
+          href: api/datapolicyoperation-get.md
+      - name: Identity protection
+        href: resources/identityprotection-root.md
+        items:
+        - name: Identity risk events
+          href: resources/identityriskevent.md
+          items:
+          - name: List identityRiskEvent
+            href: api/identityriskevent-list.md
+          - name: Get identityRiskEvent
+            href: api/identityriskevent-get.md
+          - name: List anonymousIpRiskEvent
+            href: api/anonymousipriskevent-list.md
+          - name: Get anonymousIpRiskEvent
+            href: api/anonymousipriskevent-get.md
+          - name: List impossibleTravelRiskEvent
+            href: api/impossibletravelriskevent-list.md
+          - name: Get impossibleTravelRiskEvent
+            href: api/impossibletravelriskevent-get.md
+          - name: List leakedCredentialsRiskEvent
+            href: api/leakedcredentialsriskevent-list.md
+          - name: Get leakedCredentialsRiskEvent
+            href: api/leakedcredentialsriskevent-get.md
+          - name: List malwareRiskEvent
+            href: api/malwareriskevent-list.md
+          - name: Get malwareRiskEvent
+            href: api/malwareriskevent-get.md
+          - name: List suspiciousIpRiskEvent
+            href: api/suspiciousipriskevent-list.md
+          - name: Get suspiciousIpRiskEvent
+            href: api/suspiciousipriskevent-get.md
+          - name: List unfamiliarLocationRiskEvent
+            href: api/unfamiliarlocationriskevent-list.md
+          - name: Get unfamiliarLocationRiskEvent
+            href: api/unfamiliarlocationriskevent-get.md
+        - name: Risk detection
+          href: resources/riskdetection.md
+          items:
+          - name: List risk detections
+            href: api/riskdetection-list.md
+          - name: Get risk detection
+            href: api/riskdetection-get.md
+        - name: Risky user
+          href: resources/riskyuser.md
+          items:
+          - name: List risky users
+            href: api/riskyusers-list.md
+          - name: Get risky user
+            href: api/riskyusers-get.md
+          - name: List history
+            href: api/riskyuser-list-history.md
+          - name: Confirm compromised
+            href: api/riskyusers-confirmcompromised.md
+          - name: Dismiss
+            href: api/riskyusers-dismiss.md
+      - name: Identity provider
+        href: resources/identityprovider.md
+        items:
+        - name: List identity providers
+          href: api/identityprovider-list.md
+        - name: Create identity provider
+          href: api/identityprovider-post-identityproviders.md
+        - name: Get identity provider
+          href: api/identityprovider-get.md
+        - name: Update identity provider
+          href: api/identityprovider-update.md
+        - name: Delete identity provider
+          href: api/identityprovider-delete.md
+      - name: Policies
+        href: resources/policy.md
+        items:
+        - name: List policies
+          href: api/policy-list.md
+        - name: Create policy
+          href: api/policy-post.md
+        - name: Get policy
+          href: api/policy-get.md
+        - name: Update policy
+          href: api/policy-update.md
+        - name: Delete policy
+          href: api/policy-delete.md
+        - name: Assign policy
+          href: api/policy-assign.md
+        - name: List assigned policies
+          href: api/policy-list-assigned.md
+        - name: List applied to applications
+          href: api/policy-list-appliesto.md
+      - name: Reports
+        items:
+        - name: Application sign-in
+          items:
+          - name: Sign-in summary
+            href: resources/applicationsigninsummary.md
+            items:
+            - name: Get sign-in summary
+              href: api/applicationsigninsummary-get.md
+          - name: Sign-in details
+            href: resources/applicationsignindetailedsummary.md
+            items:
+            - name: Get sign-in details
+              href: api/applicationsignindetailedsummary-get.md
+        - name: Registration and usage
+          items:
+          - name: Overview
+            href: resources/authenticationmethods-usage-insights-overview.md
+          - name: Credential User Registration Count
+            href: resources/credentialuserregistrationcount.md
+            items:
+            - name: Get registration count
+              href: api/reportroot-getcredentialuserregistrationcount.md
+          - name: Credential User Registration Details
+            href: resources/credentialuserregistrationdetails.md
+            items:
+            - name: List registration details
+              href: api/reportroot-list-credentialuserregistrationdetails.md
+          - name: User Credential Usage Details
+            href: resources/usercredentialusagedetails.md
+            items: 
+            - name: List usage details
+              href: api/reportroot-list-usercredentialusagedetails.md
+          - name: Credential Usage Summary
+            href: resources/credentialusagesummary.md
+            items:
+            - name: Get usage summary
+              href: api/reportroot-getcredentialusagesummary.md
+      - name: Trust Framework policy
+        href: resources/trustframeworkpolicy.md
+        items:
+        - name: List
+          href: api/trustframework-list-trustframeworkpolicies.md
+        - name: Create
+          href: api/trustframework-post-trustframeworkpolicy.md
+        - name: Get
+          href: api/trustframeworkpolicy-get.md
+        - name: Update
+          href: api/trustframework-put-trustframeworkpolicy.md
+        - name: Delete
+          href: api/trustframeworkpolicy-delete.md
     - name: Calendar
       href: resources/calendar.md
       displayname: Outlook calendar
@@ -7172,6 +7338,210 @@
             href: api/intune-tem-telecomexpensemanagementpartner-delete.md
           - name: Update
             href: api/intune-tem-telecomexpensemanagementpartner-update.md
+    - name: Directory management
+      items:
+      - name: Administrative unit
+        href: resources/administrativeunit.md
+        items:
+        - name: Create administrative unit
+          href: api/administrativeunit-post-administrativeunits.md
+        - name: List administrative unit
+          href: api/administrativeunit-list.md
+        - name: Get administrative unit
+          href: api/administrativeunit-get.md
+        - name: Update administrative unit
+          href: api/administrativeunit-update.md
+        - name: Delete administrative unit
+          href: api/administrativeunit-delete.md
+        - name: Add a member
+          href: api/administrativeunit-post-members.md
+        - name: List members
+          href: api/administrativeunit-list-members.md
+        - name: Get a member
+          href: api/administrativeunit-get-members.md
+        - name: Remove a member
+          href: api/administrativeunit-delete-members.md
+        - name: Add a scoped-role administrator
+          href: api/administrativeunit-post-scopedrolemembers.md
+        - name: List scoped-role administrators
+          href: api/administrativeunit-list-scopedrolemembers.md
+        - name: Get a scoped-role administrator
+          href: api/administrativeunit-get-scopedrolemembers.md
+        - name: Remove a scoped-role administrator
+          href: api/administrativeunit-delete-scopedrolemembers.md
+      - name: Contracts
+        href: resources/contract.md
+        items:
+        - name: Get contract
+          href: api/contract-get.md
+        - name: List contracts
+          href: api/contract-list.md
+      - name: Deleted items
+        href: resources/directory.md
+        items:
+        - name: Get deleted item
+          href: api/directory-deleteditems-get.md
+        - name: List deleted items
+          href: api/directory-deleteditems-list.md
+        - name: Permanently delete item
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted item
+          href: api/directory-deleteditems-restore.md
+        - name: List deleted items owned by user
+          href: api/directory-deleteditems-user-owned.md
+      - name: Device
+        href: resources/device.md
+        items:
+        - name: List devices
+          href: api/device-list.md
+        - name: Create device
+          href: api/device-post-devices.md
+        - name: Get device
+          href: api/device-get.md
+        - name: Update device
+          href: api/device-update.md
+        - name: Delete device
+          href: api/device-delete.md
+        - name: List registered owners
+          href: api/device-list-registeredowners.md
+        - name: List registered users
+          href: api/device-list-registeredusers.md
+        - name: Create registered owner
+          href: api/device-post-registeredowners.md
+        - name: Create registered user
+          href: api/device-post-registeredusers.md
+        - name: List device groups
+          href: api/device-list-memberof.md
+        - name: List device transitive groups
+          href: api/device-list-transitivememberof.md
+      - name: Directory object
+        href: resources/directoryobject.md
+        items:
+        - name: Get directory object
+          href: api/directoryobject-get.md
+        - name: Delete directory object
+          href: api/directoryobject-delete.md
+        - name: Get member objects
+          href: api/directoryobject-getmemberobjects.md
+        - name: Get member groups
+          href: api/directoryobject-getmembergroups.md
+        - name: Check member groups
+          href: api/directoryobject-checkmembergroups.md
+        - name: Get directoryObjects by ids
+          href: api/directoryobject-getbyids.md
+        - name: Validate properties
+          href: api/directoryobject-validateproperties.md
+      - name: Directory role
+        href: resources/directoryrole.md
+        items:
+        - name: List directory roles
+          href: api/directoryrole-list.md
+        - name: Activate directory role
+          href: api/directoryrole-post-directoryroles.md
+        - name: Get directory role
+          href: api/directoryrole-get.md
+        - name: List members
+          href: api/directoryrole-list-members.md
+        - name: Add member
+          href: api/directoryrole-post-members.md
+        - name: Remove member
+          href: api/directoryrole-delete-member.md
+        - name: List scoped administrators
+          href: api/directoryrole-list-scopedadministrators.md
+      - name: Directory role template
+        href: resources/directoryroletemplate.md
+        items:
+        - name: List directory role templates
+          href: api/directoryroletemplate-list.md
+        - name: Get directory role template
+          href: api/directoryroletemplate-get.md
+      - name: Directory setting
+        href: resources/directorysetting.md
+        items:
+        - name: Create setting
+          href: api/directorysetting-post-settings.md
+        - name: Get setting
+          href: api/directorysetting-get.md
+        - name: List settings
+          href: api/directorysetting-list.md
+        - name: Update setting
+          href: api/directorysetting-update.md
+        - name: Delete setting
+          href: api/directorysetting-delete.md
+      - name: Directory setting template
+        href: resources/directorysettingtemplate.md
+        items:
+        - name: List directory setting templates
+          href: api/directorysettingtemplate-list.md
+        - name: Get directory setting template
+          href: api/directorysettingtemplate-get.md
+      - name: Domains
+        href: resources/domain.md
+        items:
+        - name: List domains
+          href: api/domain-list.md
+        - name: Create domain
+          href: api/domain-post-domains.md
+        - name: Delete domain
+          href: api/domain-forcedelete.md
+        - name: Get domain
+          href: api/domain-get.md
+        - name: Update domain
+          href: api/domain-update.md
+        - name: Verify domain
+          href: api/domain-verify.md
+      - name: Invitation manager
+        href: resources/invitation.md
+        items:
+        - name: Create invitation
+          href: api/invitation-post.md
+      - name: Organization
+        href: resources/organization.md
+        items:
+        - name: Get org details
+          href: api/organization-get.md
+        - name: Update org details
+          href: api/organization-update.md
+      - name: Organizational contacts
+        href: resources/orgcontact.md
+        items:
+        - name: Contact
+          href: resources/orgcontact.md
+          items:
+          - name: List org contacts
+            href: api/orgcontact-list.md
+          - name: Get org contact
+            href: api/orgcontact-get.md
+          - name: Update org contact
+            href: api/orgcontact-update.md
+          - name: Delete org contact
+            href: api/orgcontact-delete.md
+        - name: Groups
+          href: resources/group.md
+          items:
+          - name: List memberOf
+            href: api/orgcontact-list-memberof.md
+          - name: Get member groups
+            href: api/orgcontact-getmembergroups.md
+          - name: Check member groups
+            href: api/orgcontact-checkmembergroups.md
+        - name: Org hierarchy
+          href: resources/directoryobject.md
+          items:
+          - name: List direct reports
+            href: api/orgcontact-list-directreports.md
+        - name: Directory object
+          href: resources/directoryobject.md
+          items:
+          - name: Get member objects
+            href: api/orgcontact-getmemberobjects.md
+      - name: Subscribed sku
+        href: resources/subscribedsku.md
+        items:
+        - name: List subscribedSkus
+          href: api/subscribedsku-list.md
+        - name: Get subscribedSku
+          href: api/subscribedsku-get.md
     - name: Education
       items:
       - name: Overview
@@ -7349,6 +7719,107 @@
         items:
         - name: Get sync errors
           href: api/educationsynchronizationerrors-get.md
+    - name: Enterprise applications
+      items:
+      - name: Application
+        href: resources/application.md
+        items:
+        - name: List applications
+          href: api/application-list.md
+        - name: Create application
+          href: api/application-post-applications.md
+        - name: Get application
+          href: api/application-get.md
+        - name: Update application
+          href: api/application-update.md
+        - name: Delete application
+          href: api/application-delete.md
+        - name: List owners
+          href: api/application-list-owners.md
+        - name: Assign owner
+          href: api/application-post-owners.md
+        - name: Application template
+          href: resources/applicationtemplate.md
+          items:
+          - name: List application templates
+            href: api/applicationtemplate-list.md
+          - name: Get application template
+            href: api/applicationtemplate-get.md
+          - name: Instantiate application template
+            href: api/applicationtemplate-instantiate.md
+      - name: App role assignment
+        href: resources/approleassignment.md
+        items:
+        - name: Get appRoleAssignment
+          href: api/approleassignment-get.md
+        - name: Update approleassignment
+          href: api/approleassignment-update.md
+        - name: Delete appRoleAssignment
+          href: api/approleassignment-delete.md
+      - name: Oauth2 permission grant
+        href: resources/oauth2permissiongrant.md
+        items:
+        - name: Get oauth2 permission grant
+          href: api/oauth2permissiongrant-get.md
+        - name: Update oauth2 permission grant
+          href: api/oauth2permissiongrant-update.md
+        - name: Delete oauth2 permission grant
+          href: api/oauth2permissiongrant-delete.md
+      - name: Service principal
+        href: resources/serviceprincipal.md
+        items:
+        - name: List service principal
+          href: api/serviceprincipal-list.md
+        - name: Get service principal
+          href: api/serviceprincipal-get.md
+        - name: Update service principal
+          href: api/serviceprincipal-update.md
+        - name: Delete service principal
+          href: api/serviceprincipal-delete.md
+      - name: Synchronization
+        href: resources/synchronization-overview.md
+        items:
+        - name: Synchronize custom target attributes
+          href: resources/synchronization-configure-with-custom-target-attributes.md
+        - name: Synchronize directory extension attributes
+          href: resources/synchronization-configure-with-directory-extension-attributes.md
+        - name: Job
+          href: resources/synchronization-synchronizationjob.md
+          items:
+          - name: List jobs
+            href: api/synchronization-synchronizationjob-list.md
+          - name: Create job
+            href: api/synchronization-synchronizationjob-post.md
+          - name: Get job
+            href: api/synchronization-synchronizationjob-get.md
+          - name: Start job
+            href: api/synchronization-synchronizationjob-start.md
+          - name: Pause job
+            href: api/synchronization-synchronizationjob-pause.md
+          - name: Restart job
+            href: api/synchronization-synchronizationjob-restart.md
+          - name: Delete job
+            href: api/synchronization-synchronizationjob-delete.md
+        - name: Schema
+          href: resources/synchronization-synchronizationschema.md
+          items:
+          - name: Get schema
+            href: api/synchronization-synchronizationschema-get.md
+          - name: Get schema functions
+            href: api/synchronization-synchronizationschema-functions.md
+          - name: Get schema filter operators
+            href: api/synchronization-synchronizationschema-filteroperators.md
+          - name: Update schema
+            href: api/synchronization-synchronizationschema-update.md
+          - name: Reset schema
+            href: api/synchronization-synchronizationschema-delete.md
+        - name: Template
+          href: resources/synchronization-synchronizationtemplate.md
+          items:
+          - name: List templates
+            href: api/synchronization-synchronizationtemplate-list.md
+          - name: Get template
+            href: api/synchronization-synchronizationtemplate-get.md
     - name: Files
       displayName: OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint
       items:
@@ -7668,11 +8139,8 @@
           href: api/dynamics-vendor-update.md
         - name: Delete vendor
           href: api/dynamics-vendor-delete.md
-    - name: Identity and access
-      displayName: Azure AD, Microsoft identity platform
+    - name: Identity governance
       items:
-      - name: Overview
-        href: resources/azure-ad-overview.md
       - name: Access reviews
         href: resources/accessreviews-root.md
         items:
@@ -7735,358 +8203,6 @@
           items:
           - name: List
             href: api/programcontroltype-list.md
-      - name: Administrative unit
-        href: resources/administrativeunit.md
-        items:
-        - name: Create administrative unit
-          href: api/administrativeunit-post-administrativeunits.md
-        - name: List administrative unit
-          href: api/administrativeunit-list.md
-        - name: Get administrative unit
-          href: api/administrativeunit-get.md
-        - name: Update administrative unit
-          href: api/administrativeunit-update.md
-        - name: Delete administrative unit
-          href: api/administrativeunit-delete.md
-        - name: Add a member
-          href: api/administrativeunit-post-members.md
-        - name: List members
-          href: api/administrativeunit-list-members.md
-        - name: Get a member
-          href: api/administrativeunit-get-members.md
-        - name: Remove a member
-          href: api/administrativeunit-delete-members.md
-        - name: Add a scoped-role administrator
-          href: api/administrativeunit-post-scopedrolemembers.md
-        - name: List scoped-role administrators
-          href: api/administrativeunit-list-scopedrolemembers.md
-        - name: Get a scoped-role administrator
-          href: api/administrativeunit-get-scopedrolemembers.md
-        - name: Remove a scoped-role administrator
-          href: api/administrativeunit-delete-scopedrolemembers.md
-      - name: App role assignment
-        href: resources/approleassignment.md
-        items:
-        - name: Get appRoleAssignment
-          href: api/approleassignment-get.md
-        - name: Update approleassignment
-          href: api/approleassignment-update.md
-        - name: Delete appRoleAssignment
-          href: api/approleassignment-delete.md
-      - name: Application
-        href: resources/application.md
-        items:
-        - name: List applications
-          href: api/application-list.md
-        - name: Create application
-          href: api/application-post-applications.md
-        - name: Get application
-          href: api/application-get.md
-        - name: Update application
-          href: api/application-update.md
-        - name: Delete application
-          href: api/application-delete.md
-        - name: List owners
-          href: api/application-list-owners.md
-        - name: Assign owner
-          href: api/application-post-owners.md
-        - name: Application template
-          href: resources/applicationtemplate.md
-          items:
-          - name: List application templates
-            href: api/applicationtemplate-list.md
-          - name: Get application template
-            href: api/applicationtemplate-get.md
-          - name: Instantiate application template
-            href: api/applicationtemplate-instantiate.md
-      - name: Audit logs
-        href: resources/azure-ad-auditlog-overview.md
-        items:
-        - name: Directory audit
-          href: resources/directoryaudit.md
-          items:
-          - name: List directory audits
-            href: api/directoryaudit-list.md
-          - name: Get directory audit
-            href: api/directoryaudit-get.md
-        - name: Sign-in
-          href: resources/signin.md
-          items:
-          - name: List sign-ins
-            href: api/signin-list.md
-          - name: Get sign-in
-            href: api/signin-get.md
-        - name: Provisioning logs
-          href: resources/provisioningobjectsummary.md
-          items:
-          - name: List directory provisioning
-            href: api/provisioningobjectsummary-list.md
-      - name: Contracts
-        href: resources/contract.md
-        items:
-        - name: Get contract
-          href: api/contract-get.md
-        - name: List contracts
-          href: api/contract-list.md
-      - name: Data policy operation
-        href: resources/datapolicyoperation.md
-        items:
-        - name: Get data policy operation
-          href: api/datapolicyoperation-get.md
-      - name: Deleted items
-        href: resources/directory.md
-        items:
-        - name: Get deleted item
-          href: api/directory-deleteditems-get.md
-        - name: List deleted items
-          href: api/directory-deleteditems-list.md
-        - name: Permanently delete item
-          href: api/directory-deleteditems-delete.md
-        - name: Restore deleted item
-          href: api/directory-deleteditems-restore.md
-        - name: List deleted items owned by user
-          href: api/directory-deleteditems-user-owned.md
-      - name: Device
-        href: resources/device.md
-        items:
-        - name: List devices
-          href: api/device-list.md
-        - name: Create device
-          href: api/device-post-devices.md
-        - name: Get device
-          href: api/device-get.md
-        - name: Update device
-          href: api/device-update.md
-        - name: Delete device
-          href: api/device-delete.md
-        - name: List registered owners
-          href: api/device-list-registeredowners.md
-        - name: List registered users
-          href: api/device-list-registeredusers.md
-        - name: Create registered owner
-          href: api/device-post-registeredowners.md
-        - name: Create registered user
-          href: api/device-post-registeredusers.md
-        - name: List device groups
-          href: api/device-list-memberof.md
-        - name: List device transitive groups
-          href: api/device-list-transitivememberof.md
-      - name: Directory object
-        href: resources/directoryobject.md
-        items:
-        - name: Get directory object
-          href: api/directoryobject-get.md
-        - name: Delete directory object
-          href: api/directoryobject-delete.md
-        - name: Get member objects
-          href: api/directoryobject-getmemberobjects.md
-        - name: Get member groups
-          href: api/directoryobject-getmembergroups.md
-        - name: Check member groups
-          href: api/directoryobject-checkmembergroups.md
-        - name: Get directoryObjects by ids
-          href: api/directoryobject-getbyids.md
-        - name: Validate properties
-          href: api/directoryobject-validateproperties.md
-      - name: Directory role
-        href: resources/directoryrole.md
-        items:
-        - name: List directory roles
-          href: api/directoryrole-list.md
-        - name: Activate directory role
-          href: api/directoryrole-post-directoryroles.md
-        - name: Get directory role
-          href: api/directoryrole-get.md
-        - name: List members
-          href: api/directoryrole-list-members.md
-        - name: Add member
-          href: api/directoryrole-post-members.md
-        - name: Remove member
-          href: api/directoryrole-delete-member.md
-        - name: List scoped administrators
-          href: api/directoryrole-list-scopedadministrators.md
-      - name: Directory role template
-        href: resources/directoryroletemplate.md
-        items:
-        - name: List directory role templates
-          href: api/directoryroletemplate-list.md
-        - name: Get directory role template
-          href: api/directoryroletemplate-get.md
-      - name: Directory setting
-        href: resources/directorysetting.md
-        items:
-        - name: Create setting
-          href: api/directorysetting-post-settings.md
-        - name: Get setting
-          href: api/directorysetting-get.md
-        - name: List settings
-          href: api/directorysetting-list.md
-        - name: Update setting
-          href: api/directorysetting-update.md
-        - name: Delete setting
-          href: api/directorysetting-delete.md
-      - name: Directory setting template
-        href: resources/directorysettingtemplate.md
-        items:
-        - name: List directory setting templates
-          href: api/directorysettingtemplate-list.md
-        - name: Get directory setting template
-          href: api/directorysettingtemplate-get.md
-      - name: Domains
-        href: resources/domain.md
-        items:
-        - name: List domains
-          href: api/domain-list.md
-        - name: Create domain
-          href: api/domain-post-domains.md
-        - name: Delete domain
-          href: api/domain-forcedelete.md
-        - name: Get domain
-          href: api/domain-get.md
-        - name: Update domain
-          href: api/domain-update.md
-        - name: Verify domain
-          href: api/domain-verify.md
-      - name: Identity protection
-        href: resources/identityprotection-root.md
-        items:
-        - name: Identity risk events
-          href: resources/identityriskevent.md
-          items:
-          - name: List identityRiskEvent
-            href: api/identityriskevent-list.md
-          - name: Get identityRiskEvent
-            href: api/identityriskevent-get.md
-          - name: List anonymousIpRiskEvent
-            href: api/anonymousipriskevent-list.md
-          - name: Get anonymousIpRiskEvent
-            href: api/anonymousipriskevent-get.md
-          - name: List impossibleTravelRiskEvent
-            href: api/impossibletravelriskevent-list.md
-          - name: Get impossibleTravelRiskEvent
-            href: api/impossibletravelriskevent-get.md
-          - name: List leakedCredentialsRiskEvent
-            href: api/leakedcredentialsriskevent-list.md
-          - name: Get leakedCredentialsRiskEvent
-            href: api/leakedcredentialsriskevent-get.md
-          - name: List malwareRiskEvent
-            href: api/malwareriskevent-list.md
-          - name: Get malwareRiskEvent
-            href: api/malwareriskevent-get.md
-          - name: List suspiciousIpRiskEvent
-            href: api/suspiciousipriskevent-list.md
-          - name: Get suspiciousIpRiskEvent
-            href: api/suspiciousipriskevent-get.md
-          - name: List unfamiliarLocationRiskEvent
-            href: api/unfamiliarlocationriskevent-list.md
-          - name: Get unfamiliarLocationRiskEvent
-            href: api/unfamiliarlocationriskevent-get.md
-        - name: Risk detection
-          href: resources/riskdetection.md
-          items:
-            - name: List risk detections
-              href: api/riskdetection-list.md
-            - name: Get risk detection
-              href: api/riskdetection-get.md
-        - name: Risky user
-          href: resources/riskyuser.md
-          items:
-          - name: List risky users
-            href: api/riskyusers-list.md
-          - name: Get risky user
-            href: api/riskyusers-get.md
-          - name: List history
-            href: api/riskyuser-list-history.md
-          - name: Confirm compromised
-            href: api/riskyusers-confirmcompromised.md
-          - name: Dismiss
-            href: api/riskyusers-dismiss.md
-      - name: Identity provider
-        href: resources/identityprovider.md
-        items:
-        - name: List identity providers
-          href: api/identityprovider-list.md
-        - name: Create identity provider
-          href: api/identityprovider-post-identityproviders.md
-        - name: Get identity provider
-          href: api/identityprovider-get.md
-        - name: Update identity provider
-          href: api/identityprovider-update.md
-        - name: Delete identity provider
-          href: api/identityprovider-delete.md
-      - name: Invitation manager
-        href: resources/invitation.md
-        items:
-        - name: Create invitation
-          href: api/invitation-post.md
-      - name: Oauth2 permission grant
-        href: resources/oauth2permissiongrant.md
-        items:
-        - name: Get oauth2 permission grant
-          href: api/oauth2permissiongrant-get.md
-        - name: Update oauth2 permission grant
-          href: api/oauth2permissiongrant-update.md
-        - name: Delete oauth2 permission grant
-          href: api/oauth2permissiongrant-delete.md
-      - name: Organization
-        href: resources/organization.md
-        items:
-        - name: Get org details
-          href: api/organization-get.md
-        - name: Update org details
-          href: api/organization-update.md
-      - name: Organizational contacts
-        href: resources/orgcontact.md
-        items:
-        - name: Contact
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Update org contact
-            href: api/orgcontact-update.md
-          - name: Delete org contact
-            href: api/orgcontact-delete.md
-        - name: Groups
-          href: resources/group.md
-          items:
-          - name: List memberOf
-            href: api/orgcontact-list-memberof.md
-          - name: Get member groups
-            href: api/orgcontact-getmembergroups.md
-          - name: Check member groups
-            href: api/orgcontact-checkmembergroups.md
-        - name: Org hierarchy
-          href: resources/directoryobject.md
-          items:
-          - name: List direct reports
-            href: api/orgcontact-list-directreports.md
-        - name: Directory object
-          href: resources/directoryobject.md
-          items:
-          - name: Get member objects
-            href: api/orgcontact-getmemberobjects.md
-      - name: Policies
-        href: resources/policy.md
-        items:
-        - name: List policies
-          href: api/policy-list.md
-        - name: Create policy
-          href: api/policy-post.md
-        - name: Get policy
-          href: api/policy-get.md
-        - name: Update policy
-          href: api/policy-update.md
-        - name: Delete policy
-          href: api/policy-delete.md
-        - name: Assign policy
-          href: api/policy-assign.md
-        - name: List assigned policies
-          href: api/policy-list-assigned.md
-        - name: List applied to applications
-          href: api/policy-list-appliesto.md
       - name: Privileged Identity Management
         items:
         - name: Privileged Identity Management
@@ -8191,7 +8307,7 @@
             - name: List
               href: api/governanceroleassignment-list.md
             - name: Get
-              href: api/governanceroleassignment-get.md
+                href: api/governanceroleassignment-get.md
             - name: Export
               href: api/governanceroleassignment-export.md
           - name: Role assignment requests
@@ -8207,68 +8323,6 @@
               href: api/governanceroleassignmentrequest-update.md
             - name: Cancel
               href: api/governanceroleassignmentrequest-cancel.md
-      - name: Service principal
-        href: resources/serviceprincipal.md
-        items:
-        - name: List service principal
-          href: api/serviceprincipal-list.md
-        - name: Get service principal
-          href: api/serviceprincipal-get.md
-        - name: Update service principal
-          href: api/serviceprincipal-update.md
-        - name: Delete service principal
-          href: api/serviceprincipal-delete.md
-      - name: Subscribed sku
-        href: resources/subscribedsku.md
-        items:
-        - name: List subscribedSkus
-          href: api/subscribedsku-list.md
-        - name: Get subscribedSku
-          href: api/subscribedsku-get.md
-      - name: Synchronization
-        href: resources/synchronization-overview.md
-        items:
-        - name: Synchronize custom target attributes
-          href: resources/synchronization-configure-with-custom-target-attributes.md
-        - name: Synchronize directory extension attributes
-          href: resources/synchronization-configure-with-directory-extension-attributes.md
-        - name: Job
-          href: resources/synchronization-synchronizationjob.md
-          items:
-          - name: List jobs
-            href: api/synchronization-synchronizationjob-list.md
-          - name: Create job
-            href: api/synchronization-synchronizationjob-post.md
-          - name: Get job
-            href: api/synchronization-synchronizationjob-get.md
-          - name: Start job
-            href: api/synchronization-synchronizationjob-start.md
-          - name: Pause job
-            href: api/synchronization-synchronizationjob-pause.md
-          - name: Restart job
-            href: api/synchronization-synchronizationjob-restart.md
-          - name: Delete job
-            href: api/synchronization-synchronizationjob-delete.md
-        - name: Schema
-          href: resources/synchronization-synchronizationschema.md
-          items:
-          - name: Get schema
-            href: api/synchronization-synchronizationschema-get.md
-          - name: Get schema functions
-            href: api/synchronization-synchronizationschema-functions.md
-          - name: Get schema filter operators
-            href: api/synchronization-synchronizationschema-filteroperators.md
-          - name: Update schema
-            href: api/synchronization-synchronizationschema-update.md
-          - name: Reset schema
-            href: api/synchronization-synchronizationschema-delete.md
-        - name: Template
-          href: resources/synchronization-synchronizationtemplate.md
-          items:
-          - name: List templates
-            href: api/synchronization-synchronizationtemplate-list.md
-          - name: Get template
-            href: api/synchronization-synchronizationtemplate-get.md
       - name: Terms of use
         href: resources/agreement.md
         items:
@@ -8284,19 +8338,6 @@
           href: api/agreement-delete.md
         - name: List acceptance status
           href: api/user-list-agreementacceptances.md
-      - name: Trust Framework policy
-        href: resources/trustframeworkpolicy.md
-        items:
-        - name: List
-          href: api/trustframework-list-trustframeworkpolicies.md
-        - name: Create
-          href: api/trustframework-post-trustframeworkpolicy.md
-        - name: Get
-          href: api/trustframeworkpolicy-get.md
-        - name: Update
-          href: api/trustframework-put-trustframeworkpolicy.md
-        - name: Delete
-          href: api/trustframeworkpolicy-delete.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
