@@ -8406,7 +8406,7 @@
           - name: List device groups
             href: api/device-list-memberof.md
           - name: List device transitive groups
-            href: api/device-list-transitivememberof.d
+            href: api/device-list-transitivememberof.md
         - name: Risky user
           href: resources/riskyuser.md
           items:
