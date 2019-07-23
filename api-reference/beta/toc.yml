@@ -8204,15 +8204,15 @@
             - name: Get template
               href: api/synchronization-synchronizationtemplate-get.md
       - name: Audit logs
-          href: resources/azure-ad-auditlog-overview.md
+        href: resources/azure-ad-auditlog-overview.md
+        items:
+        - name: Directory audit
+          href: resources/directoryaudit.md
           items:
-          - name: Directory audit
-            href: resources/directoryaudit.md
-            items:
-            - name: List directory audits
-              href: api/directoryaudit-list.md
-            - name: Get directory audit
-              href: api/directoryaudit-get.md
+          - name: List directory audits
+            href: api/directoryaudit-list.md
+          - name: Get directory audit
+            href: api/directoryaudit-get.md
           - name: Sign-in
             href: resources/signin.md
             items:
