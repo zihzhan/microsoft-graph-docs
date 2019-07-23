@@ -42,6 +42,7 @@ In the request body, supply the values for relevant fields that should be update
 |body|ItemBody|The body of the message. Updatable only if isDraft = true.|
 |categories|String collection|The categories associated with the message.|
 |ccRecipients|Recipient collection|The Cc recipients for the message. |
+|flag|[followupFlag](../resources/followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|Recipient|The mailbox owner and sender of the message. Must correspond to the actual mailbox used. |
 |importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
@@ -65,6 +66,8 @@ If successful, this method returns a `200 OK` response code and updated [message
 ## Example
 ##### Request
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_message"
@@ -83,6 +86,16 @@ Content-length: 248
   "inferenceClassification": "other"
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-message-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-message-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
@@ -125,7 +138,6 @@ Content-length: 248
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->

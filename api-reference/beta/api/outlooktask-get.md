@@ -18,11 +18,11 @@ By default, this operation (and the POST, PATCH, and [complete](../api/outlookta
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Tasks.Read    |
-|Delegated (personal Microsoft account) | Tasks.Read    |
-|Application | Not supported. |
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:------------------------------------|
+| Delegated (work or school account)     | Tasks.Read                          |
+| Delegated (personal Microsoft account) | Tasks.Read                          |
+| Application                            | Not supported.                      |
 
 ## HTTP request
 
@@ -39,10 +39,10 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 
 ## Request headers
 
-| Name      |Description|
-|:----------|:----------|
-| Authorization  | Bearer {token}. Required. |
-| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional.|
+| Name                     | Description                                       |
+|:-------------------------|:--------------------------------------------------|
+| Authorization            | Bearer {token}. Required.                         |
+| Prefer: outlook.timezone | Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified. Optional. |
 
 ## Request body
 
@@ -52,25 +52,46 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [outlookTask](../resources/outlooktask.md) object in the response body.
 
-## Example 1
+## Examples
 
-### Request
+### Example 1: Get an Outlook task
+
+#### Request
 
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### Response
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+<!-- markdownlint-disable MD024 -->
+
+#### Response
 
 Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,14 +101,13 @@ Here is an example of the response. By default, the date-time properties in the 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 376
 
 {
   "id": "AAMkADA1MTrgAAA=",
   "createdDateTime": "2016-04-22T06:03:35.9279794Z",
   "lastModifiedDateTime": "2016-04-22T06:03:35.9436052Z",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIOJMyQ==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": null,
   "body": {
     "contentType": "text",
@@ -98,7 +118,7 @@ Content-length: 376
     "dateTime": "2016-04-27T04:00:00.0000000",
     "timeZone": "UTC"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -115,26 +135,44 @@ Content-length: 376
 }
 ```
 
-## Example 2
+### Example 2: Get Outlook task with date-time properties in Pacific Standard Time
 
-### Request
+#### Request
 
-This example uses the `Prefer: outlook.timezone` header to specify displaying date-time properties in the response in Pacific Standard Time.
+This example uses the `Prefer: outlook.timezone` header to specify that the API should return date-time properties in the response in Pacific Standard Time.
+
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
+GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MHgwAAA=
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
-Here is an example of the response. The date-time properties in the response are displayed in the specified Pacific Standard Time.
+Here is an example of the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
 
 > **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,14 +182,13 @@ Here is an example of the response. The date-time properties in the response are
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",
   "createdDateTime": "2016-04-22T15:19:18.9526004-07:00",
   "lastModifiedDateTime": "2016-04-22T15:19:19.015101-07:00",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIW9XXA==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": "Dana Swope",
   "body": {
     "contentType": "text",
@@ -162,7 +199,7 @@ Content-length: 576
     "dateTime": "2016-05-04T021:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -189,7 +226,6 @@ Content-length: 576
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/outlooktask-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
 -->
