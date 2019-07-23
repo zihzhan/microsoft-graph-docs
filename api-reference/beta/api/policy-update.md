@@ -2,13 +2,16 @@
 title: "Update Policy"
 description: "Update properties in a preexisting policy."
 localization_priority: Normal
+author: davidmu1
+doc_type: apiPageType
+ms.prod: "microsoft-identity-platform"
 ---
 
 # Update Policy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update properties in a preexisting [policy](../resources/policy.md).
+Update properties in a [policy](../resources/policy.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,10 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 PATCH /policies/{id}
 ```
 ## Request headers
-| Name       | Type | Description|
-|:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
-| Content-Type | application/json  | Nature of the data in the body of an entity. Required. |
+| Name | Description |
+|:---- |:----------- |
+| Authorization  | Bearer {token}. Required. |
+| Content-Type | application/json |
 
 ## Request body
 In the request body, provide a JSON object with the parameters that need to be updated. The following table shows the possible parameters.
@@ -38,17 +41,17 @@ In the request body, provide a JSON object with the parameters that need to be u
 |definition|String|The stringified version of the [policy](../resources/policy.md) object.|
 |displayName|String|A custom name for the policy.|
 |isOrganizationDefault|Boolean|Specifies if this policy is applied by default.|
-|type|String|Specifies the type of policy. Currently must be "TokenLifetimePolicy"|
+|type|String|Specifies the type of [policy](../resources/policy.md).|
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Example
 The following example updates the definition of the token lifetime policy and sets it as the organization default.
 
-##### Request
-Here is an example of the request.
+### Request
+The following example shows the request.
 
 ```http
 PATCH https://graph.microsoft.com/beta/policies/{id}
@@ -59,8 +62,8 @@ Content-Type: application/json
 }
 ```
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties are returned from an actual call.
 
 ```http
 HTTP/1.1 204 No Content
