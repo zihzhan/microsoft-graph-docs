@@ -595,18 +595,18 @@
           href: api/directoryaudit-list.md
         - name: Get directory audit
           href: api/directoryaudit-get.md
-        - name: Sign-in
-          href: resources/signin.md
-          items:
-          - name: List sign-ins
-            href: api/signin-list.md
-          - name: Get sign-in
-            href: api/signin-get.md
-        - name: Provisioning logs
-          href: resources/provisioningobjectsummary.md
-          items:
-          - name: List directory provisioning
-            href: api/provisioningobjectsummary-list.md
+      - name: Sign-in
+        href: resources/signin.md
+        items:
+        - name: List sign-ins
+          href: api/signin-list.md
+        - name: Get sign-in
+          href: api/signin-get.md
+      - name: Provisioning logs
+        href: resources/provisioningobjectsummary.md
+        items:
+        - name: List directory provisioning
+          href: api/provisioningobjectsummary-list.md
     - name: Calendar
       href: resources/calendar.md
       displayname: Outlook calendar
