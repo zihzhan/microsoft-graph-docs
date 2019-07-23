@@ -585,6 +585,28 @@
           href: api/opentypeextension-post-opentypeextension.md
         - name: Get open extension
           href: api/opentypeextension-get.md
+    - name: Audit logs
+      href: resources/azure-ad-auditlog-overview.md
+      items:
+      - name: Directory audit
+        href: resources/directoryaudit.md
+        items:
+        - name: List directory audits
+          href: api/directoryaudit-list.md
+        - name: Get directory audit
+          href: api/directoryaudit-get.md
+        - name: Sign-in
+          href: resources/signin.md
+          items:
+          - name: List sign-ins
+            href: api/signin-list.md
+          - name: Get sign-in
+            href: api/signin-get.md
+        - name: Provisioning logs
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List directory provisioning
+            href: api/provisioningobjectsummary-list.md
     - name: Calendar
       href: resources/calendar.md
       displayname: Outlook calendar
@@ -8203,28 +8225,6 @@
               href: api/synchronization-synchronizationtemplate-list.md
             - name: Get template
               href: api/synchronization-synchronizationtemplate-get.md
-      - name: Audit logs
-        href: resources/azure-ad-auditlog-overview.md
-        items:
-        - name: Directory audit
-          href: resources/directoryaudit.md
-          items:
-          - name: List directory audits
-            href: api/directoryaudit-list.md
-          - name: Get directory audit
-            href: api/directoryaudit-get.md
-          - name: Sign-in
-            href: resources/signin.md
-            items:
-            - name: List sign-ins
-              href: api/signin-list.md
-            - name: Get sign-in
-              href: api/signin-get.md
-          - name: Provisioning logs
-            href: resources/provisioningobjectsummary.md
-            items:
-            - name: List directory provisioning
-              href: api/provisioningobjectsummary-list.md
       - name: Authentication and security
         items:
         - name: Data policy operation
