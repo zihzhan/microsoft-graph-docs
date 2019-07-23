@@ -3,7 +3,7 @@ title: "policy resource type"
 description: "Represents an Azure AD policy."
 localization_priority: Normal
 author: davidmu1
-doc_type: apiPageType
+doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 
