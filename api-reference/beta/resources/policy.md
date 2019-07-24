@@ -37,6 +37,25 @@ The following are the policy types:
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Required.|
 
+## JSON representation
+The following is a JSON representation of the resource.
+
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.policy",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.directoryObject",  
+  "openType": true
+}-->
+```json
+{
+  "definition": ["String"],
+  "displayName": "String",
+  "isOrganizationDefault": "Boolean",
+  "type": "String"
+}
+```
+
 ## Relationships
 |Relationship|Type|Description|
 |:-------------|:-----------|:-----------|
