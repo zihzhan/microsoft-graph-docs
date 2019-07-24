@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "definition": ["String"],
+  "definition": "String",
   "displayName": "String",
   "isOrganizationDefault": "Boolean",
   "type": "String"
