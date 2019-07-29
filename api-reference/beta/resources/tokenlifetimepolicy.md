@@ -1,5 +1,5 @@
 ---
-title: "tokenLifetimePolicy resource type"
+title: "tokenLifetimePolicy policy definition"
 description: "Specifies the lifetimes of tokens issued for various purposes"
 localization_priority: Normal
 author: davidmu1
@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# tokenLifetimePolicy resource type
+# tokenLifetimePolicy policy definition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

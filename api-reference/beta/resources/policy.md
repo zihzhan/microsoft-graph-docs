@@ -32,10 +32,10 @@ The following are the policy types:
 ##  Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The string version of the specific policy. See below. Required.|
+|definition|String|The policy definition is a JSON string. Each policy definition JSON is different per policy type. Supported defitions: [activitybasedtimeoutpolicy](activitybasedtimeoutpolicy.md) and [tokenlifetimepolicy](tokenlifetimepolicy.md). Required.|
 |displayName|String|A custom name for the policy. Required.|
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
-|type|String|Specifies the type of policy. Required.|
+|type|String|Specifies the type of policy. Supported types: **activityBasedTimeoutPolicy** and **tokenLifetimePolicy**. Required.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

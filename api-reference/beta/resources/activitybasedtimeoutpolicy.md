@@ -1,5 +1,5 @@
 ---
-title: "activityBasedTimeoutPolicy resource type"
+title: "activityBasedTimeoutPolicy policy definition"
 description: "Specifies a shared activity-based timeout policy."
 localization_priority: Normal
 author: davidmu1
@@ -7,7 +7,7 @@ doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# activityBasedTimeoutPolicy resource type
+# activityBasedTimeoutPolicy policy definition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
