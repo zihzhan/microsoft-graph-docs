@@ -8225,7 +8225,7 @@
               href: api/synchronization-synchronizationtemplate-list.md
             - name: Get template
               href: api/synchronization-synchronizationtemplate-get.md
-      - name: Authentication and security
+      - name: Identity and sign-in
         items:
         - name: Data policy operation
           href: resources/datapolicyoperation.md
