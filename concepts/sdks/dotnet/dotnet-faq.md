@@ -2,7 +2,7 @@
 title: "Frequently asked questions"
 description: "Contains frequently asked questions for the .Net client library."
 localization_priority: Normal
-author: MichaelMainer
+author: sdk-contributors
 ---
 
 # Frequently Asked Questions
