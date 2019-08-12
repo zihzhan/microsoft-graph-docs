@@ -58,7 +58,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create-policy"
+  "name": "create_policy"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/policies

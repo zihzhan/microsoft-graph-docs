@@ -55,7 +55,7 @@ The following example shows the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update-policy"
+  "name": "update_policy"
 }-->
 ```http
 PATCH https://graph.microsoft.com/beta/policies/{id}
