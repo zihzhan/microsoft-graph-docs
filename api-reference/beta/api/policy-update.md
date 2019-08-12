@@ -60,6 +60,7 @@ The following example shows the request.
 ```http
 PATCH https://graph.microsoft.com/beta/policies/{id}
 Content-Type: application/json
+
 {
 	"definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\"}}"],
 	"isOrganizationDefault":true
