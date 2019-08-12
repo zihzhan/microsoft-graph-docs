@@ -78,7 +78,9 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "name": "create_policy",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policy"
 } -->
 ```http
 HTTP/1.1 201 Created
