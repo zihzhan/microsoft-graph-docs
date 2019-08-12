@@ -1,5 +1,5 @@
 ---
-title: "Update Policy"
+title: "Update policy"
 description: "Update properties in a preexisting policy."
 localization_priority: Normal
 author: davidmu1
@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Update Policy
+# Update policy
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +63,7 @@ Content-Type: application/json
 ```
 
 ### Response
-The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties are returned from an actual call.
+The following example shows the response. 
 
 ```http
 HTTP/1.1 204 No Content
