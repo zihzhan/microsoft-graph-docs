@@ -42,7 +42,7 @@ The following table shows the properties that are required when you create a pol
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The string version of the [policy](../resources/policy.md) object.|
+|definition|String collection|The string version of the [policy](../resources/policy.md) object.|
 |displayName|String|A custom name for the policy.|
 |type|String|Specifies the type of [type of policy](../resources/policy.md).|
 

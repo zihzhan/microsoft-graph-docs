@@ -24,7 +24,7 @@ The maximum values for properties denoted in days are 1 second short of the deno
 | Property	   | Type	|Description|
 |:-------------|:------|:---------|
 |Version|Integer|Policy version. Set value of 1. Required.|
-|ApplicationPolicies|Array|Collection of application policies.|
+|ApplicationPolicies|[policy](policy.md) collection|Collection of application policies.|
 |ApplicationId|String|Application identifier the policy applies to. A value of "default" indicates the default value that applies to all applications that support activity-based timeout functionality but do not have application-specific overrides. Allowed values:<br>- default: applies to all applications that support activity-based timeout functionality<br>- c44b4083-3bb0-49c1-b47d-974e53cbdf3c: applies the policy to the Azure Portal|
 |WebSessionIdleTimeout|String|The period of user inactivity after which the user's web session is considered expired. The minimum value is 5 minutes; the maximum value is 1 day.|
 
