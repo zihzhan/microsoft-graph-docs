@@ -37,6 +37,11 @@ The following are the policy types:
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
 |type|String|Specifies the type of policy. Supported types: **activityBasedTimeoutPolicy** and **tokenLifetimePolicy**. Required.|
 
+## Relationships
+|Relationship|Type|Description|
+|:-------------|:-----------|:-----------|
+|appliesTo|[directoryObject](../resources/directoryobject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
+
 ## JSON representation
 The following is a JSON representation of the resource.
 
@@ -55,11 +60,6 @@ The following is a JSON representation of the resource.
   "type": "String"
 }
 ```
-
-## Relationships
-|Relationship|Type|Description|
-|:-------------|:-----------|:-----------|
-|appliesTo|[directoryObject](../resources/directoryobject.md) collection|The applications, service principals, groups, or organization the policy applies to.|
 
 <!--
 {
