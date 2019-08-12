@@ -93,7 +93,7 @@ Content-type: application/json
   "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}"],
   "displayName":"name-value",
   "isOrganizationDefault":false,
-  "keyCredentials",[{"@odata.type": "microsoft.graph.keyCredential"}],
+  "keyCredentials":[{"@odata.type": "microsoft.graph.keyCredential"}],
   "type":"TokenLifetimePolicy"
 }
 
