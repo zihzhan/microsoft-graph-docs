@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /policies/{id}
 ```
@@ -53,6 +53,10 @@ The following example updates the definition of the token lifetime policy and se
 ### Request
 The following example shows the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "update-policy"
+}-->
 ```http
 PATCH https://graph.microsoft.com/beta/policies/{id}
 Content-Type: application/json
@@ -65,6 +69,23 @@ Content-Type: application/json
 ### Response
 The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties are returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "message: updateReply",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

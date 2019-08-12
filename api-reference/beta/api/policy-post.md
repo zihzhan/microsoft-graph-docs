@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Not supported. |
 
 ## HTTP request
-
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /policies
 ```
@@ -56,6 +56,10 @@ The following example creates a new token lifetime Policy. Notice the string def
 ### Request
 The following example shows the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create-policy"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/policies
 Content-Type: application/json
@@ -70,6 +74,10 @@ Content-Type: application/json
 ### Response
 The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties are returned from an actual call.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

@@ -39,6 +39,11 @@ The [policy](policy.md) resource contains a definition JSON property, that speci
 ## JSON representation
 The following is a JSON representation of the resource.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.tokenlifetimepolicy",
+  "keyProperty": "id"
+}-->
 ```json
 {
   "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],
@@ -47,3 +52,16 @@ The following is a JSON representation of the resource.
   "type":"TokenLifetimePolicy",
 }
 ```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "tokenlifetimepolicy resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->
