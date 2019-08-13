@@ -90,7 +90,7 @@ Content-type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/$metadata#policies/$entity",
   "id":"id-value",
   "alternativeIdentifier":null,
-  "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}"],
+  "definition":"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}",
   "displayName":"name-value",
   "isOrganizationDefault":false,
   "keyCredentials":[{"@odata.type": "microsoft.graph.keyCredential"}],
