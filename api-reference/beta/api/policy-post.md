@@ -66,7 +66,7 @@ Content-Type: application/json
 
 {
   "displayName":"CustomTokenLifetimePolicy",
-  "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}"],
+  "definition":"{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\"}}",
   "type":"TokenLifetimePolicy"
 }
 ```
