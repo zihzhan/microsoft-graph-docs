@@ -58,7 +58,7 @@ The following example shows the request.
   "name": "update_policy"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/policies/{id}
+PATCH https://graph.microsoft.com/beta/policies/59b0dd33-b9cf-4fca-aa3e-82fefc5d7ba1
 Content-Type: application/json
 
 {
@@ -72,8 +72,7 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "odata.type": "microsoft.graphy.policy"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content
