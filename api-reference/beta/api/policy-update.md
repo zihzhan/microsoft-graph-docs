@@ -72,7 +72,8 @@ The following example shows the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "odata.type": "microsoft.graphy.policy"
 } -->
 ```http
 HTTP/1.1 204 No Content
