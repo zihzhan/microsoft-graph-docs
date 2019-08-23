@@ -1,3 +1,12 @@
+---
+title: "Prerequisites for new API documentation"
+description: "Prerequisites for new API documentation"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Prerequisites for new API documentation
 
 The following table lists the prerequisite steps for adding API documentation to docs.microsoft.com.

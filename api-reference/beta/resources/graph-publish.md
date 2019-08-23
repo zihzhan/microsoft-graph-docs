@@ -1,3 +1,12 @@
+---
+title: "Publish content"
+description: "Publish content"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Publish content
 
 Before you can publish APIs on docs.microsoft.com, make sure that you complete the steps in [create content](graph-create-content.md)

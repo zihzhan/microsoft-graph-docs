@@ -1,3 +1,12 @@
+---
+title: "Update API documentation"
+description: "Update API documentation"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Update API documentation 
 
 Before you start adding or updating content for publishing APIs on docs.microsoft.com, make sure that you complete the steps in [prerequisites](graph-prerequisites-existing.md)

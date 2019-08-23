@@ -1,3 +1,12 @@
+---
+title: "Prerequisites for updating API documenation"
+description: "Prerequisites for updating API documenation"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Prerequisites for updating API documenation
 
 The following table lists the prerequisite steps for updating API documentation in docs.microsoft.com.

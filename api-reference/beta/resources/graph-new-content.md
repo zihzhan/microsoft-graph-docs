@@ -1,3 +1,11 @@
+---
+title: "Create API documentation"
+description: "Create API documentation"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
 
 # Create API documentation
 

@@ -1,3 +1,11 @@
+---
+title: "Update existing API documentation"
+description: "Update existing API documentation"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
 
 # Update existing API documentation
 
