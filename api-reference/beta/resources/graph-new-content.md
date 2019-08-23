@@ -19,4 +19,4 @@ If you are a PM, Engineer, or Content Developer, you may be involved in creating
 
 ## Publish documentation
 
-If you are a Content Developer, you're help is needed to publish the API documentation on docs.microsoft.com. For a checklist that lists the steps to do this, see [Publish API documenation](graph-publish.md).
+If you are a Content Developer, your help is needed to publish the API documentation on docs.microsoft.com. For a checklist that lists the steps to do this, see [Publish API documenation](graph-publish.md).

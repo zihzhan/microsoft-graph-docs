@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Before you can publish API documentation on docs.microsoft.com, make sure that you complete the steps in [create content](graph-create-content.md).
 
-The following table lists the steps for adding API documentation.
+The following table lists the steps for publishing API documentation.
 
 | Step | Required | Task | Description |
 | ---- | ---- | ----------- |
