@@ -8544,6 +8544,26 @@
           href: api/trustframework-put-trustframeworkpolicy.md
         - name: Delete
           href: api/trustframeworkpolicy-delete.md
+      - name: CDK test
+        items:
+        - name: Create new documentation
+          href: api/resources/graph-new-content.md
+          items:
+          - name: Prerequisites
+            href: api/resources/graph-prerequisites-new.md
+          - name: Create documentation
+            href: api/resources/graph-create-content.md
+          - name: Publish documentation
+            href: api/resources/graph-publish.md
+        - name: Update existing documentation
+          href: api/resources/graph-existing-content.md
+          items:
+          - name: Prerequisites
+            href: api/resources/graph-prerequisites-existing.md
+          - name: Update documentation
+            href: api/resources/graph-update-content.md
+          - name: Publish
+            href: api/resources/graph-publish.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
