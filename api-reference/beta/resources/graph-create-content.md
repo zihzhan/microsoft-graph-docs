@@ -9,7 +9,7 @@ doc_type: resourcePageType
 
 # Create API documentation 
 
-Before you start adding content for publishing APIs on docs.microsoft.com, make sure that you complete the steps in [prerequisites](graph-prerequisites.md)
+Before you start adding content for publishing APIs on docs.microsoft.com, make sure that you complete the steps in [prerequisites](graph-prerequisites-new.md)
 
 The following table lists the steps for adding API content.
 
