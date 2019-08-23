@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 ## Prequisites
 
-If you are a PM or Engineer, you're help with starting the documentation workflow and creating initial pages is needed. For a checklist that lists the steps to do this, see [Prerequisites for new API documentation](graph-prerequisites-new.md).
+If you are a PM or Engineer, your help with starting the documentation workflow and creating initial pages is needed. For a checklist that lists the steps to do this, see [Prerequisites for new API documentation](graph-prerequisites-new.md).
 
 ## Create documentation
 
