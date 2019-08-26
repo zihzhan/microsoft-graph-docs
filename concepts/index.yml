@@ -30,7 +30,7 @@ highlightedContent:
       itemType: overview
       url: /graph/use-the-api
     - title: Microsoft Graph REST API v1.0
-      itemType: referemce
+      itemType: reference
       url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
     - title: Microsoft Graph REST API Beta
       itemType: reference
