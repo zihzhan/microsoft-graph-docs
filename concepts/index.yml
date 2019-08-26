@@ -17,9 +17,6 @@ highlightedContent:
     - title: Overview of Microsoft Graph
       itemType: overview
       url: /graph/overview
-    - title: Getting started with Microsoft Graph
-      itemType: video
-      url: https://youtu.be/PI9NO5rayiY
     - title: Services and features
       itemType: concept
       url: /graph/overview-major-services
@@ -35,107 +32,6 @@ highlightedContent:
     - title: Microsoft Graph REST API Beta
       itemType: reference
       url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-
-tools: 
-  title: Quickstarts
-  summary: Follow platform-specific quickstarts that guide you through basic Microsoft Graph concepts.
-  items: 
-    - title: Android
-      imageSrc: ./images/index/logo_android.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-android
-    - title: Angular
-      imageSrc: ./images/index/angular.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-angular
-    - title: ASP.NET
-      imageSrc: ./images/index/logo_NET.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
-    - title: iOS
-      imageSrc: ./images/index/logo_ios.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
-    - title: Node.js
-      imageSrc: ./images/index/logo_nodejs.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-node
-    - title: PHP
-      imageSrc: ./images/index/logo_php.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-php
-    - title: Python
-      imageSrc: ./images/index/logo_python.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-Python
-    - title: Ruby
-      imageSrc: ./images/index/logo_ruby.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
-    - title: UWP
-      imageSrc: ./images/index/logo_windows.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
-    - title: Xamarin
-      imageSrc: ./images/index/logo_xamarin.svg
-      url: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
-  title: Tutorials
-  summary: Follow step-by-step training exercises to learn how to create a simple app that uses Azure AD authentication and accesses data via Microsoft Graph.
-  items: 
-    - title: Android
-      imageSrc: ./images/index/logo_android.svg
-      url: /graph/tutorials/android
-    - title: Angular
-      imageSrc: ./images/index/angular.svg
-      url: /graph/tutorials/angular
-    - title: ASP.NET
-      imageSrc: ./images/index/logo_NET.svg
-      url: /graph/tutorials/aspnet
-    - title: Node.js
-      imageSrc: ./images/index/logo_nodejs.svg
-      url: /graph/tutorials/node
-    - title: PHP
-      imageSrc: ./images/index/logo_php.svg
-      url: /graph/tutorials/php
-    - title: Python
-      imageSrc: ./images/index/logo_python.svg
-      url: /graph/tutorials/python
-    - title: Ruby
-      imageSrc: ./images/index/logo_ruby.svg
-      url: /graph/tutorials/ruby
-    - title: UWP
-      imageSrc: ./images/index/logo_windows.svg
-      url: /graph/tutorials/uwp
-    - title: Xamarin
-      imageSrc: ./images/index/logo_xamarin.svg
-      url: /graph/tutorials/xamarin
-  title: SDKs
-  summary: Download SDKs and follow platform-specific guidance to integrate the Microsoft Graph API into your app.
-  items: 
-    - title: Android
-      imageSrc: ./images/index/logo_android.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-android
-    - title: Angular
-      imageSrc: ./images/index/angular.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
-    - title: ASP.NET
-      imageSrc: ./images/index/logo_NET.svg
-      url: https://www.nuget.org/packages/Microsoft.Graph
-    - title: iOS
-      imageSrc: ./images/index/logo_ios.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-objc
-    - title: Java
-      imageSrc: ./images/index/logo_java.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-java
-    - title: JavaScript
-      imageSrc: ./images/index/logo_js.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
-    - title: Node.js
-      imageSrc: ./images/index/logo_nodejs.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
-    - title: PHP
-      imageSrc: ./images/index/logo_php.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-php
-    - title: Ruby
-      imageSrc: ./images/index/logo_ruby.svg
-      url: https://github.com/microsoftgraph/msgraph-sdk-ruby
-    - title: UWP
-      imageSrc: ./images/index/logo_windows.svg
-      url: https://www.nuget.org/packages/Microsoft.Graph
-    - title: Xamarin
-      imageSrc: ./images/index/logo_xamarin.svg
-      url: https://www.nuget.org/packages/Microsoft.Graph
 
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -197,6 +93,111 @@ conceptualContent:
         - url: /graph/toolkit/overview
           itemType: overview
           text: Use the toolkit (preview)
+
+tools: 
+  title: Quickstarts
+  summary: Follow platform-specific quickstarts that guide you through basic Microsoft Graph concepts.
+  items: 
+    - title: Android
+      imageSrc: ./images/index/logo_android.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-android
+    - title: Angular
+      imageSrc: ./images/index/angular.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-angular
+    - title: ASP.NET
+      imageSrc: ./images/index/logo_NET.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
+    - title: iOS
+      imageSrc: ./images/index/logo_ios.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
+    - title: Node.js
+      imageSrc: ./images/index/logo_nodejs.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-node
+    - title: PHP
+      imageSrc: ./images/index/logo_php.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-php
+    - title: Python
+      imageSrc: ./images/index/logo_python.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-Python
+    - title: Ruby
+      imageSrc: ./images/index/logo_ruby.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
+    - title: UWP
+      imageSrc: ./images/index/logo_windows.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
+    - title: Xamarin
+      imageSrc: ./images/index/logo_xamarin.svg
+      url: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
+
+tools:
+  title: Tutorials
+  summary: Follow step-by-step training exercises to learn how to create a simple app that uses Azure AD authentication and accesses data via Microsoft Graph.
+  items: 
+    - title: Android
+      imageSrc: ./images/index/logo_android.svg
+      url: /graph/tutorials/android
+    - title: Angular
+      imageSrc: ./images/index/angular.svg
+      url: /graph/tutorials/angular
+    - title: ASP.NET
+      imageSrc: ./images/index/logo_NET.svg
+      url: /graph/tutorials/aspnet
+    - title: Node.js
+      imageSrc: ./images/index/logo_nodejs.svg
+      url: /graph/tutorials/node
+    - title: PHP
+      imageSrc: ./images/index/logo_php.svg
+      url: /graph/tutorials/php
+    - title: Python
+      imageSrc: ./images/index/logo_python.svg
+      url: /graph/tutorials/python
+    - title: Ruby
+      imageSrc: ./images/index/logo_ruby.svg
+      url: /graph/tutorials/ruby
+    - title: UWP
+      imageSrc: ./images/index/logo_windows.svg
+      url: /graph/tutorials/uwp
+    - title: Xamarin
+      imageSrc: ./images/index/logo_xamarin.svg
+      url: /graph/tutorials/xamarin
+
+tools:
+  title: SDKs
+  summary: Download SDKs and follow platform-specific guidance to integrate the Microsoft Graph API into your app.
+  items: 
+    - title: Android
+      imageSrc: ./images/index/logo_android.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-android
+    - title: Angular
+      imageSrc: ./images/index/angular.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
+    - title: ASP.NET
+      imageSrc: ./images/index/logo_NET.svg
+      url: https://www.nuget.org/packages/Microsoft.Graph
+    - title: iOS
+      imageSrc: ./images/index/logo_ios.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-objc
+    - title: Java
+      imageSrc: ./images/index/logo_java.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-java
+    - title: JavaScript
+      imageSrc: ./images/index/logo_js.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
+    - title: Node.js
+      imageSrc: ./images/index/logo_nodejs.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-javascript
+    - title: PHP
+      imageSrc: ./images/index/logo_php.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-php
+    - title: Ruby
+      imageSrc: ./images/index/logo_ruby.svg
+      url: https://github.com/microsoftgraph/msgraph-sdk-ruby
+    - title: UWP
+      imageSrc: ./images/index/logo_windows.svg
+      url: https://www.nuget.org/packages/Microsoft.Graph
+    - title: Xamarin
+      imageSrc: ./images/index/logo_xamarin.svg
+      url: https://www.nuget.org/packages/Microsoft.Graph
 
 additionalContent:
   sections:
