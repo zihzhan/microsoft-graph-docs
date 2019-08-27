@@ -148,7 +148,7 @@ conceptualContent:
         - url: /graph/tutorials/ruby
           itemType: tutorial
           text: Ruby
-        - url: h/graph/tutorials/uwp
+        - url: /graph/tutorials/uwp
           itemType: tutorial
           text: UWP
         - url: /graph/tutorials/xamarin
