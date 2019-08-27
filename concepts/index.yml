@@ -50,6 +50,12 @@ conceptualContent:
         - url: /graph/data-connect-overview
           itemType: concept
           text: Microsoft Graph data connect
+        - url: https://developer.microsoft.com/graph/quick-start
+          itemType: quickstart
+          text: Quickstarts
+        - url: /graph/tutorials
+          itemType: tutorial
+          text: Tutorials
       footerLink:
         url: /graph/versioning-and-support
         text: See more
@@ -128,8 +134,6 @@ tools:
     - title: Xamarin
       imageSrc: ./images/index/logo_xamarin.svg
       url: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
-
-tools:
   title: Tutorials
   summary: Follow step-by-step training exercises to learn how to create a simple app that uses Azure AD authentication and accesses data via Microsoft Graph.
   items: 
@@ -160,8 +164,6 @@ tools:
     - title: Xamarin
       imageSrc: ./images/index/logo_xamarin.svg
       url: /graph/tutorials/xamarin
-
-tools:
   title: SDKs
   summary: Download SDKs and follow platform-specific guidance to integrate the Microsoft Graph API into your app.
   items: 
