@@ -15,8 +15,8 @@ Represents an Azure AD policy. Policies are custom rules that can be enforced on
 
 The following are the policy types:
 
-- [Token lifetime policy](tokenlifetimepolicy.md)
-- [Activity-based timeout policy](activitybasedtimeoutpolicy.md)
+- [Token lifetime policy](/graph/identity-tokenlifetimepolicy)
+- [Activity-based timeout policy](/graph/identity-activitybasedtimeoutpolicy)
 
 ## Methods
 | Method       | Return Type  |Description|
@@ -32,10 +32,16 @@ The following are the policy types:
 ##  Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|definition|String|The policy definition is a JSON string. Each policy definition JSON is different per policy type. Supported definitions: [activitybasedtimeoutpolicy](activitybasedtimeoutpolicy.md) and [tokenlifetimepolicy](tokenlifetimepolicy.md). Required.|
+|alternativeIdentifier|String| |
+|definition|String collection|The policy definition is a stringified JSON object contained in an array. Each policy definition JSON is different per policy type. Supported definitions: [activity-based timeout policy](/graph/identity-activitybasedtimeoutpolicy) and [token lifetime policy](/graph/identity-tokenlifetimepolicy). Required.|
 |displayName|String|A custom name for the policy. Required.|
 |isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
-|type|String|Specifies the type of policy. Supported types: **activityBasedTimeoutPolicy** and **tokenLifetimePolicy**. Required.|
+|keyCredentials|[keyCredential](keycredential.md) collection|  |
+|type|String|Specifies the type of policy. The possible values are: **activityBasedTimeoutPolicy** and **tokenLifetimePolicy**. Required.|
+
+<!-- To do: 
+Fill in descriptions for the alternativeIdentifier and keyCredentials properties.
+-->
 
 ## Relationships
 |Relationship|Type|Description|
@@ -54,9 +60,11 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "definition": "String",
+  "alternativeIdentifier": "String",
+  "definition": ["String"],
   "displayName": "String",
   "isOrganizationDefault": "Boolean",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "type": "String"
 }
 ```
