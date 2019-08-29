@@ -1,17 +1,17 @@
 ---
-title: "tokenLifetimePolicy policy definition"
+title: "Token lifetime policy"
 description: "Specifies the lifetimes of tokens issued for various purposes"
 localization_priority: Normal
 author: davidmu1
-doc_type: resourcePageType
 ms.prod: "microsoft-identity-platform"
 ---
 
-# tokenLifetimePolicy policy definition
+# Token lifetime policy (preview)
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<!-- Suggest following similar file structure as identity-activitybasedtimeoutpolicy.md
+-->
 
-Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](../api/policy-assign.md) to applications and service principals. Lifetimes can be configured for four kinds of tokens: 
+Specifies the lifetimes of tokens issued for various purposes. This kind of policy can be [assigned](/graph/api/policy-assign?view=graph-rest-beta) to applications and service principals. Lifetimes can be configured for four kinds of tokens: 
 
 - **Access Token** - contains information about the identity and privileges associated with a user account that is used by clients to access protected resources like applications.
 - **Refresh Token** - is obtained together with the access token when a user authenticates against Azure AD through a client to access a protected resource. Although this token is not revoked or left unused for more than the **MaxInactiveTime**, it can be used to obtain a new access/refresh token pair when the current access token expires.
@@ -22,7 +22,7 @@ Access/Refresh token pairs are obtained during client authentication. ID/Session
 
 ## Properties
 
-The [policy](policy.md) resource contains a definition JSON property, that specifies the behavior for this type of policy. This JSON object must be converted to a string with escaped quotations before insertion into the **definition** property. The table below describes the properties in the **definition** for the token lifetime policy type.
+The [policy](/graph/api/resources/policy?view=graph-rest-beta) resource contains a definition JSON property, that specifies the behavior for this type of policy. This JSON object must be converted to a string with escaped quotations before insertion into the **definition** property. The table below describes the properties in the **definition** for the token lifetime policy type.
 
 >**Note:** All time durations in these properties are specified in the format "dd.hh:mm:ss". The maximum values for properties denoted in days are 1 second short of the denoted number of days. For example, the maxiumum value of 1 day is specified as "23:59:59".
 
@@ -58,7 +58,7 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "tokenlifetimepolicy resource",
+  "description": "Token lifetime policy",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
