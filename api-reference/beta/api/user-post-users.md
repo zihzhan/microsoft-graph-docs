@@ -62,8 +62,11 @@ Because the **user** resource supports [extensions](/graph/extensibility-overvie
 
 If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.
 
-## Example
-##### Request
+## Examples
+
+### Example 1: Create a user
+
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -102,7 +105,8 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
-##### Response
+
+#### Response
 Here is an example of the response. 
 
 [!NOTE]
@@ -130,6 +134,45 @@ Content-type: application/json
     "preferredLanguage": null,
     "surname": null,
     "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+}
+```
+
+### Example 2: Find a user account using a sign-in name
+
+Find a user account in a B2C tenant, using a sign-in name (also known as a local account). This request could be used by a helpdesk to find a customer's user account, in a B2C tenant (in this example the B2C tenant is contoso.onmicrosoft.com).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_signinname_users"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users?$select=displayName,id&$filter=identities/any(c:c/issuerAssignedId eq 'j.smith@yahoo.com' and c/issuer eq 'contoso.onmicrosoft.com')
+```
+
+#### Response
+
+Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 108
+
+{
+  "value": [
+    {
+      "displayName": "John Smith",
+      "id": "4c7be08b-361f-41a8-b1ef-1712f7a3dfb2"
+    }
+  ]
 }
 ```
 
