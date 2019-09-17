@@ -15,7 +15,7 @@ If you are a PM or Engineer, your help with starting the documentation workflow 
 
 ## Create documentation
 
-If you are a PM, Engineer, or Content Developer, you may be involved in creating the documentation that is to be published for a product or service. For a checklist that lists the steps to do this, see [Create new APIs](graph-new-content.md).
+If you are a PM, Engineer, or Content Developer, you may be involved in creating the documentation that is to be published for a product or service. For a checklist that lists the steps to do this, see [Create new APIs](graph-create-content.md).
 
 ## Publish documentation
 

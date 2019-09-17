@@ -29,10 +29,10 @@ This is a required step. All new APIs that are added to docs.microsoft.com must 
 
 Use the commenting capabilities of GitHub in the PR to share feedback and thoughts about the APIs. The technical review generally creates a number of actions and changes. Content developers update what they can, but rely on PMs or Engineers to provide additional technical details as needed. The PR review process can be time consuming; however, it’s necessary to ensure technical accuracy, compliance, and completeness. If you’re on the review chain, you’ll need to approve the PR before it can be published.
 
-## 5 - Map schema
+## 4 - Map schema
 
 This is a required step. The PM or Engineer submits a schema mapping request and provides the work-in-progress PR for docs and changelog. The schema is mapped to the stagingbeta or stagingv1.0 endpoint and verified, and then is mapped to the beta or v1.0 endpoint and verified. For more information, see [Publish your API to Microsoft Graph](https://msgo.azurewebsites.net/add/publish/#publish-your-api-to-microsoft-graph).
 
-## 6 - Incorporate feedback and publish
+## 5 - Incorporate feedback and publish
 
 After the review process is complete, incorporate any feedback that was provided in the PR. When all feedback has been incorporate and reviewers have signed off, set the label to **ready to merge**, enter **sign-off** as a comment, and then the articles will be published.
