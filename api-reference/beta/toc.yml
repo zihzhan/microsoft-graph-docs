@@ -8564,6 +8564,15 @@
             href: resources/graph-update-content.md
           - name: Publish
             href: resources/graph-publish.md
+        - name: Migrate from beta to v1.0
+          href: resources/graph-migrate-content.md
+          items:
+          - name: Prerequisites
+            href: resources/graph-prerequisites-migrate.md
+          - name: Update documentation
+            href: resources/graph-migrate-update.md
+          - name: Publish
+            href: resources/graph-publish.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
