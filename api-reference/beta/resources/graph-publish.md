@@ -27,7 +27,9 @@ This is a required step. All new APIs that are added to docs.microsoft.com must 
 
 ## 3 - Review PR
 
-Use the commenting capabilities of GitHub in the PR to share feedback and thoughts about the APIs. The technical review generally creates a number of actions and changes. Content developers update what they can, but rely on PMs or Engineers to provide additional technical details as needed. The PR review process can be time consuming; however, it’s necessary to ensure technical accuracy, compliance, and completeness. If you’re on the review chain, you’ll need to approve the PR before it can be published.
+When requesting changes to the content, use the [GitHub review feature](https://help.github.com/en/articles/about-pull-request-reviews) and select **Request changes**. This indicates that the PR is not yet ready to merge. When your feedback has been addressed, change the review status on the PR to **Approved**. Only PRs with a status of **Approved** will be merged even if the contributor has indicated that the PR is ready to merge.
+
+The technical review generally creates a number of actions and changes. Content developers update what they can, but rely on PMs or Engineers to provide additional technical details as needed. The PR review process can be time consuming; however, it’s necessary to ensure technical accuracy, compliance, and completeness. If you’re on the review chain, you’ll need to approve the PR before it can be published. When the content has been reviewed and revised to be technically accurate, set the label to **content review**.
 
 ## 4 - Map schema
 
