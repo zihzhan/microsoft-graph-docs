@@ -1,5 +1,5 @@
 ---
-title: "Create new APIs"
+title: "Document the APIs"
 description: "Create new APIs"
 localization_priority: Normal
 author: "davidmu1"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-identity-platform"
 doc_type: resourcePageType
 ---
 
-# Create new APIs 
+# Document the APIs 
 
 Before you start adding content for publishing APIs on docs.microsoft.com, make sure that you complete the steps in [prerequisites](graph-prerequisites-new.md).
 
