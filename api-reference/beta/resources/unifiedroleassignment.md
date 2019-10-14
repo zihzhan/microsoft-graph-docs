@@ -18,7 +18,9 @@ A unifiedRoleAssignment is used to grant access to resources. It represents a ro
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get unifiedRoleAssignment](../api/unifiedroleassignment-get.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Read properties and relationships of unifiedRoleAssignment object. |
+| [List principal](../api/unifiedroleassignment-list-principal.md) | [directoryObject](directoryobject.md) collection | Get a principal object collection. |
 | [Create unifiedRoleAssignment](../api/rbacapplication-post-roleassignments.md) | [unifiedRoleAssignment](unifiedroleassignment.md) | Create a new unifiedRoleAssignment by posting to the roleAssignment collection. |
+| [List roleDefinition](../api/unifiedroleassignment-list-roledefinition.md) | [unifiedRoleDefinition](unifiedroledefinition.md) collection | Get a unifiedRoleDefinition object collection. |
 | [Delete](../api/unifiedroleassignment-delete.md) | None | Delete unifiedRoleAssignment object. |
 
 ## Properties
@@ -32,7 +34,10 @@ A unifiedRoleAssignment is used to grant access to resources. It represents a ro
 
 ## Relationships
 
-None
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|principal|[directoryObject](directoryobject.md) collection| Read-only. Nullable.|
+|roleDefinition|[unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
