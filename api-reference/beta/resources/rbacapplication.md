@@ -28,7 +28,10 @@ None
 
 ## Relationships
 
-None
+| Relationship | Type        | Description |
+|:-------------|:------------|:------------|
+|roleAssignments|[unifiedRoleAssignment](unifiedroleassignment.md) collection| Read-only. Nullable.|
+|roleDefinitions|[unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only. Nullable.|
 
 ## JSON representation
 
