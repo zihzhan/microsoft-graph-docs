@@ -1,6 +1,6 @@
 ---
-title: "List roleAssignments by principal"
-description: "List roleAssignment objects by principal."
+title: "List principals for a given roleAssignment"
+description: "List principals for a given roleAssignment."
 localization_priority: Normal
 author: "davidmu1"
 ms.prod: "microsoft-identity-platform"
@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ---
 # List principal
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-List roleAssignment objects by principal (for example, a given user).
+List principals for a given roleAssignment (for example, users).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 |Permission type      | Permissions (from least to most privileged)              |
