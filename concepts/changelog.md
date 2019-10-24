@@ -31,6 +31,12 @@ Meeting organizers can allow meeting time proposals, and invitees can suggest al
 | Addition | Beta | Added the [eventMessageResponse](/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties. |
 | Addition | Beta | Added the **proposedNewTime** property to the [attendee](/graph/api/resources/attendee?view=graph-rest-beta) complex type. |
 
+### Data access (Microsoft Graph data connect)
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Not Applicable | Added Teams chat dataset. |
+
+
 ### Devices and apps (Microsoft Intune)
 
 |Change type|Version|Description|
