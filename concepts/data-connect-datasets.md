@@ -33,6 +33,7 @@ Data connect supports the following datasets today. To view the schemas for each
 |BasicDataSet_v0.Event_v1|Contains the events in each user's calendar. The schema for these entities corresponds to the [Microsoft Graph calendar events schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event).|
 |BasicDataSet_v0.Message_v1|Contains the message in each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message).|
 |BasicDataSet_v0.SentItem_v1|Contains the message sent from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.TeamsChat_v0|Contains Teams chat metadata for 1:N chats.|
 
 ## Regions
 
