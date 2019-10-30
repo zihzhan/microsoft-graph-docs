@@ -28,7 +28,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, `managed`, and `reserved`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | String                                            | Specifies the capacity of the room. |
 | displayName            | String                                            | The name associated with the room. |
@@ -48,8 +48,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |
-| managed  | The room is managed by a delegate                         |
+| standard | The room can be reserved based on the other settings in this cmdlet. This is the default value. |                         |
 | reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
 
 ## Relationships
