@@ -33,6 +33,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | capacity               | String                                            | Specifies the capacity of the room. |
 | displayName            | String                                            | The name associated with the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
+| floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | emailAddress           | String                                            | Email address of the room. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude and optionally, altitude coordinates. |
