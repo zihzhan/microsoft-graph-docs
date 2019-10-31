@@ -27,6 +27,7 @@ The [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findro
 |Supports [getting an individual room or room list](../api/place-get.md) in a tenant | Does not support getting an individual room or room list in a tenant
 |Defines the specific entities of [room](room.md) and [roomList](roomlist.md) which specify a richer property set, in addition to the display name and SMTP address. | Each room and room list is of a lighter weight [emailAddress](emailaddress.md) type which specifies only the display name and SMTP address|
 |Supports only organizational scenarios with delegated (work or school accounts) or application permissions | Similar support for only organizational scenarios with delegated or application permissions|
+|Supports [updating an individual room or room list](../api/place-update.md) in a tenant | Does not support updating an individual room or room list in a tenant
 
 ## Methods
 
