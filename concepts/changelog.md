@@ -431,6 +431,7 @@ Debut of the places API which provides rich details for locations in apps.
 | Addition        | Beta  | Added the [room](/graph/api/resources/room?view=graph-rest-beta) resource|
 | Addition        | Beta  | Added the [place](/graph/api/resources/place?view=graph-rest-beta) resource|
 |Addition         | Beta  | Added delegated and application [permissions for the places API](permissions-reference.md#places-permissions): Place.Read.All |
+| Addition        | Beta  | Added the ability to [update a room or roomlist](/graph/api/resources/place-get?view=graph-rest-beta)|
 
 ### Devices and apps (Microsoft Intune)
 
