@@ -91,6 +91,10 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 
 The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate MyAnalytics data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
 
+## Why integrate with Profile API (preview)?
+
+[Profile](/graph/api/resources/profile?view=graph-rest-beta) represents the next generation of how people in Microsoft services are represented and modelled. The data within a user's profile can be used to build customized experiences on top of Microsoft Graph with the information also available within Microsoft people experiences. 
+
 ## API reference
 
 Looking for the API reference for these services?
@@ -104,3 +108,4 @@ Looking for the API reference for these services?
 * Find more about the [people API](people-example.md) and the [person](/graph/api/resources/person?view=graph-rest-1.0) entity.
 * To get started with insights API, see [Use the insights API](/graph/api/resources/insights?view=graph-rest-beta).
 * Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
+* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).
