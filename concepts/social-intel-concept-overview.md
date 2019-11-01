@@ -1,5 +1,5 @@
 ---
-title: "Overview of social and workplace intelligence in Microsoft Graph"
+title: "Overview of people and workplace intelligence in Microsoft Graph"
 description: "The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting."
 author: "simonhult"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "insights"
 scenarios: "getting-started"
 ---
 
-# Overview of social and workplace intelligence in Microsoft Graph
+# Overview of people and workplace intelligence in Microsoft Graph
 
 The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. As ubiquitous the user's data is in Microsoft Graph, data derived from the user's social interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
