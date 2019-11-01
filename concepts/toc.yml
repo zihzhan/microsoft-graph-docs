@@ -246,7 +246,7 @@ items:
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
-          - name: Get information from a user profile
+          - name: Get information within a user profile
             href: profile-example.md
       - name: Tasks and plans
         href: planner-concept-overview.md
