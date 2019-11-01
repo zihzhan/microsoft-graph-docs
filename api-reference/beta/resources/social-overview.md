@@ -62,3 +62,9 @@ Include the next sentence when supporting events.
   - [Get details of each mention in a message](../api/message-get.md#request-2)
 
 - [Delete a mention](../api/message-delete.md#request-2) in a message
+
+## Help users contextualize others in their organization
+
+Viewing a users profile or profile card is a common action taken by user's when seeking to contextualize others within their organization. 
+
+The [profile](../resources/profile.md) resource is a rich source of information about users within your organization and provides a light-weight mechanism for storing and retrieving information about a user within your organization.
