@@ -240,12 +240,14 @@ items:
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
-      - name: Social and workplace intelligence
+      - name: People and workplace intelligence
         items:
           - name: Overview
             href: social-intel-concept-overview.md
           - name: Get information about relevant people
             href: people-example.md
+          - name: Get information from a user profile
+            href: profile-example.md
       - name: Tasks and plans
         href: planner-concept-overview.md
         displayName: Planner
