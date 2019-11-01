@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [personInterest](personinterest.md) resource type provides detailed information about interests the user has associated with themselves in various services.
+Represents detailed information about interests the user has associated with themselves in various services.
 
 Inherits from [itemFacet](itemfacet.md).
 
