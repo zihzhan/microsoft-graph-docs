@@ -8546,33 +8546,62 @@
           href: api/trustframeworkpolicy-delete.md
       - name: CDK test
         items:
-        - name: Create new documentation
-          href: resources/graph-new-content.md
+        - name: Get started
           items:
-          - name: Prerequisites
-            href: resources/graph-prerequisites-new.md
-          - name: Create documentation
-            href: resources/graph-create-content.md
-          - name: Publish documentation
-            href: resources/graph-publish.md
-        - name: Update existing documentation
-          href: resources/graph-existing-content.md
+          - name: Create new documentation        
+            items:
+            - name: Overview
+              href: resources/graph-create-content.md
+            - name: Set up environment
+              href: resources/graph-set-up.md
+            - name: Author content
+              href: resources/graph-author-content.md
+            - name: Update TOC
+              href: resources/graph-update-toc.md
+            - name: Update change log
+              href: resources/graph-update-changelog.md
+            - name: Perform technical review
+              href: resources/graph-tech-review.md
+            - name: Publish
+              href: resources/graph-publish.md
+          - name: Working with GitHub
+            href: resources/manage-your-documentation.md
+          - name: Run stub generator
+            href: resources/stub-generator.md
+          - name: Use APIDoctor
+            href: resources/api-doctor-validate-examples.md
+        - name: Manage content
           items:
-          - name: Prerequisites
-            href: resources/graph-prerequisites-existing.md
-          - name: Update documentation
-            href: resources/graph-update-content.md
-          - name: Publish documentation
-            href: resources/graph-publish.md
-        - name: Migrate from beta to v1.0
-          href: resources/graph-migrate-content.md
-          items:
-          - name: Prerequisites
-            href: resources/graph-prerequisites-migrate.md
-          - name: Update documentation
-            href: resources/graph-migrate-update.md
-          - name: Publish documentation
-            href: resources/graph-publish.md
+          - name: Update existing documentation
+            items:
+            - name: Overview
+              href: resources/graph-update-content.md
+            - name: Set up environment
+              href: resources/graph-set-up.md
+            - name: Add/Update an API
+              href: resources/graph-update-api.md
+            - name: Add properties
+              href: resources/graph-add-properties.md
+            - name: Update TOC
+              href: resources/graph-update-toc.md
+            - name: Update change log
+              href: resources/graph-update-changelog.md
+            - name: Perform technical review
+              href: resources/graph-tech-review.md
+            - name: Publish
+              href: resources/graph-publish.md 
+          - name: Migrate from beta to v1.0
+            items:
+            - name: Overview
+              href: resources/graph-migrate-content.md
+            - name: Collect and update content
+              href: resources/graph-migrate-update.md
+            - name: Update TOC
+              href: resources/graph-update-toc.md
+            - name: Update change log
+              href: resources/graph-update-changelog.md
+            - name: Publish
+              href: resources/graph-publish.md
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
