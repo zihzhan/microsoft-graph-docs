@@ -46,9 +46,7 @@ To get to the site to install activesupport, type `gem install activesupport` on
 
 1. Run `ruby edmx2json.rb` command to generate the intermediary JSON files. This takes between 1 to 15 minutes (depending on the size of the CSDL file) to complete.
 
-::: tip [Use Microsoft Graph CSDL]
 While the tool *could* be used on your service endpoint's CSDL definition, it's preferable and more reliable to run the tool against the Microsoft Graph exposed CSDL. You can run this against a Canary test version for example like https://canary.graph.microsoft.com/{yourTestVersion}/$metadata.
-:::
 
     ```Shell
     Usage: edmx2json [options]
@@ -78,10 +76,6 @@ The output of this tool is not intended to be "publish-ready". These files shoul
 - **Permissions**: Permissions are not currently in the metadata, so the permissions tables are not accurate. Be sure to add the appropriate permission scopes.
 - **Optional query parameters**: All list and get API topics get this section added with standard boilerplate. If your API doesn't support OData query parameters like `$select`, update the boilerplate text to state that the API does not support query parameters. If you support a subset, or there are other considerations (limited support, etc.), be sure to add information in this section to communicate what is and isn't supported.
 - **Examples**: Be sure to add relevant and useful examples.
-
-See step-by-step accounts of the sections to modify when adding or updating 
-[properties](../manage-content/steps-add-properties-to-resource-topic.md) and 
-[APIs](../manage-content/steps-update-api-topic.md). 
 
 ### Things to avoid
 

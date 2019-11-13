@@ -19,7 +19,7 @@ If you're familiar with Git + GitHub, skip to the **Contribute and edit content*
 
 ## Setting up your fork of the repository
 
-- Set up a GitHub account so you can contribute to this project. If you haven't done this already, please [complete the steps here](Get-started-with-GitHub.md)
+- Set up a GitHub account so you can contribute to this project.
 - Set up your machine with Git by following the instructions in the [Setting up Git Tutorial](https://help.github.com/articles/set-up-git/)
 - Create your own fork of the [microsoft-graph-docs](https://github.com/microsoftgraph/microsoft-graph-docs) repo by clicking the **Fork** button at the top of the page
 - Copy the fork to your local machine by entering at the command prompt
