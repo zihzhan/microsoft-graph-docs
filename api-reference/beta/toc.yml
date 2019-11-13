@@ -8565,11 +8565,11 @@
             - name: Publish
               href: resources/graph-publish.md
           - name: Working with GitHub
-            href: resources/manage-your-documentation.md
+            href: resources/graph-manage-docs.md
           - name: Run stub generator
-            href: resources/stub-generator.md
+            href: resources/graph-stub-generator.md
           - name: Use APIDoctor
-            href: resources/api-doctor-validate-examples.md
+            href: resources/graph-api-doctor.md
         - name: Manage content
           items:
           - name: Update existing documentation

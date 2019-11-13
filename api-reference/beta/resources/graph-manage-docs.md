@@ -1,3 +1,12 @@
+---
+title: "Manage your documentation on GitHub"
+description: "Manage your documentation on GitHub"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Manage your documentation on GitHub
 
 ## Working with Git, GitHub and the Microsoft Graph repo

@@ -1,3 +1,12 @@
+---
+title: "Use the Microsoft Graph REST API docs stub generator"
+description: "Use the Microsoft Graph REST API docs stub generator"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Use the Microsoft Graph REST API docs stub generator
 
 Microsoft Graph uses CSDL (and XML format) for defining its API surface. This topic provides instructions to take that XML CSDL file and generate API and resource stub reference docs. This process does not account for the descriptions/information already available in the beta and v1.0 documentation, or any description annotations you might have in the CSDL for your types and properties. 

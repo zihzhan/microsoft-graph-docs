@@ -1,3 +1,12 @@
+---
+title: "Enable API Doctor to validate examples"
+description: "Enable API Doctor to validate examples"
+localization_priority: Normal
+author: "davidmu1"
+ms.prod: "microsoft-identity-platform"
+doc_type: resourcePageType
+---
+
 # Enable API Doctor to validate examples
 
 For API Doctor to validate an HTTP example against the related resources _as defined in the docs_, you must do the 
