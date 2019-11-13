@@ -19,7 +19,13 @@ If you're familiar with Git + GitHub, skip to the **Contribute and edit content*
 
 ## Setting up your fork of the repository
 
-- Set up a GitHub account so you can contribute to this project.
+- Go to [GitHub](https://github.com/) and create an account.
+- Go to the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/) and join the Microsoft organization. You’ll sign in using your personal GitHub account and then follow instructions to link your GitHub account to your Microsoft email, and join the [Microsoft organization](https://repos.opensource.microsoft.com/Microsoft/join).
+- Enable two-factor authentication (2 factor authentication) on [your GitHub account](https://github.com/settings/two_factor_authentication/configure).
+- Join the [Mircrosoft Graph organization](https://repos.opensource.microsoft.com/microsoftgraph/join) . 
+    - Join the following team to contribute to the microsoft-graph-docs repo : https://repos.opensource.microsoft.com/MicrosoftGraph/teams/graph-docs-contributors.
+    - Important: Click [here](http://idwebelements/GroupManagement.aspx?Group=msgraphdocs&Operation=join) to join the **MSGraphDocs** alias in [IDWeb](https://idweb/) to get doc-related communications, including new guidelines and requirements. These communications will help save you time as you prepare your content PR.
+- Add your name to the appropriate column for your API area in the [Microsoft Graph contacts](https://microsoft.sharepoint.com/teams/MicrosoftGraph18/Lists/Microsoft%20Graph%20Contacts/AllItems.aspx).
 - Set up your machine with Git by following the instructions in the [Setting up Git Tutorial](https://help.github.com/articles/set-up-git/)
 - Create your own fork of the [microsoft-graph-docs](https://github.com/microsoftgraph/microsoft-graph-docs) repo by clicking the **Fork** button at the top of the page
 - Copy the fork to your local machine by entering at the command prompt
@@ -35,6 +41,8 @@ cd microsoft-graph-docs
 git remote add upstream https://github.com/microsoftgraph/microsoft-graph-docs.git
 git fetch upstream
 ```
+
+Content owners in GitHub are the individuals listed in the [Microsoft Graph contacts](https://microsoft.sharepoint.com/teams/MicrosoftGraph18/Lists/Microsoft%20Graph%20Contacts/AllItems.aspx) list for each API area. GitHub owners are responsible for reviewing and merging external PRs and responding to issues related to their areas of ownership. See also the list of [GitHub owners](https://microsoft.sharepoint.com/teams/OfficePlatform/DevX%20Wiki%20Page%20Library/Microsoft%20Graph%20GitHub%20owners%20list.aspx) in the DevX Wiki.
 
 Congratulations! You've now set up your repository. You won't need to repeat these steps again.
 
