@@ -33,7 +33,7 @@ To enable your application to identify and authenticate itself when obtaining au
 
 You'll need to add additional permissions in order to use Microsoft Graph notifications. Choose **Add a permission**, and under Microsoft APIs, select **Microsoft Graph**, and then select **Delegated permissions**.
     
-![Screenshot of the Request API permissions page of the Azure portal](images/notifications-api-permissions.png)
+![Screenshot of the Request API permissions page of the Azure portal](images/notif-api-permissions.png)
     
 Add the following permissions:
 
