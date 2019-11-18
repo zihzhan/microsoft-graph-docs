@@ -56,7 +56,7 @@ Have a bot [record a short audio clip](https://docs.microsoft.com/en-us/graph/ap
 
 Have a bot [play a prompt](https://docs.microsoft.com/en-us/graph/api/call-playprompt?view=graph-rest-beta&tabs=http) with the appropriate response to the customer, after their speech is analyzed.
 
-![IVR Diagram](communications-ivr.PNG)
+![IVR Diagram](images/communications-ivr.PNG)
 
 
 ### Collaborate through Group Calls
@@ -106,7 +106,7 @@ View and Manage [Permissions for Online Meetings](https://docs.microsoft.com/en-
 
 ## Next Steps
 
-Learn how you can use [bots]() to get started <br/>
+Learn how you can [get started]() with bots<br/>
 Learn more about [calls]()<br/>
 Learn more about [media]()<br/>
 Learn more about [online meetings]()<br/>
