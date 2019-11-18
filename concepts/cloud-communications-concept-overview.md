@@ -56,7 +56,7 @@ Have a bot [record a short audio clip](https://docs.microsoft.com/en-us/graph/ap
 
 Have a bot [play a prompt](https://docs.microsoft.com/en-us/graph/api/call-playprompt?view=graph-rest-beta&tabs=http) with the appropriate response to the customer, after their speech is analyzed.
 
-![IVR Diagram](communications-ivr.png)
+![IVR Diagram](communications-ivr.PNG)
 
 
 ### Collaborate through Group Calls
