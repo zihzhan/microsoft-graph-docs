@@ -1,4 +1,4 @@
-# Making Use of Media
+# Understanding Media
 
 Enable your bots to send and receive audio and video related content. Making use of media allows you to create a more interactive experience between your bots and users.
 
