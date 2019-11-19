@@ -11,6 +11,7 @@ Discover the benefits of utilizing service applications ([bots](https://microsof
 It can be overwhelming at times when you're receiving a lot of calls for your business and it isn't possible, nor productive, to answer all of them. A bot can serve as your front-desk assistant and handle these calls by rejecting what seem like spam calls, and redirecting (forwarding) specific calls to a different number.
 
 **Learn how to create these scenarios:**<br/><br/>
+
 Have a user [call a bot](/graph/api/application-post-calls) through VoIP.
 
 Have a bot [redirect the incoming call](/graph/api/call-redirect) to the appropriate agent if necessary.
@@ -28,7 +29,6 @@ When a customer is prompted for a response from the bot, the customer can press 
 Have a bot [answer a call](/graph/api/call-answer) from a customer.
 
 Have a bot [play a prompt](/graph/api/call-playprompt) to inform and prompt a customer for a selection.
-
 
 Have a bot [subscribe to a tone](/graph/api/call-subscribetotone) to gather the DTMF from a customer.
 
@@ -61,6 +61,7 @@ Have a bot [play a prompt](/graph/api/call-playprompt) with the appropriate resp
 Engage with your coworkers or customers by creating a group call. Let everyone contribute to the conversation.
 
 **Learn how to create these scenarios:**<br/><br/>
+
 Have a bot [create a group call](/graph/api/application-post-calls#example-3-create-a-group-call-with-service-hosted-media) with multiple participants.
 
 Have a bot [invite another bot or user](/graph/api/participant-invite) to an existing group call.
@@ -76,6 +77,7 @@ Have a bot [mute another participant](/graph/api/participant-mute).
 If you want to send your customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
 
 **Learn how to create these scenarios:**<br/><br/>
+
 Have a bot [call a customer](/graph/api/application-post-calls) on Teams.
 
 Have a bot [play a recorded prompt](/graph/api/call-playprompt) to serve as a reminder.
@@ -86,8 +88,8 @@ Have the bot [end the call](/graph/api/call-delete).
 ### Set up Online Meetings
 Whether you want to schedule a meeting between a doctor and a patient or between you and your direct reports, you'll be able to generate a meeting that you can rely on. For added flexibility, you'll be able to "dial out" to other users and invite them to the meeting while it's ongoing.
 
-
 **Learn how to create these scenarios:**<br/><br/>
+
 Have a user [create an online meeting](/graph/api/application-post-onlinemeetings).
 
 Have a user [retrieve the details](https://docs.microsoft.com/en-us/graph/api/onlinemeeting-get) of an online meeting
