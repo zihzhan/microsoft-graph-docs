@@ -10,7 +10,7 @@ Discover the benefits of utilizing service applications ([bots](https://microsof
 
 It can be overwhelming at times when you're receiving a lot of calls for your business and it isn't possible, nor productive, to answer all of them. A bot can serve as your front-desk assistant and handle these calls by rejecting what seem like spam calls, and redirecting (forwarding) specific calls to a different number.
 
-**Learn how to create these scenarios:**<br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a user [call a bot](/graph/api/application-post-calls) through VoIP.
 
@@ -24,7 +24,7 @@ Whether you own a large helpdesk service or a small storefront, it can be diffic
 
 When a customer is prompted for a response from the bot, the customer can press a key on their keypad that corresponds to their selection. The bot can then gather the dial-tone multi-frequency (DTMF) from the customer.
 
-**Learn how to create these scenarios:**<br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a bot [answer a call](/graph/api/call-answer) from a customer.
 
@@ -44,7 +44,7 @@ Integrating with a natural language processing service means that the customer's
 
 >**Note:** You may NOT record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/en-us/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
-**Learn how to create these scenarios:** <br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a bot [answer a call](/graph/api/call-answer) from a customer.
 
@@ -60,7 +60,7 @@ Have a bot [play a prompt](/graph/api/call-playprompt) with the appropriate resp
 ### Collaborate through Group Calls
 Engage with your coworkers or customers by creating a group call. Let everyone contribute to the conversation.
 
-**Learn how to create these scenarios:**<br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a bot [create a group call](/graph/api/application-post-calls#example-3-create-a-group-call-with-service-hosted-media) with multiple participants.
 
@@ -76,7 +76,7 @@ Have a bot [mute another participant](/graph/api/participant-mute).
 ### Send Reminders Reliably
 If you want to send your customers a reminder for an appointment or a reminder for a payment deadline that’s approaching, you can have a bot call the customer automatically. <!--If the customer misses the call, it will leave a voicemail with the automated message. (Add this back once bot to PSTN calling works)-->
 
-**Learn how to create these scenarios:**<br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a bot [call a customer](/graph/api/application-post-calls) on Teams.
 
@@ -88,7 +88,7 @@ Have the bot [end the call](/graph/api/call-delete).
 ### Set up Online Meetings
 Whether you want to schedule a meeting between a doctor and a patient or between you and your direct reports, you'll be able to generate a meeting that you can rely on. For added flexibility, you'll be able to "dial out" to other users and invite them to the meeting while it's ongoing.
 
-**Learn how to create these scenarios:**<br/><br/>
+<br/>**Learn how to create these scenarios:**<br/>
 
 Have a user [create an online meeting](/graph/api/application-post-onlinemeetings).
 
