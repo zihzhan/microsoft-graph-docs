@@ -11,7 +11,7 @@ If you want your bot to play a custom prompt when a customer dials your business
 
 View an [example](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples) of how to create a bot that uses service-hosted media.
 
-![Remote Hosting Diagram](images/communications-remote-media2.PNG)<br/></br>
+![Remote Hosting Diagram](images/communications-remote-media.PNG)<br/></br>
 
 ## Application-Hosted Media (Local Hosting)
 If you want your bot to access a live stream of your customers' audio and video that could be used for recording, transcribing, translating, or sentiment analysis through a natural language processing service, consider hosting your media locally.
