@@ -42,7 +42,7 @@ On the downside, since the bot instance is just on one machine, it isn't as resi
 
 These SDKs are written in C#. We hope to have more support for other languages in the future.
 
-If you're using **stateless** bots, install the [Graph Communications Core SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Core) and any other dependencies that are required.
+If you're using **stateless** bots, install the [Graph Communications Core SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Core).
 
 
 If you're using **stateful** bots, refer to the [Graph Communications Calling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls).
