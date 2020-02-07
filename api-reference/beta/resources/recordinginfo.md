@@ -19,6 +19,7 @@ Recording information for a participant.
 |:---------------|:--------|:----------|
 | initiatedBy | [participantInfo](participantinfo.md) | The participant who initiated the recording. |
 | status | String | Possible values are: `recordingCapable`, `notRecording`, `startedRecording`. |
+| initiator | [identitySet](identitySet.md) | The identities of recording initiator. |
 
 ## JSON representation
 
@@ -34,7 +35,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "initiatedBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "status": "recordingCapable | notRecording | startedRecording"
+  "status": "recordingCapable | notRecording | startedRecording",
+  "initiator": {"@odata.type": "#microsoft.graph.initiator"}
 }
 ```
 
